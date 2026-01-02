@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "Prague Spring: An Alternate History" + '_' + "Donytr";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
@@ -250,7 +250,7 @@
     if (window.dendryUI.dark_mode) {
         document.body.classList.add('dark-mode');
     }
-    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 4 weeks.";
   };
 
 }());

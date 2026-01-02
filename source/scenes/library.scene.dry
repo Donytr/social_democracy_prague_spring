@@ -9,8 +9,8 @@ Herein contains relevant information about the government and politics of the Ge
 
 @menu
 
-- @government: Germany's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
+- @government: Czechoslovakia's system of government
+- @czechoslovak_timeline: Timeline of Czechoslovakia before 1967
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -23,42 +23,34 @@ Herein contains relevant information about the government and politics of the Ge
 @government
 go-to: menu
 
-The German Republic, called by some of our detractors as the "Weimar Republic", is a parliamentary republic with a somewhat weak president and a strong parliament, called the Reichstag. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
+The Czechoslovak Socialist Republic, also known as the Fourth Republic, is a multi-ethnic country located in Central Europe. While it is a parliamentary democracy on paper, in reality, it functions as a one-party satellite state of the Soviet Union. The politics are entirely controlled by the Communist Party (*KSČ*), and while other parties exist under the National Front coalition, they have no power and are allowed solely for the purpose of maintaining the façade of plurality. No other parties outside the National Front exist.
 
-The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+All parties receive seats within the National Assembly (*Národní shromáždění* or Národné zhromaždenie), the unicameral parliament of the Republic. Elections take place every four years, with voter turnout consistently exceeding 99 %. Voters have the option to voice their disagreement with the Nation Front candidates using blank ballots; however, these are often not available at voting stations. Regardless of electoral results, seats are allocated to individual parties based on set percentages.
 
-The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
+According to the constitution, the president is supposed to be elected by the National Assembly to five-year terms. However, in practice, the president was first secretly chosen by the KSČ leadership and then voted in. The president represents the country, is the commander in chief of the armed forces, and has the ability to appoint and remove the prime minister and other important officials.
 
-Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+The prime minister is, along with deputy ministers and federal ministers, chosen by the Central Committee of the KSČ. They all comprise the Presidium of the Government and are tasked with the control of ministries and ensuring the implementation of the National Assembly's laws. If the president is not capable of fulfilling his duties, the prime minister takes over.
 
-@weimar_timeline
+@czechoslovak_timeline
 go-to: menu
 
-= Timeline of the SPD and the Republic (until 1928)
+= Timeline of Czechoslovakia and KSČ (until 1967)
 
-**1875**: The SPD is formed as a merger of the General German Workers' Association, founded by Ferdinand Lassalle, and the Social Democratic Workers' Party of Germany, led by Wilhelm Liebknecht and August Bebel. Eventually, the SPD grows to become the largest party in the German Empire.
+**1921**: The KSČ is founded at a congress of the Czechoslovak Social-Democratic Party following an ideological split between moderates and Marxist-Leninists. Unlike social democrats, the KSČ advocates for a revolution and became the member of Comitern during the summer. 
 
-**1914**: The Great War begins. The SPD votes in favor of war credits, with substantial internal dissent. This begins a policy of *Burgfriedenspolitik*, a general peace between all political parties and trade unions.
+**1925**: During the 1925 parliamentary election, the KSČ absorbs two thirds of the social democratic vote. The party is, with 12.9% of the national vote, the second largest in the National Assembly. However, it is not included in the government coalition. 
 
-**1917**: The USPD, a left-wing anti-war split from the SPD, is formed.
+**1928**: In July, the KSČ organises the "Red Day" (*Rudý Den*), a protest in Prague aimed at proving the party's capability at mobilising the masses. However, the event is a failure, as only around 6,000 of the anticipated 120,000 people attend. This significantly increases the criticism the moderate party leadership faces from radicals such as Klement Gottwald, who is leading an unofficial group of communist officials called the "Karlín Boys".
 
-**1918**: Following defeats in the war and uprisings by soldiers, sailors, and workers, SPD leader Philip Scheidemann proclaims the German Republic, and Kaiser Wilhelm II abdicates from his throne. An armistice is declared, ending the Great War. Conflict between center-left social democrats and far-left radicals erupts in the streets of Berlin and elsewhere.
+**1929**: The Fifth Congress of the KSČ is hastily organised. The existing leadership is dismissed, Gottwald is elected the new General Secretary. Many members of the KSČ leave, tens of thousands are purged for criticising Gottwald. Many later found the Communist Party of Czechoslovakia, often called the Leninists.
 
-**1919**: The Spartacist Uprising, in which communist workers attempt to seize control of government, is launched. The uprising is defeated by the Social Democratic government, now led by President Friedrich Ebert and Chancellor Philipp Scheidemann, with the support of the far-right Freikorps militias. The two key leaders of the uprising, Rosa Luxemburg and Karl Liebknecht, are murdered by the Freikorps. The Treaty of Versailles is signed under great protest from all political factions in Germany, officially ending the Great War. The Weimar Constitution is signed. The first "Weimar Coalition" government is formed, led by the SPD, DDP, and Center (Z) parties.
+**1932**: The Leninists merge with the Czechoslovak Social-Democratic Party.
 
-**1920**: The Kapp Putsch, an attempt by reactionary actors within the military to take power, is launched, and is defeated by the workers with a general strike. This is followed by left-wing uprisings in the Ruhr, which are defeated by the Reichswehr and Freikorps. The Weimar Coalition is defeated in the elections, with the right and far left increasing in vote share. Elected governments in this period are very unstable, often only lasting a matter of months. There is a split in the USPD, with the majority faction joining with the KPD and the Soviet Union's Communist International (Comintern) alliance.
+**1938**: Under diplomatic and military pressure, the Czechoslovak government accepts the Munich Agreement, which forces it to cede border regions with significant German population (*Sudetenland*) to Germany. The Second Republic is thus born, with its government attempting to improve relations with Hitler's Germany. One of undertaken measures is the ban of the KSČ, one of the chief domestic critics of Munich. Following the ban, Gottwald emigrates to the Soviet Union.
 
-**1921**: Communist uprisings in Saxony and Hamburg are defeated. Matthias Erzberger, the Center Party leader who signed the Versailles Treaty, is assassinated.
+**1939**: The Slovak State, a fascist client state of Germany, is proclaimed on March 14th, with Hungary annexing Transcarphatia the next day. Germany establishes the Protectorate of Bohemia and Moravia the following day, thus ending the Second Republic. In October, the former president Edvard Beneš establishes the Czechoslovak government-in-exile while in France.
 
-**1922**: The Treaty of Rapallo is signed, which normalized relations with the Soviet Union. Walther Rathenau, the DDP Foreign Minister, is assassinated. The SPD reunites with most of the remaining USPD.
-
-**1923**: Hyperinflation begins, largely due to the economic policy of "passive resistance" against the French occupation of the Ruhr and the Versailles reparations. The currency is rapidly devalued as prices for necessities rise to billions of Reichsmarks. The government launches a *Reichsexekution* against Saxony, which was led by a joint SPD-KPD government. The Nazi "Beer Hall Putsch" is launched in Munich, and fails, with the arrest of Hitler. Eventually, new policies manage to stabilize the currency, and the French occupation ends.
-
-**1924**: Parliamentary elections are held in May and December, the latter leading to the bourgeois-right governments that last until 1928. Hitler is released from prison. The Dawes Plan for the repayment of the Versailles reparations is negotiated, which reduces payments and increases economic growth. Germany begins to enter a period of relative stability, with the end of the hyperinflation crisis. 
-
-**1925**:  President Friedrich Ebert dies, and new presidential elections are held, leading to the narrow election of Paul von Hindenburg in the second round. Hindenburg is a war hero and a right-wing reactionary. The SPD adopts the Heidelberg Program as its party platform. The Locarno Treaties are signed, which confirmed Germany's post-war western borders.
-
-**1926**: A referendum on the expropriation of the princes, supported by the SPD and KPD, fails.
+**1943**: 
 
 @curr_gov
 go-to: cabinet if spd_in_government; menu if not spd_in_government
