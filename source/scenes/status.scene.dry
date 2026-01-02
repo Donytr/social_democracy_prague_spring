@@ -57,7 +57,7 @@ Others: [+ other_r +]%
 
 [? if spd_in_government = 1 : Budget: [+ budget +] ?]
 
-Next election: [+ next_election_week +], [+ next_election_month : month +] [+ next_election_year +]
+Next election: Week [+ next_election_week +], [+ next_election_month : month +] [+ next_election_year +]
 
 = Economics
 
@@ -76,15 +76,15 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_relation : relationships +]
 
 {!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
 

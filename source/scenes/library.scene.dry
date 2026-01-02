@@ -23,7 +23,7 @@ Herein contains relevant information about the government and politics of the Ge
 @government
 go-to: menu
 
-The Czechoslovak Socialist Republic, also known as the Fourth Republic, is a landlocked country located in Central Europe. While it is a parliamentary democracy on paper, in reality, it functions as a one-party satellite state of the Soviet Union. The politics are entirely controlled by the Communist Party (*KSČ*), and while other parties exist under the National Front coalition, they have no power and are allowed solely for the purpose of maintaining the façade of plurality. No other parties outside the National Front exist.
+The Czechoslovak Socialist Republic, also known as the Fourth Republic, is a landlocked country located in Central Europe consisting of two main regions - Czechia and Slovakia. While it is a parliamentary democracy on paper, in reality, it functions as a one-party satellite state of the Soviet Union. The politics are entirely controlled by the Communist Party (*KSČ*), and while other parties exist under the National Front coalition, they have no power and are allowed solely for the purpose of maintaining the façade of plurality. No other parties outside the National Front exist.
 
 All parties receive seats within the National Assembly (*Národní shromáždění* or *Národné zhromaždenie*), the unicameral parliament of the Republic. Elections take place every four years, with voter turnout consistently exceeding 99 %. Voters have the option to voice their disagreement with National Front candidates using blank ballots; however, these are often not available at voting stations. Regardless of electoral results, seats are allocated to individual parties based on set percentages.
 
@@ -36,7 +36,7 @@ go-to: menu
 
 = Timeline of Czechoslovakia and KSČ (until 1967)
 
-**1914**: The Great War begins. Many Czechs and Slovaks, unwilling to fight for Austria-Hungary, defect to form the Czechoslovak Legion.
+**1914**: The Great War begins. Although many Czechs and Slovaks are initially loyal to Austria-Hungary, this gradually changes, with thousands defecting to form the Czechoslovak Legion.
 
 **1918**: The Czechoslovak Republic is proclaimed on October 28th.
 
@@ -72,9 +72,11 @@ go-to: menu
 
 **1953**: Gottwald dies in office. He is succeeded as the Czechoslovak president and the leader of the KSČ by Antonín Zápotocký, who enacts a monetary reform several few months later. The reform devaluated the Czechoslovak currency and was so unpopular the army had to suppress an uprising in Pilsen. He also speaks out against forced collectivisation, starting an exodus of farmers from unified agricultural cooperatives. Show trials and persecution of dissidents are slowly discontinued.
 
+**1955**: In response to West Germany's membership in NATO, the USSR, Czechoslovakia, Poland, Hungary, and other four Eastern European countries establish the Warsaw Pact, a defence organisation based on mutual defence of all member states.
+
 **1957**: Zápotocký dies in office. Viliam Široký, a Slovak Stalinist, is expected to take over, but the USSR favours Antonín Novotný, who eventually becomes the new president.
 
-**1960**: A new constitution is adopted, firmly establishing socialism as the state ideology and the KSČ as the leading government party. It also strengthens the Republic's centralisation and curtails Slovakia's already limited autonomy.
+**1960**: A new constitution is adopted, firmly establishing socialism as the state ideology and the KSČ's role as the leading government party. It also strengthens the Republic's centralisation and curtails Slovakia's already limited autonomy.
 
 **1963**: The Third Five-Year Plan collapses, a sign of the economic downturn plaguing the country.
 
@@ -224,36 +226,31 @@ Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD
 @parties
 go-to: menu
 
-**SPD** - *Sozialdemokratische Partei Deutschlands* (Social Democratic Party of Germany) - this is us. We are a socialist and democratic party of the working class. We are the heirs of the legacy of Marx and Engels, Lassalle and Bebel. We are the foremost defenders of the Republic. The modern SPD was formed from a merger of the "Majority" SPD, which supported the Great War, and the "Independent" SPD or USPD, which opposed the war.
+All legal political parties are a part the National Front coalition. While parties other than the KSČ and the KSS exist, they are powerless, with the Communist Party of Czechoslovakia retaining control in all of them. All parties are structured just like the KSČ, with a secretariat, central committee, and Presidium.
 
-**Z** - *Zentrumspartei* (Center Party) - a centrist to center-right Catholic party that supports the Republic, and has historically supported many of our labor, welfare, and anti-militarist priorities. They have often been in coalitions with us. They are often associated with the **BVP** (Bavarian People's Party), which represents Catholics in Bavaria. [? if year >= 1930 or chancellor = "Brüning" : They have appeared to take a more conservative turn recently, with the rise of Brüning and the party leader, Ludwig Kaas. ?]
+{!<tr><td><div class="box" style='background-color:#DC241F'> </div> !} **KSČ** - *Komunistická strana Československa* (Communist Party of Czechoslovakia) - this is us. We stand for Marxism-Leninism. Following the February 1948 coup, we assumed undisputed power within the country and de facto transformed it into a one-party state. Our power was entrenched in the 1960 Constitution.
 
-Current relations: [+ z_relation : relationships +]
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div> !} **KSS** - *Komunistická strana Slovenska* (Communist Party of Slovakia) - a slovak branch of the KSČ, founded by the merger of an independent party of the same name and the KSČ in 1948. Just like other non-KSČ parties, it has no independence.
 
-# TODO: replace this with the german state party after 1930
-**DDP** - *Deutsche Demokratische Partei* (German Democratic Party) - a center-left liberal party, popular among the intelligensia and educated middle class. They have often been in coalitions with us. [? if year >= 1930 : They have recently reformed themselves as the German State Party (DStP). ?]
+Current relations: [+ kss_relation : relationships +]
 
-Current relations: [+ ddp_relation : relationships +]
+{!<tr><td><div class="box" style='background-color:#FAC469'> </div> !} **ČSS** - *Československá strana socialistická* (Czechoslovak Socialist Party) - a nationalist socialist party founded in 1897. Formerly called the *Česká strana národně sociální* (Czech National Social Party), it was one of the biggest opponents of the KSČ before undergoing reformation in 1948 to become more aligned with our party.
 
-**DVP** - *Deutsche Volkspartei* (German People's Party) - a conservative-liberal party, supported by the middle classes and bourgeoisie. We have occasionally been in coalitions.
+Current relations: [+ css_relation : relationships +]
 
-Current relations: [+ dvp_relation : relationships +]
+{!<tr><td><div class="box" style='background-color:#FFDC00'> </div> !} **ČSL** - *Československá strana lidová* (Czechoslovak People's Party) - a conservative catholic and the only non-socialist party formed after 1945. During February 1948, it was taken over by its radical communist wing. Many remain in the party as to protest against the regime, and frictions exist between the pro-Communist leadership and members.
 
-**DNVP** - *Deutschnationale Volkspartei* (German National People's Party) - a right-wing nationalist-conservative party, with authoritarian, monarchist, and racist elements. It is supported by the former aristocracy, rural landowners, and conservative Lutherans.
+Current relations: [+ csl_relation : relationships +]
 
-Current relations: [+ dnvp_relation : relationships +]
+{!<tr><td><div class="box" style='background-color:#0000FF'> </div> !} **SSO** - *Strana slovenskej obrody* (Party of Slovak Revival) - a political party founded in March 1948 by members of the defunct *Demokratická strana* (Democratic Party) who were willing to cooperate with the KSČ. It is rather conservative.
 
-**KPD** - *Kommunistische Partei Deutschlands* (German Communist Party) - a radical left-wing offshoot of the SPD that emerged in the aftermath of the German Revolution of 1918, they follow the path of Moscow, opposing parliamentary democracy in favor of a Soviet-style revolution.
+Current relations: [+ ssl_relation : relationships +]
 
-Current relations: [+ kpd_relation : relationships +]
+{!<tr><td><div class="box" style='background-color:#1A809A'> </div> !} **SSl** - *Strana slobody* (Freedom Party) - a republican, Christian democratic party founded in 1946 after a split from the *Demokratická strana* (Democratic Party).
 
-[? if sapd_formed: SAPD - Sozialistische Arbeiterpartei Deutschlands (Socialist Worker's Party of Germany) - a party recently formed in a split from the SPD, the SAPD is essentially an agglomeration of various left-wing splinter groups between the SPD and KPD. ?]
+Current relations: [+ sso_relation : relationships +]
 
-**NSDAP** - *Nationalsozialistische Deutsche Arbeiterpartei* - (National Socialist German Worker's Party, or Nazis) - a far-right nationalist and antisemitic party. Led by Adolf Hitler, they attempted a coup in 1923, and were banned for it, but have since been legalized.
-
-Current relations: [+ nsdap_relation : relationships +]
-
-**Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
+{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div> !} **Independents** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
 
 @paramilitaries
 on-arrival: {!
