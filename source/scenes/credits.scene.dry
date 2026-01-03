@@ -55,13 +55,13 @@ Data was once again retrieved from the 1970 census. For all social classes, I le
 
 For *pensioners*, I counted the "nepracující důchodci" (non-working pensioners; 1,720K) and "pracující důchodci" (working pensioners; 352K) rows.
 
-As for *students*, I used the "žáci a studenti 15 letí a starší" (pupils and students 15 years old or older) row. I included minors older than 15 years and younger than 18 years, as there is no such distinction in the census and I didn't want to complicate things.
+As for *intelligentsia*, I included university students. For those, I used the "žáci a studenti 15 letí a starší" (pupils and students 15 years old or older) row in the census. I included minors older than 15 years and younger than 18 years, as there is no such distinction in the census and I didn't want to complicate things.
 
 When I put all the percentages together, I had to multiply them all by 1.21 to account for the children (20.8%) I left out. Below is a table of figures I calculated. One thing to note is that even when I added all values in the census table together, the total number (9,808K) would be by over one third smaller than the population of the country (14,345K). I have no clue why; maybe many citizens simply didn't bother with filling out their employment information? 
 
 {!<table>!}
 
-{!<tr> <th> </th> <th>Rural Class</th> <th>Working Class</th> <th>Middle Class</th> <th>Students</th> <th>Pensioners</th></tr>!}
+{!<tr> <th> </th> <th>Rural Class</th> <th>Working Class</th> <th>Middle Class</th> <th>Intelligentsia</th> <th>Pensioners</th></tr>!}
 
 {!<tr> <th> Number of </th> <td style="text-align: right;">656,976</td> <td style="text-align: right;">3,357,125</td> <td style="text-align: right;">1,712,189</td> <td style="text-align: right;">271,668</td> <td style="text-align: right;">2,072,362</td> </tr>!}
 
