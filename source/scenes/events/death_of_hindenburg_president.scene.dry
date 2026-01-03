@@ -57,7 +57,7 @@ Kurt Schumacher is an ambitious rising star in the party, and would be all too w
 - @munzenberg_r1: Support Willi Münzenberg of the KPD.
 - @braun_r1: Support Otto Braun.
 - @schumacher_r1: Support Kurt Schumacher.
-- @juchacz_r1: Support Marie Juchacz.
+- @juchackss_r1: Support Marie Juchacz.
 - @cultural_figure: Support a nonpartisan cultural figure?
 
 @eckener_r1
@@ -134,7 +134,7 @@ go-to: r1_menu
 We have nominated Kurt Schumacher to be our presidential candidate.
 
 
-@juchacz_r1
+@juchackss_r1
 subtitle: -2 resources.
 unavailable-subtitle: [? if resources < 2 : -2 resources - Not enough resources. ?]
 view-if: womens_rights >= 6 and family_law >= 2 and womens_work >= 2 and welfare > 0
@@ -319,12 +319,12 @@ max-visits: 1
 
 The KPD is supporting their own candidate, [+ kpd_candidate +]. [? if sso_relation >= 50 : However, they are willing to be convinced to drop their campaign and support [+ spd_candidate +]; how do we convince them? ?][? if sso_relation < 50 or kpd_party_leader != "Conciliators" : They do not seem willing to be convinced. ?]
 
-- @kpd_resources: Use our resources.
+- @ssl_resources: Use our resources.
 - @sso_relations: Use our good relations.
 - @r1_menu: Forget about the KPD.
 - @r2_campaigning: Forget about the KPD.
 
-@kpd_resources
+@ssl_resources
 view-if: sso_relation >= 50 and not historical_mode
 choose-if: resources >= 3
 subtitle: -3 resources
@@ -453,7 +453,7 @@ Election results:
 
 [? if Braun_running : Braun - [+ Braun_votes_disp +]% ?]
 [? if Schumacher_running : Schumacher - [+ Schumacher_votes_disp +]% ?]
-[? if Juchacz_running : Juchacz - [+ Juchacz_votes_disp +]% ?]
+[? if Juchackss_running : Juchacz - [+ Juchacz_votes_disp +]% ?]
 # cultural candidates
 [? if Einstein_running : Einstein - [+ Einstein_votes_disp +]% ?]
 [? if Ossietzky_running : Ossietzky - [+ Ossietzky_votes_disp +]% ?]

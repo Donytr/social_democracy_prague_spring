@@ -297,22 +297,22 @@ Q.catholics_other = 12;
 // note: the Z figures also include the BVP (Bavarian people's party)
 // since they were ideologically similar, but they were separate parties.
 // They did not have a CDU/CSU-style relationship.
-Q.spd_r = 26;
-Q.kpd_r = 9;
-Q.z_r = 17;
-Q.ddp_r = 6;
-Q.dvp_r = 10;
-Q.dnvp_r = 20;
+Q.ksc_r = 26;
+Q.ssl_r = 9;
+Q.kss_r = 17;
+Q.css_r = 6;
+Q.csl_r = 10;
+Q.sso_r = 20;
 Q.nsdap_r = 3;
 Q.other_r = 9;
 
 // diff from prev
-Q.old_spd_r = 26;
-Q.old_kpd_r = 9;
-Q.old_z_r = 17;
-Q.old_ddp_r = 6;
-Q.old_dvp_r = 10;
-Q.old_dnvp_r = 20;
+Q.old_ksc_r = 26;
+Q.old_ssl_r = 9;
+Q.old_kss_r = 17;
+Q.old_css_r = 6;
+Q.old_csl_r = 10;
+Q.old_sso_r = 20;
 Q.old_nsdap_r = 3;
 Q.old_other_r = 9;
 
@@ -332,40 +332,41 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
-// starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
-Q.spd_in_government = 0;
-Q.z_in_government = 1;
-Q.ddp_in_government = 0;
-Q.dvp_in_government = 1;
-Q.dnvp_in_government = 1;
-Q.kpd_in_government = 0;
-Q.nsdap_in_government = 0;
+Q.president = "Antonín Novotný";
+Q.president_party = 'KSČ';
+Q.prime_minister = "Josef Lenárt";
+Q.prime_minister_party_party = 'KSČ';
+Q.first_secretary = "Antonín Novotný";
+Q.ksc_in_government = 1;
+Q.ssl_in_government = 1;
+Q.kss_in_government = 1;
+Q.css_in_government = 1;
+Q.csl_in_government = 1;
+Q.sso_in_government = 1;
 
-Q.in_right_coalition = 0;
+// National Front - default governing coalition
+Q.in_national_front = 0;
 // Weimar coalition = SPD + Z + DDP
-Q.in_weimar_coalition = 0;
+//Q.in_weimar_coalition = 0;
 // Grand coalition = SPD + Z + BVP + DDP + DVP
 // also includes the "new grand coalition" of SPD + Z + BVP + DDP + DVP + Others
-Q.in_grand_coalition = 0;
+//Q.in_grand_coalition = 0;
 // Popular front = SPD + KPD + Z + DDP
-Q.in_popular_front = 0;
+//Q.in_popular_front = 0;
 // left coalition = SPD + KPD + left-splinters
-Q.in_left_front = 0;
+//Q.in_left_front = 0;
 // emergency government containing the SPD: only president Braun can do this.
-Q.in_emergency_government = 0;
-Q.in_spd_majority = 0;
-Q.grand_coalition_failed = 0;
+//Q.in_emergency_government = 0;
+//Q.in_spd_majority = 0;
+//Q.grand_coalition_failed = 0;
 // if the SPD is ruling as part of a minority government
-Q.in_minority_government = 0;
+//Q.in_minority_government = 0;
 // national unity governmet
 
 // if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
 Q.coalition_dissent = 0;
 // dissent from the KPD, in a popular front or left front government
-Q.kpd_coalition_dissent = 0;
+//Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
 Q.spd_toleration = 0;
@@ -374,24 +375,51 @@ Q.spd_toleration = 0;
 Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
-// starting with the 4th Marx cabinet https://en.wikipedia.org/wiki/Fourth_Marx_cabinet
-// is the agricultural ministry useful at all?
-Q.foreign_minister = 'Streseman';
-Q.foreign_minister_party = 'DVP';
-Q.interior_minister = 'von Keudell';
-Q.interior_minister_party = 'DNVP';
-Q.justice_minister = 'Hergt';
-Q.justice_minister_party = 'DNVP';
-Q.labor_minister = 'Brauns';
-Q.labor_minister_party = 'Z';
-Q.reichswehr_minister = 'Groener';
-Q.reichswehr_minister_party = 'I';
-Q.economic_minister = 'Curtius';
-Q.economic_minister_party = 'DVP';
-Q.finance_minister = 'Köhler';
-Q.finance_minister_party = 'Z';
-Q.agriculture_minister = 'Schiele';
-Q.agriculture_minister_party = 'DNVP';
+// starting with the Josef Lenárt's cabinet https://cs.wikipedia.org/wiki/Vl%C3%A1da_Jozefa_Len%C3%A1rta
+#Q.planning_minister = ' '; # cannot find any name before Vlasák in '68
+#Q.planning_minister_party = 'KSČ';
+Q.energy_minister = 'Josef Korčák';
+Q.energy_minister_party = 'KSČ';
+#Q.price_minister = ' '; # the first one was perhaps in 1968?
+#Q.price_minister_party = 'KSČ';
+Q.agriculture_minister = 'Karel Mestek';
+Q.agriculture_minister_party = 'KSČ';
+Q.chemical_minister = 'Václav Valeš';
+Q.chemical_minister_party = 'KSČ';
+Q.construction_minister = 'Samuel Takáč';
+Q.construction_minister_party = 'KSS';
+Q.consumerind_minister = 'Božena Machačová-Dostálová';
+Q.consumerind_minister_party = 'KSČ';
+Q.education_minister = 'Jiří Hájek';
+Q.education_minister_party = 'KSČ';
+Q.finance_minister = 'Bohumil Sucharda';
+Q.finance_minister_party = 'KSČ';
+Q.foreign_minister = 'Václav David';
+Q.foreign_minister_party = 'KSČ';
+Q.fortrade_minister = 'František Hamouz';
+Q.fortrade_minister_party = 'KSČ';
+Q.forestry_minister = 'Josef Smrkovský';
+Q.forestry_minister_party = 'KSČ';
+Q.health_minister = 'Josef Plojhar';
+Q.health_minister_party = 'ČSL';
+Q.heavyind_minister = 'Josef Krejčí';
+Q.heavyind_minister_party = 'KSČ';
+Q.interior_minister = 'Josef Kudrna';
+Q.interior_minister_party = 'KSČ';
+Q.inttrade_minister = 'Jindřich Uher';
+Q.inttrade_minister_party = 'KSČ';
+Q.justice_minister = 'Alois Neuman';
+Q.justice_minister_party = 'ČSS';
+#Q.labour_minister = ''; # established in 1968
+#Q.labour_minister_party = 'KSS';
+Q.mining_minister = 'František Penc';
+Q.mining_minister_party = 'KSČ';
+Q.defence_minister = 'Bohumír Lomský';
+Q.defence_minister_party = 'KSČ';
+Q.technology_minister = 'František Vlasák';
+Q.technology_minister_party = 'KSČ';
+Q.transport_minister = 'Alois Indra';
+Q.transport_minister_party = 'KSČ';
 
 // Events: what has occurred?
 Q.panzerkreuzer_seen = 0;
@@ -627,10 +655,10 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= 1967
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
+It is a turbulent time for the Czechoslovak Socialist Republic, to say at least. Since the beginning of the 60s, the economy has been stagnating and dissatisfaction with the current state of things increasing.
 
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+For the better or worse, winds of change are reaching the country. Due to strained economy and ongoing economic reform, citizens are starting to demand political freedoms. President Novotný and party hardliners resists any change, though.
 
 

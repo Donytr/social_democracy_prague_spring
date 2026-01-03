@@ -70,7 +70,7 @@ go-to: menu
 
 **1949**: The First Five-Year Plan is started, aimed (especially after the outbreak of the Korean War) at expanding industrial production as the expense of consumer production. The plan is not fulfilled in its entirety, resulting in food shortages.
 
-**1953**: Gottwald dies in office. He is succeeded as the Czechoslovak president and the leader of the KSČ by Antonín Zápotocký, who enacts a monetary reform several few months later. The reform devaluated the Czechoslovak currency and was so unpopular the army had to suppress an uprising in Pilsen. He also speaks out against forced collectivisation, starting an exodus of farmers from unified agricultural cooperatives. Show trials and persecution of dissidents are slowly discontinued.
+**1953**: Gottwald dies in office. He is succeeded as the Czechoslovak president and the leader of the KSČ by Antonín Zápotocký, who enacts a monetary reform several few months later. The reform devalues the Czechoslovak currency and is so unpopular the army has to suppress an uprising in Pilsen. He also speaks out against forced collectivisation, starting an exodus of farmers from unified agricultural cooperatives. Show trials and persecution of dissidents are slowly discontinued.
 
 **1955**: In response to West Germany's membership in NATO, the USSR, Czechoslovakia, Poland, Hungary, and other four Eastern European countries establish the Warsaw Pact, a defence organisation based on mutual defence of all member states.
 
@@ -83,33 +83,31 @@ go-to: menu
 **1965**: The economist Ota Šik, a member of the KSČ's Central Committee and a former ardent proponent of planned economy, is beginning to carry out reforms aimed at introducing market elements and generally liberalising the Czechoslovak economy.
 
 @curr_gov
-go-to: cabinet if spd_in_government; menu if not spd_in_government
 
 = Current Government
 
-President: [+ president +]
+President: [+ president +] ([+ president_party +])
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
 
-Reichstag composition:
+First Secretary: [+ first_secretary +]
 
-# 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
-# 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]%
-# 1928: 10, 1930: 13
-KPD: [+ kpd_r +]%
-# 1928: 5, 1930: 4 (as DstP)
-[+ ddp_name +]: [+ ddp_r +]%
-# 1928: 9, 1930: 5
-DVP: [+ dvp_r +]%
-# 1928: 14, 1930: 7
-DNVP: [+ dnvp_r +]%
-# 1928: 3, 1930: 18
-NSDAP: [+ nsdap_r +]%
-# 1928: 9, 1930: 10
-Others: [+ other_r +]%
+National Assembly composition:
+
+# 
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r +]%
+# 
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
+# 
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
+# 
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
+# 
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
+# 
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
+# 
+Independents: [+ other_r +]%
 
 SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
@@ -123,21 +121,49 @@ go-to: menu
 
 Current cabinet:
 
-Labor: [+ labor_minister_party +]
+Central Planning Commission: [+ planning_minister_party +]
 
-Interior: [+ interior_minister_party +]
+Central Energy Administration [+ energy_minister_party +]
+
+Price Regulation: [+ price_minister_party +]
+
+Agriculture and Food: [+ agriculture_minister_party +]
+
+Chemical Industry: [+ chemical_minister_party +]
+
+Construction: [+ construction_minister_party +]
+
+Consumer Industry: [+ consumerind_minister_party +]
+
+Education: [+ education_minister_party +]
 
 Finance: [+ finance_minister_party +]
 
-Economic: [+ economic_minister_party +]
+Foreign Affairs: [+ foreign_minister_party +]
+
+Foreign Trade: [+ fortrade_minister_party +]
+
+Forestry and Water Management: [+ forestry_minister_party +]
+
+Health: [+ health_minister_party +]
+
+Heavy Industry: [+ heavyind_minister_party +]
+
+Interior: [+ interior_minister_party +]
+
+Internal Trade: [+ inttrade_minister_party +]
 
 Justice: [+ justice_minister_party +]
 
-Foreign: [+ foreign_minister_party +]
+Labour and Social Affairs: [+ labour_minister_party +]
 
-Reichswehr: [+ reichswehr_minister_party +]
+Mining: [+ mining_minister_party +]
 
-Agriculture: [+ agriculture_minister_party +]
+National Defence: [+ defence_minister_party +]
+
+Technology: [+ technology_minister_party +]
+
+Transport: [+ transport_minister_party +]
 
 
 @demographics
@@ -145,17 +171,27 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the SPD or KPD. They make up 40-50% of the population.
+There are two ways to roughly divide the population into distinct groups: by ethnic identity and social class. There are four significant ethnic groups within Czechoslovakia:
 
-**Old Mittelstand**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the far right. 10-15% of the population.
+**Czechs**: The dominant group in Bohemia and the Czechoslovak Republic generally. 65% nationally, 95% in Czechia.
 
-**New Mittelstand**: The new middle class consists of white-collar workers and government employees. This is the base of liberalism. 10-15% of the population.
+**Slovaks**: The dominant group in Slovakia. 29% nationally, 85% in Slovakia.
 
-**Rural**: Small and large farmers and independent rural workers. Protestant farmers often support the DNVP. 20-30% of the population.
+**Moravians**: The dominant group in Moravia-Silesia. It is underrepresented and discussions of Moravian identity have been historically suppressed. It is not officially listed in censuses. 22% nationally.
 
-**Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the Center Party (or the Bavarian People's Party in Bavaria).
+**Hungarians**: The dominant group in southern Slovakia. It faces frequent discrimination. 4% nationally, 12% in Slovakia.
 
-**Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
+Then there are social classes:
+
+**Rural Class**: Rural workers and both farmers independent and in unified agricultural cooperatives. They  
+
+**Working Class**: 
+
+**Middle Class**: 
+
+**Students** 
+
+**Pensioners** 
 
 
 @public_opinion
@@ -244,13 +280,13 @@ Current relations: [+ csl_relation : relationships +]
 
 {!<tr><td><div class="box" style='background-color:#0000FF'> </div> !} **SSO** - *Strana slovenskej obrody* (Party of Slovak Revival) - a political party founded in March 1948 by members of the defunct *Demokratická strana* (Democratic Party) who were willing to cooperate with the KSČ. It is rather conservative.
 
-Current relations: [+ ssl_relation : relationships +]
+Current relations: [+ sso_relation : relationships +]
 
 {!<tr><td><div class="box" style='background-color:#1A809A'> </div> !} **SSl** - *Strana slobody* (Freedom Party) - a republican, Christian democratic party founded in 1946 after a split from the *Demokratická strana* (Democratic Party).
 
-Current relations: [+ sso_relation : relationships +]
+Current relations: [+ ssl_relation : relationships +]
 
-{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div> !} **Independents** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
+{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div> !} **Independents** - various candidates not affiliated with either party. They are generally aligned with the KSČ.
 
 @paramilitaries
 on-arrival: {!
@@ -301,65 +337,44 @@ Loyalty: [+ prussian_police_loyalty : loyalty +]
 @factions
 go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
-**Internal factions of the SPD**
+**Internal factions of the KSČ**
 
 Overall dissent: [+ dissent_percent : dissent +]
 
-**Left**
-
-Many leftists are former members of the USPD (the left-wing, anti-war Independent Social Democratic Party), or are young radicals. Many are interested in closer cooperation with the KPD, and some support extraparliamentary action.
-
-Strength: [+ left_strength : strength +]
-
-Dissent: [+ left_dissent : dissent +]
-
-**Centrists**
-
-Centrists in the SPD are followers of the doctrine of orthodox Marxism as expounded by Karl Kautsky and later Rudolf Hilferding. They seek a middle course between reform and revolution, while defending the democratic state.
-
-Strength: [+ center_strength : strength +]
-
-Dissent: [+ center_dissent : dissent +]
-
-**Labor**
-
-Many SPD members are also part of the ADGB, the federation of free trade unions. Their goal is economic reform and benefits for organized workers.
-
-Strength: [+ labor_strength : strength +]
-
-Dissent: [+ labor_dissent : dissent +]
-
 **Reformists**
 
-Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy against the far right and left. [? if spd_prussia : They are dominant in the state government of Prussia. ?]
+The reformist wing of KSČ is relatively new. It emerged at the start of the 60s amidst economic stagnation and increasing criticism leveled at the existing command economy and calls for economic and political reform. It mostly consists of the younger members of the party, some of whom replaced older hardliners.
 
 Strength: [+ reformist_strength : strength +]
 
 Dissent: [+ reformist_dissent : dissent +]
 
-@neorevisionists
-go-to: menu
+**Pragmatists**
 
-**Neorevisionists**
+Pragmatists are the most moderate wing of the party. They support mild reforms, though they are more cautious than other factions. They value stability above everything.
 
-Neorevisionists focus on defending the republic and expanding democracy, while also expanding the party's base beyond the working class to create a people's party. They support new propaganda methods and extraparliamentary action in defense of the republic.
+Strength: [+ pragmatist_strength : strength +]
 
-Strength: [+ neorevisionist_strength : strength +]
+Dissent: [+ pragmatist_dissent : dissent +]
 
-Dissent: [+ neorevisionist_dissent : dissent +]
+**Hardliners**
+
+A considerable number of KSČ members are hardliners, opposed to any reform (political or economical) and fully loyal to the ideology of socialism. They believe the KSČ should retain monopoly over Czechoslovak politics and be obedient to Moscow's leadership.
+
+Strength: [+ hardliner_strength : strength +]
 
 
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: z_minus_bvp_r = z_r - 3;
+on-arrival: z_minus_bvp_r = kss_r - 3;
 on-display: {!
 data = [
     {
         "id": "kpd",
         "legend": "KPD",
         "name": "KPD",
-        "seats": Q.kpd_r*5,
+        "seats": Q.ssl_r*5,
     }];
 if (Q.sapd_formed && Q.sapd_r) {
     data.push({
@@ -374,19 +389,19 @@ data = data.concat([
         "id": "spd",
         "legend": "SPD",
         "name": "SPD",
-        "seats": Q.spd_r*5,
+        "seats": Q.ksc_r*5,
     },
     {
         "id": "ddp",
         "legend": "DDP",
         "name": "DDP",
-        "seats": Q.ddp_r*5,
+        "seats": Q.css_r*5,
     },
     {
         "id": "z",
         "legend": "Center",
         "name": "Center",
-        "seats": (Q.z_r - 3)*5,
+        "seats": (Q.kss_r - 3)*5,
     },
     {
         "id": "bvp",
@@ -398,7 +413,7 @@ data = data.concat([
         "id": "dvp",
         "legend": "DVP",
         "name": "DVP",
-        "seats": Q.dvp_r*5,
+        "seats": Q.csl_r*5,
     },
     {
         "id": "other",
@@ -410,7 +425,7 @@ data = data.concat([
         "id": "dnvp",
         "legend": "DNVP",
         "name": "DNVP",
-        "seats": Q.dnvp_r*5,
+        "seats": Q.sso_r*5,
     },
     {
         "id": "nsdap",
@@ -473,23 +488,23 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ ksc_r +]%** {!</td></tr>!}
 
 [? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ ssl_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div></td><td>!} [+ ddp_name +]: {!</td><td>!} [+ ddp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div></td><td>!} [+ ddp_name +]: {!</td><td>!} [+ css_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} Z: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#69A2BE'> </div></td><td>!} BVP: {!</td><td>!} 3% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ dvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ csl_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div></td><td>!} DNVP: {!</td><td>!} [+ dnvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div></td><td>!} DNVP: {!</td><td>!} [+ sso_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#954B00'> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
 {!</table>!}

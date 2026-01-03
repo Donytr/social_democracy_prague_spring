@@ -4,6 +4,8 @@ Here are all sources referenced during the creation of this mod.
 
 - @books: Books
 - @articles: Articles
+- @data: Data
+- @method: Methodology
 - @images: Image sources
 - @music: Music sources
 - @root: Back
@@ -22,11 +24,56 @@ Here are all sources referenced during the creation of this mod.
 
 **Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. https://archive.org/details/from-the-prague-spring-to-normalization
 
+**International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up, https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml
+
 **Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948
 
+- @credits: Back
 
+@data
+
+**Czech Statistical Office**. Czechoslovak Population Census – 1970. 1970. https://csu.gov.cz/ceskoslovenske-scitani-lidu-1970
 
 - @credits: Back
+
+@method
+
+This section details my methodology - where I got my information from, how I processed data, and with which assumptions I worked.
+
+- @demography: Demographics
+- @credits: Back
+
+@demographics
+
+**Ethnicities**
+
+Data about Czech, Slovak, and Hungarian representation primarily comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,733K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
+
+**Social classes**
+
+Data was once again retrieved from the 1970 census. For all social classes, I left out children below 15 years of age, as they couldn't vote yet. For the working class, middle class, and the rural class, I added together values in the following rows above the "Economically inactive" row: *ekonomicky aktivní* (economically active), *- pomáhající* (helpers), *- ženy v domácnosti* (housewives), *- učni* (apprentices), *- děti do 15 let* (minors younger than 15 years), and *- ostatní dospělí* (other adults). Below the "Economically inactive" row, I counted the following rows: *ženy v domácnosti* (housewives), *učni, žáci, studenti, děti* (apprentices, pupils, students, children), and *ostatní dospělí* (other adults).
+
+For *pensioners*, I counted the "nepracující důchodci" (non-working pensioners; 1,720K) and "pracující důchodci" (working pensioners; 352K) rows.
+
+As for *students*, I used the "žáci a studenti 15 letí a starší" (pupils and students 15 years old or older) row. I included minors older than 15 years and younger than 18 years, as there is no such distinction in the census and I didn't want to complicate things.
+
+When I put all the percentages together, I had to multiply them all by 1.21 to account for the children (20.8%) I left out. Below is a table of figures I calculated. One thing to note is that even when I added all values in the census table together, the total number (9,808K) would be by over one third smaller than the population of the country (14,345K). I have no clue why; maybe many citizens simply didn't bother with filling out their employment information? 
+
+{!<table>!}
+
+{!<tr> <th> </th> <th>Rural Class</th> <th>Working Class</th> <th>Middle Class</th> <th>Students</th> <th>Pensioners</th></tr>!}
+
+{!<tr> <th> Number of </th> <td style="text-align: right;">656,976</td> <td style="text-align: right;">3,357,125</td> <td style="text-align: right;">1,712,189</td> <td style="text-align: right;">271,668</td> <td style="text-align: right;">2,072,362</td> </tr>!}
+
+{!<tr> <th> % </th> <td>6.70</td> <td>34.23</td> <td>17.46</td> <td>2.77</td> <td>21.13</td> </tr>!}
+
+{!<tr> <th> % (normalised) </th> <td>8.11</td> <td>41.42</td> <td>21.12</td> <td>3.35</td> <td>25.57</td></tr>!}
+
+{!</table>!}
+
+- @method: Back
+- @credits: Credits
+
 
 @images
 

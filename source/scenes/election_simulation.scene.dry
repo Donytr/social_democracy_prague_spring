@@ -149,12 +149,12 @@ Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 10;
 Q.catholics_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
+Q.ksc_r = 25;
+Q.ssl_r = 10;
+Q.kss_r = 15;
+Q.css_r = 10;
+Q.csl_r = 10;
+Q.sso_r = 14;
 Q.nsdap_r = 10;
 Q.other_r = 5;
 !}
@@ -231,12 +231,12 @@ Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 10;
 Q.catholics_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
+Q.ksc_r = 25;
+Q.ssl_r = 10;
+Q.kss_r = 15;
+Q.css_r = 10;
+Q.csl_r = 10;
+Q.sso_r = 14;
 Q.nsdap_r = 10;
 Q.other_r = 5;
 !}
@@ -246,37 +246,37 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.spd_r = Q.spd_votes;
-Q.z_r = Q.z_votes;
-Q.kpd_r = Q.kpd_votes;
-Q.ddp_r = Q.ddp_votes;
-Q.dvp_r = Q.dvp_votes;
-Q.dnvp_r = Q.dnvp_votes;
+Q.ksc_r = Q.spd_votes;
+Q.kss_r = Q.z_votes;
+Q.ssl_r = Q.kpd_votes;
+Q.css_r = Q.ddp_votes;
+Q.csl_r = Q.dvp_votes;
+Q.sso_r = Q.dnvp_votes;
 Q.nsdap_r = Q.nsdap_votes;
 Q.other_r = Q.other_votes;
 
 // The largest party can only be the NSDAP or the SPD.
 Q.largest_party = 'SPD';
-if (Q.nsdap_r >= Q.spd_r && Q.nsdap_r >= Q.kpd_r) {
+if (Q.nsdap_r >= Q.ksc_r && Q.nsdap_r >= Q.ssl_r) {
     Q.largest_party = 'NSDAP';
 }
-if (Q.kpd_r >= Q.spd_r && Q.kpd_r >= Q.nsdap_r) {
+if (Q.ssl_r >= Q.ksc_r && Q.ssl_r >= Q.nsdap_r) {
     Q.largest_party = 'KPD';
 }
 
 // coalitions
-Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
-Q.grand_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r;
-Q.bourgeois_coalition = Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
-Q.center_right_coalition = Q.z_r + Q.ddp_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.right_coalition = Q.z_r + Q.dvp_r + Q.other_r + Q.dnvp_r;
-Q.far_right_coalition = Q.dnvp_r + Q.nsdap_r;
-Q.left_coalition = Q.spd_r + Q.kpd_r;
+Q.weimar_coalition = Q.ksc_r + Q.css_r + Q.kss_r - 3;
+Q.grand_coalition = Q.ksc_r + Q.css_r + Q.kss_r + Q.csl_r;
+Q.bourgeois_coalition = Q.css_r + Q.kss_r + Q.csl_r + Q.other_r;
+Q.center_right_coalition = Q.kss_r + Q.css_r + Q.csl_r + Q.other_r + Q.sso_r;
+Q.right_coalition = Q.kss_r + Q.csl_r + Q.other_r + Q.sso_r;
+Q.far_right_coalition = Q.sso_r + Q.nsdap_r;
+Q.left_coalition = Q.ksc_r + Q.ssl_r;
 // this is an absurd concept lol
-Q.united_front_coalition = Q.spd_r + Q.kpd_r + Q.z_r + Q.ddp_r - 3;
-Q.anti_democratic_coalition = Q.kpd_r + Q.nsdap_r;
+Q.united_front_coalition = Q.ksc_r + Q.ssl_r + Q.kss_r + Q.css_r - 3;
+Q.anti_democratic_coalition = Q.ssl_r + Q.nsdap_r;
 // aka everyone except nazi, kpd, dnvp
-Q.neo_weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r + Q.dvp_r + Q.other_r;
+Q.neo_weimar_coalition = Q.ksc_r + Q.css_r + Q.kss_r + Q.csl_r + Q.other_r;
 !}
 
 The electoral system is essentially proportional, with the proportion of Reichstag seats roughly equal to the proportion of votes.
@@ -284,22 +284,22 @@ The electoral system is essentially proportional, with the proportion of Reichst
 **Election results:**
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]
+SPD: [+ ksc_r +]
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]
+Z + BVP: [+ kss_r +]
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_r +]
+KPD: [+ ssl_r +]
 
 # 1928: 5, 1930: 4 (as DstP)
-DDP: [+ ddp_r +]
+DDP: [+ css_r +]
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_r +]
+DVP: [+ csl_r +]
 
 # 1928: 14, 1930: 7
-DNVP: [+ dnvp_r +]
+DNVP: [+ sso_r +]
 
 # 1928: 3, 1930: 18
 NSDAP: [+ nsdap_r +]

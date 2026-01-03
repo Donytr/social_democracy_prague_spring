@@ -121,11 +121,11 @@ max-visits: 1
 
 The KPD is supporting their own candidate, Ernst Thälmann. [? if sso_relation >= 50 : However, they are willing to be convinced to drop their campaign and support Braun; how do we convince them? ?][? if sso_relation < 50 or kpd_party_leader != "Conciliators" : They do not seem willing to be convinced. ?]
 
-- @kpd_resources: Use our resources.
+- @ssl_resources: Use our resources.
 - @sso_relations: Use our good relations.
 - @braun_campaign: Forget about the KPD.
 
-@kpd_resources
+@ssl_resources
 view-if: sso_relation >= 50 and not historical_mode
 choose-if: resources >= 3
 subtitle: -3 resources
@@ -358,11 +358,11 @@ max-visits: 1
 
 The KPD is committed to supporting Ernst Thälmann. [? if sso_relation >= 45 : However, the Nazi-Hindenburg coalition worries them enough that they are willing to be convinced to drop their campaign and support Braun. ?][? if sso_relation < 45 : They do not seem willing to be convinced. ?]
 
-- @r2_kpd_resources: Use our resources.
+- @r2_ssl_resources: Use our resources.
 - @r2_sso_relations: Use our good relations.
 - @round2_menu: Forget about the KPD.
 
-@r2_kpd_resources
+@r2_ssl_resources
 view-if: sso_relation >= 45 and not historical_mode
 choose-if: resources >= 3
 subtitle: -3 resources
