@@ -102,23 +102,25 @@ if (Q.lm_strength) {
 
 = Security Forces
 
-ČSLA: [+ military_strength +]K troops
+{!<span class="tooltip-text" title="Czechoslovak People's Army">ČSLA</span>!}: [+ military_strength +] thousand troops
 
-ČSLA loyalty: [+ military_loyalty : loyalty +]
+{!<span class="tooltip-text" title="Czechoslovak People's Army">ČSLA</span>!} loyalty: [+ military_loyalty : loyalty +]
 
-People's Militias: [+ lm_strength +]K members
+{!<span class="tooltip-text" title="People's Militias">LM</span>!}: [+ lm_strength +] thousand members
 
-LM militancy: [+ lm_militancy : militancy +]
+{!<span class="tooltip-text" title="People's Militias">LM</span>!} militarisation: [+ lm_militancy : militancy +]
 
-LM loyalty: [+ lm_loyalty : loyalty +]
+{!<span class="tooltip-text" title="Public Security">VB</span>!}: [+ vb_strength +]K members
 
-VB: [+ vb_strength +]K members
+{!<span class="tooltip-text" title="Public Security">VB</span>!} militarisation: [+ vb_loyalty : militancy +]
 
-VB loyalty: [+ vb_loyalty : loyalty +]
+{!<span class="tooltip-text" title="Public Security">VB</span>!} loyalty: [+ vb_loyalty : loyalty +]
 
-StB: [+ stb_strength +]K employees
+{!<span class="tooltip-text" title="State Security">StB</span>!}: [+ stb_strength +]K members
 
-StB loyalty: [+ stb_loyalty : loyalty +]
+{!<span class="tooltip-text" title="State Security">StB</span>!} efficiency: [+ stb_loyalty : loyalty +]
+
+{!<span class="tooltip-text" title="State Security">StB</span>!} loyalty: [+ stb_loyalty : loyalty +]
 
 @polls
 on-arrival: {!
@@ -159,9 +161,9 @@ Working Class: KSČ: [+ working_ksc_display +]%, KSS: [+ working_kss_display +]%
 
 Middle Class: KSČ: [+ middle_ksc_display +]%, KSS: [+ middle_kss_display +]%, ČSS: [+ middle_css_display +]%, ČSL: [+ middle_csl_display +]%, SSO: [+ middle_sso_display +]%; SSl: [+ middle_ssl_display +]%, Independent: [+ middle_ind_display +]%
 
-Intelligentsia: KSČ: [+ intell_ksc_display +]%, KSS: [+ intell_kss_display +]%, ČSS: [+ intell_css_display +]%, ČSL: [+ intell_csl_display +]%, SSO: [+ intell_sso_display +]%; SSl: [+ intell_ssl_display +]%, Independent: [+ intell_ind_display +]%
-
 Pensioners: KSČ: [+ pension_ksc_display +]%, KSS: [+ pension_kss_display +]%, ČSS: [+ pension_css_display +]%, ČSL: [+ pension_csl_display +]%, SSO: [+ pension_sso_display +]%; SSl: [+ pension_ssl_display +]%, Independent: [+ pension_ind_display +]%
+
+Intelligentsia: KSČ: [+ intell_ksc_display +]%, KSS: [+ intell_kss_display +]%, ČSS: [+ intell_css_display +]%, ČSL: [+ intell_csl_display +]%, SSO: [+ intell_sso_display +]%; SSl: [+ intell_ssl_display +]%, Independent: [+ intell_ind_display +]%
 
 Support for Socialism: [+ socialism_disp +]%
 

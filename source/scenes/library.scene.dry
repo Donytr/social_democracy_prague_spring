@@ -186,9 +186,9 @@ Then there are social/economic classes:
 
 **Middle Class**: Consists of white-collar workers. 21% of the population.
 
-**Intelligentsia** is the smallest class, accounting for mere 4% of the population. However, they are also the most politically active one, and the one that pushes for reforms most heavily. University students, scientists, writers, and such all belong here.
-
 **Pensioners** are generally people who are too old to work and receive pension from the government. They account for 26% of the population.
+
+**Intelligentsia** is the smallest class, accounting for mere 4% of the population. However, they are also the most politically active one, and the one that pushes for reforms most heavily. University students, scientists, writers, and such all belong here.
 
 
 @public_opinion
@@ -236,15 +236,22 @@ Independent: [+ ind_votes +]%
 
 **Detailed results for each demographic**
 
-Rural Class: KSČ: [+ rural_ksc_display +]%, KSS: [+ rural_kss_display +]%, ČSS: [+ rural_css_display +]%, ČSL: [+ rural_csl_display +]%, SSO: [+ rural_sso_display +]%; SSl: [+ rural_ssl_display +]%, Independent: [+ rural_ind_display +]%
+{!<table>!}
 
-Working Class: KSČ: [+ working_ksc_display +]%, KSS: [+ working_kss_display +]%, ČSS: [+ working_css_display +]%, ČSL: [+ working_csl_display +]%, SSO: [+ working_sso_display +]%; SSl: [+ working_ssl_display +]%, Independent: [+ working_ind_display +]%
+{!<tr> <th> </th> <th><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span></th> <th><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span></th> <th><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">SSO</span></th> <th><span class="tooltip-text" title="Freedom Party">SSl</span></th> <th><span class="tooltip-text" title="Independent">SSl</span></th> </tr>!}
 
-Middle Class: KSČ: [+ middle_ksc_display +]%, KSS: [+ middle_kss_display +]%, ČSS: [+ middle_css_display +]%, ČSL: [+ middle_csl_display +]%, SSO: [+ middle_sso_display +]%; SSl: [+ middle_ssl_display +]%, Independent: [+ middle_ind_display +]%
+{!<tr> <th>Rural Class</th> <td>[+ rural_ksc_display +]%</td> <td>[+ rural_kss_display +]%</td> <td>[+ rural_css_display +]%</td> <td>[+ rural_csl_display +]%</td> <td>[+ rural_sso_display +]%</td> <td>[+ rural_ssl_display +]%</td> <td>[+ rural_ind_display +]%</td> </tr>!}
 
-Intelligentsia: KSČ: [+ intell_ksc_display +]%, KSS: [+ intell_kss_display +]%, ČSS: [+ intell_css_display +]%, ČSL: [+ intell_csl_display +]%, SSO: [+ intell_sso_display +]%; SSl: [+ intell_ssl_display +]%, Independent: [+ intell_ind_display +]%
+{!<tr> <th>Working Class</th> <td>[+ working_ksc_display +]%</td> <td>[+ working_kss_display +]%</td> <td>[+ working_css_display +]%</td> <td>[+ working_csl_display +]%</td> <td>[+ working_sso_display +]%</td> <td>[+ working_ssl_display +]%</td> <td>[+ working_ind_display +]%</td> </tr>!}
 
-Pensioners: KSČ: [+ pension_ksc_display +]%, KSS: [+ pension_kss_display +]%, ČSS: [+ pension_css_display +]%, ČSL: [+ pension_csl_display +]%, SSO: [+ pension_sso_display +]%; SSl: [+ pension_ssl_display +]%, Independent: [+ pension_ind_display +]%
+{!<tr> <th>Middle Class</th> <td>[+ middle_ksc_display +]%</td> <td>[+ middle_kss_display +]%</td> <td>[+ middle_css_display +]%</td> <td>[+ middle_csl_display +]%</td> <td>[+ middle_sso_display +]%</td> <td>[+ middle_ssl_display +]%</td> <td>[+ middle_ind_display +]%</td> </tr>!}
+
+{!<tr> <th>Pensioners</th> <td>[+ pension_ksc_display +]%</td> <td>[+ pension_kss_display +]%</td> <td>[+ pension_css_display +]%</td> <td>[+ pension_csl_display +]%</td> <td>[+ pension_sso_display +]%</td> <td>[+ pension_ssl_display +]%</td> <td>[+ pension_ind_display +]%</td> </tr>!}
+
+{!<tr> <th>Intelligentsia</th> <td>[+ intell_ksc_display +]%</td> <td>[+ intell_kss_display +]%</td> <td>[+ intell_css_display +]%</td> <td>[+ intell_csl_display +]%</td> <td>[+ intell_sso_display +]%</td> <td>[+ intell_ssl_display +]%</td> <td>[+ intell_ind_display +]%</td> </tr>!}
+
+{!</table>!}
+
 
 @parties
 go-to: menu
@@ -291,13 +298,15 @@ Loyalty: [+ military_loyalty : loyalty +]
 
 Militancy: [+ lm_militancy : militancy +]
 
-Loyalty: [+ lm_loyalty : loyalty +]
-
 **Veřejná bezpečnost** (*Public Security*; *VB*): [+ vb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's police force.
+
+Militarisation: [+ vb_militancy : militancy +]
 
 Loyalty: [+ vb_loyalty : loyalty +]
 
-**Státní bezpečnost** (*State Security*; *StB*): [+ stb_strength +] thousand employees. A subdivision of the National Security Corps, it is Czechoslovakia's secret police.
+**Státní bezpečnost** (*State Security*; *StB*): [+ stb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's secret police.
+
+Efficiency: [+ stb_efficiency : militancy +]
 
 Loyalty: [+ stb_loyalty : loyalty +]
 

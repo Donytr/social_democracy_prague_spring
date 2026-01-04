@@ -64,13 +64,13 @@ Since I left out children (20.8%), I had to multiply all percentages by 1.21 to 
 
 {!<table>!}
 
-{!<tr> <th> </th> <th>Rural Class</th> <th>Working Class</th> <th>Middle Class</th> <th>Intelligentsia</th> <th>Pensioners</th></tr>!}
+{!<tr> <th> </th> <th>Rural Class</th> <th>Working Class</th> <th>Middle Class</th> <th>Pensioners</th> <th>Intelligentsia</th> </tr>!}
 
-{!<tr> <th> Number of </th> <td style="text-align: right;">656,976</td> <td style="text-align: right;">3,357,125</td> <td style="text-align: right;">1,712,189</td> <td style="text-align: right;">271,668</td> <td style="text-align: right;">2,072,362</td> </tr>!}
+{!<tr> <th> Number of </th> <td style="text-align: right;">656,976</td> <td style="text-align: right;">3,357,125</td> <td style="text-align: right;">1,712,189</td> <td style="text-align: right;">2,072,362</td> <td style="text-align: right;">271,668</td> </tr>!}
 
-{!<tr> <th> % </th> <td>6.70</td> <td>34.23</td> <td>17.46</td> <td>2.77</td> <td>21.13</td> </tr>!}
+{!<tr> <th> % </th> <td>6.70</td> <td>34.23</td> <td>17.46</td> <td>21.13</td> <td>2.77</td> </tr>!}
 
-{!<tr> <th> % (normalised) </th> <td>8.11</td> <td>41.42</td> <td>21.12</td> <td>3.35</td> <td>25.57</td></tr>!}
+{!<tr> <th> % (normalised) </th> <td>8.11</td> <td>41.42</td> <td>21.12</td> <td>25.57</td> <td>3.35</td> </tr>!}
 
 {!</table>!}
 

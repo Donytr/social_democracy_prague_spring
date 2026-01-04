@@ -117,10 +117,14 @@ Q.ssl_leader = "Michal Žákovič";
 
 // The array of forces
 // Number of members in 1967 (in thousands)
-// People's Militias
+
+// Czechoslovak People's Army
+Q.military_strength = 222; // 1966
+Q.military_militancy = 5;
+
+// People's Militias (instead of loyalty, civilian satisfaction with regime could work)
 Q.lm_strength = 78; // maybe 77K, as the mod begins in mid-1967?
 Q.lm_militancy = 0.5;
-Q.lm_loyalty = 0.5 // 0 = aligned to Moscow, 1 = aligned to KSČ
 Q.lm_disbanded = 0;
 
 // Public Security (VB) // WIP
@@ -130,13 +134,8 @@ Q.vb_loyalty = 0.5;
 
 // State Security (StB) 
 Q.stb_strength = 13; // StB had 8K employees in mid-50s, 12K in 1989. That's roughly an increase of 118 employees per year. There were 12 years between 1953 and 1967, so the number of employees was roughly increased by 1.4K.
-Q.stb_militancy = 1;
+Q.stb_efficiency = 1;
 Q.stb_loyalty = 0.4;
-
-// Czechoslovak People's Army
-Q.military_strength = 222; // 1966
-Q.military_militancy = 5;
-Q.military_loyalty = 0.2;
 
 // The state of the country
 
