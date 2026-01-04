@@ -6,6 +6,8 @@ map.jpg: Central Intelligence Agency. 1981. Wikimedia Commons, https://commons.w
 
 national_assembly.jpg: *unknown*. Before 1948. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg. Accessed 4 Jan 2026. Public Domain
 
+passport.jpg: Patrik Kunec. 15 Jan 2024. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg. Accessed 4 Jan 2026. Public Domain
+
 = Images (newspapers):
 
 rude_pravo.jpg: Rudé Právo. 1 Jun 1967. Ústav pro českou literaturu, https://archiv.ucl.cas.cz/index.php?path=RudePravo/1967/6/1/1.png. Accessed 4 Jan 2026. Watermark present on the archived version was removed. (not in public domain, but I doubt the KSČM will sue me...please don't, this mod is educational)

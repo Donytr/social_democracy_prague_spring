@@ -118,49 +118,49 @@ KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in 
 
 **Current cabinet:**
 
-Central Planning Commission: [+ planning_minister_party +]
+Central Planning Commission: [+ planning_minister +] ([+ planning_minister_party +])
 
-Central Energy Administration [+ energy_minister_party +]
+Central Energy Administration: [+ energy_minister +] ([+ energy_minister_party +])
 
-Price Regulation: [+ price_minister_party +]
+Price Regulation: [+ price_minister +] ([+ price_minister_party +])
 
-Agriculture and Food: [+ agriculture_minister_party +]
+Agriculture and Food: [+ agriculture_minister +] ([+ agriculture_minister_party +])
 
-Chemical Industry: [+ chemical_minister_party +]
+Chemical Industry: [+ chemical_minister +] ([+ chemical_minister_party +])
 
-Construction: [+ construction_minister_party +]
+Construction: [+ construction_minister +] ([+ construction_minister_party +])
 
-Consumer Industry: [+ consumerind_minister_party +]
+Consumer Industry: [+ consumerind_minister +] ([+ consumerind_minister_party +])
 
-Education: [+ education_minister_party +]
+Education: [+ education_minister +] ([+ education_minister_party +])
 
-Finance: [+ finance_minister_party +]
+Finance: [+ finance_minister +] ([+ finance_minister_party +])
 
-Foreign Affairs: [+ foreign_minister_party +]
+Foreign Affairs: [+ foreign_minister +] ([+ foreign_minister_party +])
 
-Foreign Trade: [+ fortrade_minister_party +]
+Foreign Trade: [+ fortrade_minister +] ([+ fortrade_minister_party +])
 
-Forestry and Water Management: [+ forestry_minister_party +]
+Forestry and Water Management: [+ forestry_minister +] ([+ forestry_minister_party +])
 
-Health: [+ health_minister_party +]
+Health: [+ health_minister +] ([+ health_minister_party +])
 
-Heavy Industry: [+ heavyind_minister_party +]
+Heavy Industry: [+ heavyind_minister +] ([+ heavyind_minister_party +])
 
-Interior: [+ interior_minister_party +]
+Interior: [+ interior_minister +] ([+ interior_minister_party +])
 
-Internal Trade: [+ inttrade_minister_party +]
+Internal Trade: [+ inttrade_minister +] ([+ inttrade_minister_party +])
 
-Justice: [+ justice_minister_party +]
+Justice: [+ justice_minister +] ([+ justice_minister_party +])
 
-Labour and Social Affairs: [+ labour_minister_party +]
+Labour and Social Affairs: [+ labour_minister +] ([+ labour_minister_party +])
 
-Mining: [+ mining_minister_party +]
+Mining: [+ mining_minister +] ([+ mining_minister_party +])
 
-National Defence: [+ defence_minister_party +]
+National Defence: [+ defence_minister +] ([+ defence_minister_party +])
 
-Technology: [+ technology_minister_party +]
+Technology: [+ technology_minister +] ([+ technology_minister_party +])
 
-Transport: [+ transport_minister_party +]
+Transport: [+ transport_minister +] ([+ transport_minister_party +])
 
 
 @demographics
@@ -236,19 +236,19 @@ Independent: [+ ind_votes +]%
 
 **Detailed results for each demographic**
 
-{!<table>!}
+{!<table class="tableBorder">!}
 
-{!<tr> <th> </th> <th><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span></th> <th><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span></th> <th><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">SSO</span></th> <th><span class="tooltip-text" title="Freedom Party">SSl</span></th> <th><span class="tooltip-text" title="Independent">SSl</span></th> </tr>!}
+{!<tr> <th class="cellBorder"> </th> <th class="cellBorderKSC"><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span></th> <th class="cellBorderKSS"><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span></th> <th class="cellBorderCSS"><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span></th> <th class="cellBorderCSL"><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span></th> <th class="cellBorderSSO"><span class="tooltip-text" title="Party of Slovak Revival">SSO</span></th> <th class="cellBorderSSL"><span class="tooltip-text" title="Freedom Party">SSl</span></th> <th class="cellBorderIND"><span class="tooltip-text" title="Independent">Ind</span></th> </tr>!}
 
-{!<tr> <th>Rural Class</th> <td>!}[+ rural_ksc_display +]%{!</td> <td>!}[+ rural_kss_display +]%{!</td> <td>!}[+ rural_css_display +]%{!</td> <td>!}[+ rural_csl_display +]%{!</td> <td>!}[+ rural_sso_display +]%{!</td> <td>!}[+ rural_ssl_display +]%{!</td> <td>!}[+ rural_ind_display +]%{!</td> </tr>!}
+{!<tr> <th class="cellBorder">Rural Class</th> <td class="cellBorderKSC">!}[+ rural_ksc_display +]%{!</td> <td class="cellBorderKSS">!}[+ rural_kss_display +]%{!</td> <td class="cellBorderCSS">!}[+ rural_css_display +]%{!</td> <td class="cellBorderCSL">!}[+ rural_csl_display +]%{!</td> <td class="cellBorderSSO">!}[+ rural_sso_display +]%{!</td> <td class="cellBorderSSL">!}[+ rural_ssl_display +]%{!</td> <td class="cellBorderIND">!}[+ rural_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Working Class</th> <td>!}[+ working_ksc_display +]%{!</td> <td>!}[+ working_kss_display +]%{!</td> <td>!}[+ working_css_display +]%{!</td> <td>!}[+ working_csl_display +]%{!</td> <td>!}[+ working_sso_display +]%{!</td> <td>!}[+ working_ssl_display +]%{!</td> <td>!}[+ working_ind_display +]%{!</td> </tr>!}
+{!<tr> <th class="cellBorder">Working Class</th> <td class="cellBorderKSC">!}[+ working_ksc_display +]%{!</td> <td class="cellBorderKSS">!}[+ working_kss_display +]%{!</td> <td class="cellBorderCSS">!}[+ working_css_display +]%{!</td> <td class="cellBorderCSL">!}[+ working_csl_display +]%{!</td> <td class="cellBorderSSO">!}[+ working_sso_display +]%{!</td> <td class="cellBorderSSL">!}[+ working_ssl_display +]%{!</td> <td class="cellBorderIND">!}[+ working_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Middle Class</th> <td>!}[+ middle_ksc_display +]%{!</td> <td>!}[+ middle_kss_display +]%{!</td> <td>!}[+ middle_css_display +]%{!</td> <td>!}[+ middle_csl_display +]%{!</td> <td>!}[+ middle_sso_display +]%{!</td> <td>!}[+ middle_ssl_display +]%{!</td> <td>!}[+ middle_ind_display +]%{!</td> </tr>!}
+{!<tr> <th class="cellBorder">Middle Class</th> <td class="cellBorderKSC">!}[+ middle_ksc_display +]%{!</td> <td class="cellBorderKSS">!}[+ middle_kss_display +]%{!</td> <td class="cellBorderCSS">!}[+ middle_css_display +]%{!</td> <td class="cellBorderCSL">!}[+ middle_csl_display +]%{!</td> <td class="cellBorderSSO">!}[+ middle_sso_display +]%{!</td> <td class="cellBorderSSL">!}[+ middle_ssl_display +]%{!</td> <td class="cellBorderIND">!}[+ middle_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Pensioners</th> <td>!}[+ pension_ksc_display +]%{!</td> <td>!}[+ pension_kss_display +]%{!</td> <td>!}[+ pension_css_display +]%{!</td> <td>!}[+ pension_csl_display +]%{!</td> <td>!}[+ pension_sso_display +]%{!</td> <td>!}[+ pension_ssl_display +]%{!</td> <td>!}[+ pension_ind_display +]%{!</td> </tr>!}
+{!<tr> <th class="cellBorder">Pensioners</th> <td class="cellBorderKSC">!}[+ pension_ksc_display +]%{!</td> <td class="cellBorderKSS">!}[+ pension_kss_display +]%{!</td> <td class="cellBorderCSS">!}[+ pension_css_display +]%{!</td> <td class="cellBorderCSL">!}[+ pension_csl_display +]%{!</td> <td class="cellBorderSSO">!}[+ pension_sso_display +]%{!</td> <td class="cellBorderSSL">!}[+ pension_ssl_display +]%{!</td> <td class="cellBorderIND">!}[+ pension_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Intelligentsia</th> <td>!}[+ intell_ksc_display +]%{!</td> <td>!}[+ intell_kss_display +]%{!</td> <td>!}[+ intell_css_display +]%{!</td> <td>!}[+ intell_csl_display +]%{!</td> <td>!}[+ intell_sso_display +]%{!</td> <td>!}[+ intell_ssl_display +]%{!</td> <td>!}[+ intell_ind_display +]%{!</td> </tr>!}
+{!<tr> <th class="cellBorder">Intelligentsia</th> <td class="cellBorderKSC">!}[+ intell_ksc_display +]%{!</td> <td class="cellBorderKSS">!}[+ intell_kss_display +]%{!</td> <td class="cellBorderCSS">!}[+ intell_css_display +]%{!</td> <td class="cellBorderCSL">!}[+ intell_csl_display +]%{!</td> <td class="cellBorderSSO">!}[+ intell_sso_display +]%{!</td> <td class="cellBorderSSL">!}[+ intell_ssl_display +]%{!</td> <td class="cellBorderIND">!}[+ intell_ind_display +]%{!</td> </tr>!}
 
 {!</table>!}
 
@@ -296,7 +296,7 @@ Loyalty: [+ military_loyalty : loyalty +]
 
 **Lidové milice** (*People's Militias*; *LM*): [+ lm_strength +] thousand members.
 
-Militancy: [+ lm_militancy : militancy +]
+Militarisation: [+ lm_militancy : militancy +]
 
 **Veřejná bezpečnost** (*Public Security*; *VB*): [+ vb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's police force.
 

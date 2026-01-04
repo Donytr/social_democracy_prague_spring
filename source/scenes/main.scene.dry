@@ -41,6 +41,7 @@ max-cards: 4
 
 - @party
 - @govt
+- @foreign
 #- @advisor
 #- @shuffle_leadership_pinned
 

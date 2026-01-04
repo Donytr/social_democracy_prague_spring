@@ -537,6 +537,39 @@ table {
     border-spacing: 0.5em;
 }
 
+.tableBorder {
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse
+}
+
+.cellBorder, .cellBorderKSC, .cellBorderKSS, .cellBorderCSS, .cellBorderCSL, .cellBorderSSO, .cellBorderSSL, .cellBorderIND {
+  border: 1px solid;
+}
+
+.cellBorderKSC {
+  border-bottom: 2px solid #DC241F;
+}
+.cellBorderKSS {
+  border-bottom: 2px solid #DC241F;
+}
+.cellBorderCSS {
+  border-bottom: 2px solid #FAC469;
+}
+.cellBorderCSL {
+  border-bottom: 2px solid #FFDC00;
+}
+.cellBorderSSO {
+  border-bottom: 2px solid #0000FF;
+}
+.cellBorderSSL {
+  border-bottom: 2px solid #1A809A;
+}
+.cellBorderIND {
+  border-bottom: 2px solid #DCDCDC;
+}
+
 /* Styles for parties */
 .seat.ksc {
     fill: #DC241F;
