@@ -14,19 +14,21 @@ Here are all sources referenced during the creation of this mod.
 
 = Books
 
-(bolded sources were heavily referenced)
+**Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. https://archive.org/details/from-the-prague-spring-to-normalization
 
+**Bašta, Jiří**. Lidové milice 1948 - 1969: Nelegální armáda Komunistické strany Československa (People's Militia 1948 - 1969: Illegal military of the KSČ). Institue for the Study of Totalitarian Regimes. https://archive.org/details/lidove-milice, https://www.ustrcr.cz/wp-content/uploads/2017/10/LIDOVE-MILICE.pdf
 
+**International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up, https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml
+
+**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948
 
 - @credits: Back
 
 @articles
 
-**Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. https://archive.org/details/from-the-prague-spring-to-normalization
+**armada.vojenstvi.cz**. Rubrika: Čísla a fakta (number of Czechoslovak soldiers in 1966). https://armada.vojenstvi.cz/povalecna/cisla-fakta
 
-**International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up, https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml
-
-**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948
+**totalita.cz**. Státní bezpečnost (StB). https://www.totalita.cz/stb/stb.php
 
 - @credits: Back
 
@@ -47,7 +49,8 @@ This section details my methodology - where I got my information from, how I pro
 
 **Ethnicities**
 
-Data about Czech, Slovak, and Hungarian representation primarily comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,733K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
+Data about Czech, Slovak, and Hungarian representation comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,733K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
+
 
 **Social classes**
 
@@ -57,7 +60,7 @@ For *pensioners*, I counted the "nepracující důchodci" (non-working pensioner
 
 As for *intelligentsia*, I included university students. For those, I used the "žáci a studenti 15 letí a starší" (pupils and students 15 years old or older) row in the census. I included minors older than 15 years and younger than 18 years, as there is no such distinction in the census and I didn't want to complicate things.
 
-When I put all the percentages together, I had to multiply them all by 1.21 to account for the children (20.8%) I left out. Below is a table of figures I calculated. One thing to note is that even when I added all values in the census table together, the total number (9,808K) would be by over one third smaller than the population of the country (14,345K). I have no clue why; maybe many citizens simply didn't bother with filling out their employment information? 
+Since I left out children (20.8%), I had to multiply all percentages by 1.21 to account for them. Below is a table of figures I calculated. One thing to note is that even when I added all values in the census table together, the total number (9,808K) would be by over one third smaller than the population of the country (14,345K). I have no clue why; maybe many citizens simply didn't bother with filling out their employment information? 
 
 {!<table>!}
 

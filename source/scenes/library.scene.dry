@@ -107,7 +107,7 @@ National Assembly composition:
 # 
 {!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
 # 
-Independents: [+ other_r +]%
+Independents: [+ ind_r +]%
 
 SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
 [? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
@@ -189,16 +189,15 @@ Then there are social/economic classes:
 
 **Middle Class**: Consists of white-collar workers. 21% of the population.
 
-**Intelligentsia** is the smallest class, accounting for mere 4% of the population. However, they are also the most politically active one, and the one that pushes for reforms the most heavily. University students, scientists, writers, and such all belong here.
+**Intelligentsia** is the smallest class, accounting for mere 4% of the population. However, they are also the most politically active one, and the one that pushes for reforms most heavily. University students, scientists, writers, and such all belong here.
 
 **Pensioners** are generally people who are too old to work and receive pension from the government. They account for 26% of the population.
 
 
 @public_opinion
 on-arrival: {!
-Q.pro_republic_disp = Math.round(Q.pro_republic);
-Q.nationalism_disp = Math.round(Q.nationalism);
 Q.socialism_disp = Math.round(Q.socialism);
+Q.reform_disp = Math.round(Q.reforms);
 !}
 view-if: (not historical_mode) or game_over
 go-to: election_algorithm
@@ -206,11 +205,9 @@ set-jump: election_projections
 
 **Public Opinion**
 
-#Support for Socialism: [+ socialism +]%
+Support for Socialism: [+ socialism_disp +]%
 
-#Support for Nationalism: [+ nationalism +]%
-
-Support for the Republic: [+ pro_republic_disp +]%
+Support for Reform: [+ reform_disp +]%
 
 
 @election_projections
@@ -220,44 +217,37 @@ go-to: menu
 **Projected election results** (if the election were to be held now):
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_votes +]%
-
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+KSČ: [+ ksc_votes +]%
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_votes +]%
+KSS: [+ kss_votes +]%
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_votes +]%
+ČSS: [+ css_votes +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-[+ ddp_name +]: [+ ddp_votes +]%
+ČSL: [+ csl_votes +]%
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_votes +]%
+SSO: [+ sso_votes +]%
 
 # 1928: 14, 1930: 7
-DNVP: [+ dnvp_votes +]%
-
-# 1928: 3, 1930: 18
-NSDAP: [+ nsdap_votes +]%
+SSl: [+ ssl_votes +]%
 
 # 1928: 9, 1930: 10
-Others: [+ other_votes +]%
+Independent: [+ ind_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [+ ddp_name +]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Rural Class: KSČ: [+ rural_ksc_display +]%, KSS: [+ rural_kss_display +]%, ČSS: [+ rural_css_display +]%, ČSL: [+ rural_csl_display +]%, SSO: [+ rural_sso_display +]%; SSl: [+ rural_ssl_display +]%, Independent: [+ rural_ind_display +]%
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [+ ddp_name +]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Working Class: KSČ: [+ working_ksc_display +]%, KSS: [+ working_kss_display +]%, ČSS: [+ working_css_display +]%, ČSL: [+ working_csl_display +]%, SSO: [+ working_sso_display +]%; SSl: [+ working_ssl_display +]%, Independent: [+ working_ind_display +]%
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [+ ddp_name +]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Middle Class: KSČ: [+ middle_ksc_display +]%, KSS: [+ middle_kss_display +]%, ČSS: [+ middle_css_display +]%, ČSL: [+ middle_csl_display +]%, SSO: [+ middle_sso_display +]%; SSl: [+ middle_ssl_display +]%, Independent: [+ middle_ind_display +]%
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [+ ddp_name +]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Intelligentsia: KSČ: [+ intell_ksc_display +]%, KSS: [+ intell_kss_display +]%, ČSS: [+ intell_css_display +]%, ČSL: [+ intell_csl_display +]%, SSO: [+ intell_sso_display +]%; SSl: [+ intell_ssl_display +]%, Independent: [+ intell_ind_display +]%
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [+ ddp_name +]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
-
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [+ ddp_name +]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Pensioners: KSČ: [+ pension_ksc_display +]%, KSS: [+ pension_kss_display +]%, ČSS: [+ pension_css_display +]%, ČSL: [+ pension_csl_display +]%, SSO: [+ pension_sso_display +]%; SSl: [+ pension_ssl_display +]%, Independent: [+ pension_ind_display +]%
 
 @parties
 go-to: menu
@@ -298,44 +288,28 @@ go-to: menu
 
 **Paramilitary groups:**
 
-**Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the SPD, Z, and DDP, but primarily with the SPD. Historically, this has been an unarmed organization.
+**People's Militia**: 
 
-Strength: [+ rb_strength +] thousand
+Strength: [+ pm_strength +] thousand
 
-Militarization: [+ rb_militancy : militancy +]
-
-**Rotfrontkämpferbund (RFB)**: The "Red Front Fighter's League" is associated with the KPD.
-
-Strength: [+ rfb_strength +] thousand
-
-Militarization: [+ rfb_militancy : militancy +]
-
-**Der Stahlhelm**: A right-wing nationalist organization of primarily Great War veterans, descended from the *Freikorps* that emerged after the war. Associated with the DNVP.
-
-Strength: [+ sh_strength +] thousand
-
-Militarization: [+ sh_militancy : militancy +]
-
-**Sturmabteilung (SA)**: This is the nazi paramilitary group.
-
-Strength: [+ sa_strength +] thousand
-
-Militarization: [+ sa_militancy : militancy +]
+Militarization: [+ pm_militancy : militancy +]
 
 **Official military/paramilitary groups:**
 
-**Reichswehr**: [+ reichswehr_strength +] thousand troops. This is Germany's military.
+**Czechoslovak People's Army**: [+ military_strength +] thousand troops. This is Czechoslovakia's military.
 
-Loyalty: [+ reichswehr_loyalty : loyalty +]
+Loyalty: [+ military_loyalty : loyalty +]
 
-**Prussian police**: [+ prussian_police_strength +] thousand members.
+**Veřejná bezpečnost** (*Public Security*): [+ vb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's police force.
 
-Loyalty: [+ prussian_police_loyalty : loyalty +]
+Loyalty: [+ vb_loyalty : loyalty +]
 
+**Státní bezpečnost** (*State Security*): [+ stb_strength +] thousand employees. A subdivision of the National Security Corps, it is Czechoslovakia's secret police.
+
+Loyalty: [+ stb_loyalty : loyalty +]
 
 
 @factions
-go-to: neorevisionists if neorevisionism > 0; menu if neorevisionism <= 0
 
 **Internal factions of the KSČ**
 
@@ -363,75 +337,57 @@ A considerable number of KSČ members are hardliners, opposed to any reform (pol
 
 Strength: [+ hardliner_strength : strength +]
 
+Dissent: [+ hardliner_dissent : dissent +]
+
 
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: z_minus_bvp_r = kss_r - 3;
 on-display: {!
 data = [
     {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
-        "seats": Q.ssl_r*5,
-    }];
-if (Q.sapd_formed && Q.sapd_r) {
-    data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.round(Q.sapd_r*5),
-            });
-}
+        "id": "ksc",
+        "legend": "KSČ",
+        "name": "KSČ",
+        "seats": Q.ksc_r*5,
+    }
+];
 data = data.concat([
     {
-        "id": "spd",
-        "legend": "SPD",
-        "name": "SPD",
-        "seats": Q.ksc_r*5,
+        "id": "kss",
+        "legend": "KSS",
+        "name": "KSS",
+        "seats": Q.kss_r*5,
     },
     {
-        "id": "ddp",
-        "legend": "DDP",
-        "name": "DDP",
-        "seats": Q.css_r*5,
+        "id": "css",
+        "legend": "ČSS",
+        "name": "ČSS",
+        "seats": (Q.css_r - 3)*5,
     },
     {
-        "id": "z",
-        "legend": "Center",
-        "name": "Center",
-        "seats": (Q.kss_r - 3)*5,
-    },
-    {
-        "id": "bvp",
-        "legend": "BVP",
-        "name": "BVP",
-        "seats": 3*5,
-    },
-    {
-        "id": "dvp",
-        "legend": "DVP",
-        "name": "DVP",
+        "id": "csl",
+        "legend": "ČSL",
+        "name": "ČSL",
         "seats": Q.csl_r*5,
     },
     {
-        "id": "other",
-        "legend": "Other",
-        "name": "Other",
-        "seats": Q.other_r*5,
-    },
-    {
-        "id": "dnvp",
-        "legend": "DNVP",
-        "name": "DNVP",
+        "id": "sso",
+        "legend": "SSO",
+        "name": "SSO",
         "seats": Q.sso_r*5,
     },
     {
-        "id": "nsdap",
-        "legend": "NSDAP",
-        "name": "NSDAP",
-        "seats": Q.nsdap_r*5,
+        "id": "ssl",
+        "legend": "SSl",
+        "name": "SSl",
+        "seats": Q.ssl_r*5,
+    },
+    {
+        "id": "ind",
+        "legend": "Independent",
+        "name": "Independent",
+        "seats": Q.ind_r*5,
     },
 ]);
 if (d3 && window) {
@@ -452,8 +408,8 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'ddp': Q.ddp_name, 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ksc': '#DC241F', 'kss': '#8B0000', 'css': '#FAC469', 'csl': '#FFDC00', 'sso': '#0000FF', 'ssl': '#1A809A', 'ind': '#DCDCDC'},
+            {'ksc': 'KSČ', 'kss': 'KSS', 'css': 'ČSS', 'csl': 'ČSL', 'sso': 'SSO', 'ssl': 'SSl', 'ind': 'Independent'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -465,8 +421,8 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'ddp': Q.ddp_name, 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ksc': '#DC241F', 'kss': '#8B0000', 'css': '#FAC469', 'csl': '#FFDC00', 'sso': '#0000FF', 'ssl': '#1A809A', 'ind': '#DCDCDC'},
+            {'ksc': 'KSČ', 'kss': 'KSS', 'css': 'ČSS', 'csl': 'ČSL', 'sso': 'SSO', 'ssl': 'SSl', 'ind': 'Independent'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -483,35 +439,29 @@ if (d3 && window) {
 }
 !}
 
-= Reichstag composition
+= National Assembly composition
 
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ ksc_r +]%** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DC241F; outline: 2px; outline-style: solid;'> </div></td><td>!} **KSČ:** {!</td><td>!} **[+ ksc_r +]%** {!</td></tr>!}
 
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!} KSS: {!</td><td>!} [+ kss_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ ssl_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FAC469'> </div></td><td>!} ČSS: {!</td><td>!} [+ css_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#DCCA4A'> </div></td><td>!} [+ ddp_name +]: {!</td><td>!} [+ css_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFDC00'> </div></td><td>!} ČSL: {!</td><td>!} [+ csl_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} Z: {!</td><td>!} [+ z_minus_bvp_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0000FF'> </div></td><td>!} SSO: {!</td><td>!} [+ sso_r +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#69A2BE'> </div></td><td>!} BVP: {!</td><td>!} 3% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#1A809A'> </div></td><td>!} SSl: {!</td><td>!} [+ ssl_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#D5AC27'> </div></td><td>!} DVP: {!</td><td>!} [+ csl_r +]% {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#a0a0a0'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_r +] % {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#3f7bc1'> </div></td><td>!} DNVP: {!</td><td>!} [+ sso_r +]% {!</td></tr>!}
-
-{!<tr><td><div class="box" style='background-color:#954B00'> </div></td><td>!} NSDAP: {!</td><td>!} [+ nsdap_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div></td><td>!} Independent: {!</td><td>!} [+ ind_r +]% {!</td></tr>!}
 {!</table>!}
 
 = Election history
 
-[? if year = 1928 and month < 5 : No new elections yet. ?]
+[? if year <= 1968 and month <= 6 and week < 2: No new elections yet. ?]
 
 {!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
 
