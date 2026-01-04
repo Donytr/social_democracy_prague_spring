@@ -236,24 +236,24 @@ Q.pension_ind = 45;
 
 
 // Current National Assembly composition
-// % of the NA in Jan 1928
+// % of the NA in June 1964
 // source: wikipedia
-Q.ksc_r = 26;
-Q.kss_r = 9;
-Q.css_r = 17;
-Q.csl_r = 6;
-Q.sso_r = 10;
-Q.ssl_r = 20;
-Q.ind_r = 9;
+Q.ksc_r = 145;
+Q.kss_r = 72;
+Q.css_r = 24;
+Q.csl_r = 20;
+Q.sso_r = 6;
+Q.ssl_r = 5;
+Q.ind_r = 28;
 
-// diff from prev
-Q.old_ksc_r = 26;
-Q.old_kss_r = 9;
-Q.old_css_r = 17;
-Q.old_csl_r = 6;
-Q.old_sso_r = 10;
-Q.old_ssl_r = 20;
-Q.old_ind_r = 9;
+// diff from prev in 1960
+Q.old_ksc_r = 147;
+Q.old_kss_r = 69;
+Q.old_css_r = 19;
+Q.old_csl_r = 16;
+Q.old_sso_r = 4;
+Q.old_ssl_r = 2;
+Q.old_ind_r = 43;
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];

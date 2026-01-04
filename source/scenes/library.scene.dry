@@ -445,7 +445,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#FFDC00'> </div></td><td>!} ČSL: {!</td><td>!} [+ csl_r +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#0000FF'> </div></td><td>!} SSO: {!</td><td>!} [+ sso_r +] % {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0000FF'> </div></td><td>!} SSO: {!</td><td>!} [+ sso_r +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#1A809A'> </div></td><td>!} SSl: {!</td><td>!} [+ ssl_r +]% {!</td></tr>!}
 

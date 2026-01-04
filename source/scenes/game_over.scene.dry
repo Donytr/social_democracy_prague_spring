@@ -19,7 +19,7 @@ this.achieve('game_completed');
 
 @eg_menu
 
-- #endings
+#- @endings
 - @end_game: End game.
 
 

@@ -1,4 +1,4 @@
-# Social Democracy: An Alternate History
+# Prague Spring: An Alternate History
 
 ## Included Libraries
 
