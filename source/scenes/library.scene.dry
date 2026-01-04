@@ -5,7 +5,7 @@ go-to: menu
 
 = The Library
 
-Herein contains relevant information about the government and politics of the German republic.
+Herein contains relevant information about the government and politics of the Czechoslovak republic.
 
 @menu
 
@@ -66,7 +66,7 @@ go-to: menu
 
 **1947**: The Czechoslovak government accepts discussions regarding the Marshall Plan. However, upon Soviet pressure, the KSČ reverses its earlier support and begins to oppose the plan, beginning the decline of the party's popularity. On Stalin's orders, Gottwald begins to undermine parliamentary opposition to the Communists.
 
-**1948**: In February, 12 non-Communist ministers resign and demand Gottwald's resignation due to his refusal to stop packing the police with Communists. Gottwald refuses and instead threatens a general strike unless Beneš appoints a Communist-dominated government. Mass pro-Communist demonstrations erupt across the country and the KSČ begins organising militias. Beneš, threatened by Gottwald by a civil war and Soviet intervention, eventually gives in and accepts KSČ's demands. Communists take over, marking the end of the Third Republic. Unlawful imprisonments, show trials and executions, restriction of freedoms and travel, and labour camps are all tools of the new regime.
+**1948**: In February, 12 non-Communist ministers resign and demand Gottwald's resignation due to his refusal to stop packing the police with Communists. Gottwald refuses and instead threatens a general strike unless Beneš appoints a Communist-dominated government. Mass pro-Communist demonstrations erupt across the country and the KSČ begins organising People's Militias. Beneš, threatened by Gottwald by a civil war and Soviet intervention, eventually gives in and accepts KSČ's demands. Communists take over, marking the end of the Third Republic. Unlawful imprisonments, show trials and executions, restriction of freedoms and travel, and labour camps are all tools of the new regime.
 
 **1949**: The First Five-Year Plan is started, aimed (especially after the outbreak of the Korean War) at expanding industrial production as the expense of consumer production. The plan is not fulfilled in its entirety, resulting in food shortages.
 
@@ -286,25 +286,21 @@ Q.sa_strength = Math.round(Q.sa_strength);
 !}
 go-to: menu
 
-**Paramilitary groups:**
-
-**People's Militia**: 
-
-Strength: [+ pm_strength +] thousand
-
-Militarization: [+ pm_militancy : militancy +]
-
-**Official military/paramilitary groups:**
-
-**Czechoslovak People's Army**: [+ military_strength +] thousand troops. This is Czechoslovakia's military.
+**Czechoslovak People's Army** (*ČSLA*): [+ military_strength +] thousand troops. This is Czechoslovakia's military.
 
 Loyalty: [+ military_loyalty : loyalty +]
 
-**Veřejná bezpečnost** (*Public Security*): [+ vb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's police force.
+**Lidové milice** (*People's Militias*; *LM*): [+ lm_strength +] thousand members.
+
+Militancy: [+ lm_militancy : militancy +]
+
+Loyalty: [+ lm_loyalty : loyalty +]
+
+**Veřejná bezpečnost** (*Public Security*; *VB*): [+ vb_strength +] thousand members. A subdivision of the National Security Corps, it is Czechoslovakia's police force.
 
 Loyalty: [+ vb_loyalty : loyalty +]
 
-**Státní bezpečnost** (*State Security*): [+ stb_strength +] thousand employees. A subdivision of the National Security Corps, it is Czechoslovakia's secret police.
+**Státní bezpečnost** (*State Security*; *StB*): [+ stb_strength +] thousand employees. A subdivision of the National Security Corps, it is Czechoslovakia's secret police.
 
 Loyalty: [+ stb_loyalty : loyalty +]
 
@@ -349,7 +345,7 @@ data = [
         "id": "ksc",
         "legend": "KSČ",
         "name": "KSČ",
-        "seats": Q.ksc_r*5,
+        "seats": Q.ksc_r*3, // affects the number of seats (reichstag)
     }
 ];
 data = data.concat([
@@ -357,37 +353,37 @@ data = data.concat([
         "id": "kss",
         "legend": "KSS",
         "name": "KSS",
-        "seats": Q.kss_r*5,
+        "seats": Q.kss_r*3,
     },
     {
         "id": "css",
         "legend": "ČSS",
         "name": "ČSS",
-        "seats": (Q.css_r - 3)*5,
+        "seats": Q.css_r*3,
     },
     {
         "id": "csl",
         "legend": "ČSL",
         "name": "ČSL",
-        "seats": Q.csl_r*5,
+        "seats": Q.csl_r*3,
     },
     {
         "id": "sso",
         "legend": "SSO",
         "name": "SSO",
-        "seats": Q.sso_r*5,
+        "seats": Q.sso_r*3,
     },
     {
         "id": "ssl",
         "legend": "SSl",
         "name": "SSl",
-        "seats": Q.ssl_r*5,
+        "seats": Q.ssl_r*3,
     },
     {
         "id": "ind",
         "legend": "Independent",
         "name": "Independent",
-        "seats": Q.ind_r*5,
+        "seats": Q.ind_r*3,
     },
 ]);
 if (d3 && window) {

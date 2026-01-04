@@ -117,13 +117,13 @@ Q.ssl_leader = "Michal Žákovič";
 
 // The array of forces
 // Number of members in 1967 (in thousands)
-// People's Militia
-Q.pm_strength = 78; // maybe 77K, as the mod begins in mid-1967?
-Q.pm_militancy = 0.5;
-Q.pm_loyalty = 0.5 // 0 = aligned to Moscow, 1 = aligned to KSČ
-Q.pm_disbanded = 0;
+// People's Militias
+Q.lm_strength = 78; // maybe 77K, as the mod begins in mid-1967?
+Q.lm_militancy = 0.5;
+Q.lm_loyalty = 0.5 // 0 = aligned to Moscow, 1 = aligned to KSČ
+Q.lm_disbanded = 0;
 
-// Public Security (VB)
+// Public Security (VB) // WIP
 Q.vb_strength = 90;
 Q.vb_militancy = 1;
 Q.vb_loyalty = 0.5;
@@ -525,6 +525,6 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 It is a turbulent time for the Czechoslovak Socialist Republic, to say at least. Since the beginning of the 60s, the economy has been stagnating and dissatisfaction with the current state of things increasing.
 
-For the better or worse, winds of change are reaching the country. Due to strained economy and ongoing economic reform, citizens are starting to demand political freedoms. President Novotný and party hardliners resists any change, though.
+For the better or worse, winds of change are reaching the country. Due to strained economy and ongoing economic reform, citizens are starting to demand political freedoms. President Novotný and party hardliners resist any change, though.
 
 

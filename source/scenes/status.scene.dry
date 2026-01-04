@@ -95,40 +95,30 @@ Economic growth: [+ economic_growth_2 +]%
 
 @paramilitaries
 on-arrival: {!
-if (Q.pm_strength) {
-    Q.pm_strength_2 = Q.pm_strength.toFixed(1);
+if (Q.lm_strength) {
+    Q.lm_strength_2 = Q.lm_strength.toFixed(1);
 }
 !}
 
 = Paramilitaries
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+ČSLA: [+ military_strength +]K troops
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+ČSLA loyalty: [+ military_loyalty : loyalty +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+People's Militias: [+ lm_strength +]K members
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+LM militancy: [+ lm_militancy : loyalty +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+LM loyalty: [+ military_loyalty : loyalty +]
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+VB: [+ vb_strength +]K members
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+VB loyalty: [+ vb_loyalty : loyalty +]
 
-SA Militarization: [+ sa_militancy : militancy +]
+StB: [+ stb_strength +]K employees
 
-= Official military/paramilitaries
-
-Reichswehr: [+ reichswehr_strength +] thousand troops.
-
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
-
-Prussian police: [+ prussian_police_strength +] thousand members.
-
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
-
-[? if ksc_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+StB loyalty: [+ stb_loyalty : loyalty +]
 
 @polls
 on-arrival: {!
