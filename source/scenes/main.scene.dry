@@ -54,7 +54,7 @@ is-deck: true
 
 @govt
 title: Government Affairs
-card-image: national_assembly.jpg
+card-image: img/national_assembly.jpg
 is-deck: true
 
 #- @govt_affairs
