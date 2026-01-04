@@ -116,10 +116,7 @@ KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in 
 
 [? if ksc_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-@cabinet
-go-to: menu
-
-Current cabinet:
+**Current cabinet:**
 
 Central Planning Commission: [+ planning_minister_party +]
 

@@ -12,10 +12,10 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
-  font-family: "Minion Pro", Georgia, serif;
+  font-family: "Courier New", Georgia, monospace;
   background-color: var(--bg-color);
   padding: 0;
-  line-height: 155%;
+  line-height: 130%;
   overflow-y: scroll;
 }
 body.dark-mode {
@@ -228,7 +228,8 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "Minion Pro", Georgia, serif;
+    font-family: "Courier New", Georgia, monospace;
+    font-weight: bold;
     background-color: var(--tab-color);
     color: var(--text-color);
     /*float: left;*/

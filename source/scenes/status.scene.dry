@@ -18,7 +18,7 @@ if (Q.economic_growth) {
 
 Week [+ week +], [+ month : month +] [+ year +]
 
-Resources available: [+ resources +]
+Party resources: [+ resources +]
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
 [? if in_weimar_coalition and ksc_in_government: Weimar Coalition ?][? if in_grand_coalition and ksc_in_government: Grand Coalition ?][? if in_popular_front and ksc_in_government: Popular Front ?][? if in_left_front and ksc_in_government: Left Front ?][? if in_ksc_majority and ksc_in_government: SPD majority ?][? if in_minority_government and ksc_in_government: minority government ?][? if in_emergency_government and ksc_in_government: emergency government ?]
@@ -100,7 +100,7 @@ if (Q.lm_strength) {
 }
 !}
 
-= Paramilitaries
+= Security Forces
 
 ČSLA: [+ military_strength +]K troops
 
@@ -108,9 +108,9 @@ if (Q.lm_strength) {
 
 People's Militias: [+ lm_strength +]K members
 
-LM militancy: [+ lm_militancy : loyalty +]
+LM militancy: [+ lm_militancy : militancy +]
 
-LM loyalty: [+ military_loyalty : loyalty +]
+LM loyalty: [+ lm_loyalty : loyalty +]
 
 VB: [+ vb_strength +]K members
 
@@ -151,7 +151,7 @@ SSl: [+ ssl_votes +]%
 # 1928: 9, 1930: 10
 Independent: [+ ind_votes +]%
 
-**Detailed results for each demographic**
+Detailed results for each demographic
 
 Rural Class: KSČ: [+ rural_ksc_display +]%, KSS: [+ rural_kss_display +]%, ČSS: [+ rural_css_display +]%, ČSL: [+ rural_csl_display +]%, SSO: [+ rural_sso_display +]%; SSl: [+ rural_ssl_display +]%, Independent: [+ rural_ind_display +]%
 

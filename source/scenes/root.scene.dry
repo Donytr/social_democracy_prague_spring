@@ -264,11 +264,11 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Antonín Novotný";
+Q.president = "Antonín Novotný"; // Antonín Novotný
 Q.president_party = 'KSČ';
 Q.prime_minister = "Josef Lenárt";
-Q.prime_minister_party_party = 'KSČ';
-Q.first_secretary = "Antonín Novotný";
+Q.prime_minister_party = 'KSČ';
+Q.first_secretary = "Antonín Novotný"; // Antonín Novotný
 Q.ksc_in_government = 1;
 Q.ssl_in_government = 1;
 Q.kss_in_government = 1;
@@ -521,7 +521,7 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1967
+= **1967**
 
 It is a turbulent time for the Czechoslovak Socialist Republic, to say at least. Since the beginning of the 60s, the economy has been stagnating and dissatisfaction with the current state of things increasing.
 
