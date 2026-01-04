@@ -284,7 +284,7 @@ Q.coalition_dissent = 0;
 //Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
-Q.spd_toleration = 0;
+Q.ksc_toleration = 0;
 
 // is the current government a presidential minority government?
 Q.minority_government = 0;
@@ -345,7 +345,7 @@ Q.electoral_threshold = 0;
 
 // our conduct in the government, and the conduct of our coalition opponents.
 // did the SPD vote against the previous government in a vote of no confidence?
-Q.spd_no_confidence = 0;
+Q.ksc_no_confidence = 0;
 // was the last SPD government taken down in a vote of no confidence by right-wing coalition partners?
 Q.no_confidence_against_spd = 0;
 

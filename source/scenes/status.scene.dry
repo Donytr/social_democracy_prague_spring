@@ -20,12 +20,12 @@ Week [+ week +], [+ month : month +] [+ year +]
 
 Resources available: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
-[? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
+KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
+[? if in_weimar_coalition and ksc_in_government: Weimar Coalition ?][? if in_grand_coalition and ksc_in_government: Grand Coalition ?][? if in_popular_front and ksc_in_government: Popular Front ?][? if in_left_front and ksc_in_government: Left Front ?][? if in_ksc_majority and ksc_in_government: SPD majority ?][? if in_minority_government and ksc_in_government: minority government ?][? if in_emergency_government and ksc_in_government: emergency government ?]
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+[? if ksc_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
@@ -54,7 +54,7 @@ National Assembly composition:
 # 
 Independents: [+ ind_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+[? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 
 Next election: Week [+ next_election_week +], [+ next_election_month : month +] [+ next_election_year +]
 
@@ -62,7 +62,7 @@ Next election: Week [+ next_election_week +], [+ next_election_month : month +] 
 
 Inflation: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+Unemployment: [+ unemployed_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
 
@@ -85,32 +85,18 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_relation : relationships +]
 
-= Internal Factions of the SPD
+= Internal Factions of the KSČ
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="Reformists seek to implement economic and political reforms aimed at expanding civil rights and freedoms whilst retaining the structure of socialism.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="Pragmatists support mild reforms, though they are cautious. They value stability above everything.">Pragmatist</span>!} strength: [+ pragmatist_strength : strength +], dissent: [+ pragmatist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
-
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
-
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
-
+{!<span class="tooltip-text" title="Hardliners are opposed to any reform and fully loyal to the revolution and Moscow.">Hardliner</span>!} strength: [+ hardliner_strength : strength +], dissent: [+ hardliner_dissent : dissent +]
 
 @paramilitaries
 on-arrival: {!
-if (Q.rb_strength) {
-    Q.rb_strength_2 = Q.rb_strength.toFixed(1);
-}
-if (Q.rfb_strength) {
-    Q.rfb_strength_2 = Q.rfb_strength.toFixed(1);
-}
-if (Q.sh_strength) {
-    Q.sh_strength_2 = Q.sh_strength.toFixed(1);
-}
-if (Q.sa_strength) {
-    Q.sa_strength_2 = Q.sa_strength.toFixed(1);
+if (Q.pm_strength) {
+    Q.pm_strength_2 = Q.pm_strength.toFixed(1);
 }
 !}
 
@@ -142,7 +128,7 @@ Prussian police: [+ prussian_police_strength +] thousand members.
 
 Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+[? if ksc_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
 on-arrival: {!
