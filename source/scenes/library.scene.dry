@@ -194,7 +194,7 @@ Then there are social/economic classes:
 @public_opinion
 on-arrival: {!
 Q.socialism_disp = Math.round(Q.socialism);
-Q.reform_disp = Math.round(Q.reforms);
+Q.pro_reform_disp = Math.round(Q.pro_reform);
 !}
 view-if: (not historical_mode) or game_over
 go-to: election_algorithm
@@ -204,7 +204,7 @@ set-jump: election_projections
 
 Support for Socialism: [+ socialism_disp +]%
 
-Support for Reform: [+ reform_disp +]%
+Support for Reform: [+ pro_reform_disp +]%
 
 
 @election_projections
@@ -240,15 +240,15 @@ Independent: [+ ind_votes +]%
 
 {!<tr> <th> </th> <th><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span></th> <th><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span></th> <th><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span></th> <th><span class="tooltip-text" title="Czechoslovak People's Party">SSO</span></th> <th><span class="tooltip-text" title="Freedom Party">SSl</span></th> <th><span class="tooltip-text" title="Independent">SSl</span></th> </tr>!}
 
-{!<tr> <th>Rural Class</th> <td>[+ rural_ksc_display +]%</td> <td>[+ rural_kss_display +]%</td> <td>[+ rural_css_display +]%</td> <td>[+ rural_csl_display +]%</td> <td>[+ rural_sso_display +]%</td> <td>[+ rural_ssl_display +]%</td> <td>[+ rural_ind_display +]%</td> </tr>!}
+{!<tr> <th>Rural Class</th> <td>!}[+ rural_ksc_display +]%{!</td> <td>!}[+ rural_kss_display +]%{!</td> <td>!}[+ rural_css_display +]%{!</td> <td>!}[+ rural_csl_display +]%{!</td> <td>!}[+ rural_sso_display +]%{!</td> <td>!}[+ rural_ssl_display +]%{!</td> <td>!}[+ rural_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Working Class</th> <td>[+ working_ksc_display +]%</td> <td>[+ working_kss_display +]%</td> <td>[+ working_css_display +]%</td> <td>[+ working_csl_display +]%</td> <td>[+ working_sso_display +]%</td> <td>[+ working_ssl_display +]%</td> <td>[+ working_ind_display +]%</td> </tr>!}
+{!<tr> <th>Working Class</th> <td>!}[+ working_ksc_display +]%{!</td> <td>!}[+ working_kss_display +]%{!</td> <td>!}[+ working_css_display +]%{!</td> <td>!}[+ working_csl_display +]%{!</td> <td>!}[+ working_sso_display +]%{!</td> <td>!}[+ working_ssl_display +]%{!</td> <td>!}[+ working_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Middle Class</th> <td>[+ middle_ksc_display +]%</td> <td>[+ middle_kss_display +]%</td> <td>[+ middle_css_display +]%</td> <td>[+ middle_csl_display +]%</td> <td>[+ middle_sso_display +]%</td> <td>[+ middle_ssl_display +]%</td> <td>[+ middle_ind_display +]%</td> </tr>!}
+{!<tr> <th>Middle Class</th> <td>!}[+ middle_ksc_display +]%{!</td> <td>!}[+ middle_kss_display +]%{!</td> <td>!}[+ middle_css_display +]%{!</td> <td>!}[+ middle_csl_display +]%{!</td> <td>!}[+ middle_sso_display +]%{!</td> <td>!}[+ middle_ssl_display +]%{!</td> <td>!}[+ middle_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Pensioners</th> <td>[+ pension_ksc_display +]%</td> <td>[+ pension_kss_display +]%</td> <td>[+ pension_css_display +]%</td> <td>[+ pension_csl_display +]%</td> <td>[+ pension_sso_display +]%</td> <td>[+ pension_ssl_display +]%</td> <td>[+ pension_ind_display +]%</td> </tr>!}
+{!<tr> <th>Pensioners</th> <td>!}[+ pension_ksc_display +]%{!</td> <td>!}[+ pension_kss_display +]%{!</td> <td>!}[+ pension_css_display +]%{!</td> <td>!}[+ pension_csl_display +]%{!</td> <td>!}[+ pension_sso_display +]%{!</td> <td>!}[+ pension_ssl_display +]%{!</td> <td>!}[+ pension_ind_display +]%{!</td> </tr>!}
 
-{!<tr> <th>Intelligentsia</th> <td>[+ intell_ksc_display +]%</td> <td>[+ intell_kss_display +]%</td> <td>[+ intell_css_display +]%</td> <td>[+ intell_csl_display +]%</td> <td>[+ intell_sso_display +]%</td> <td>[+ intell_ssl_display +]%</td> <td>[+ intell_ind_display +]%</td> </tr>!}
+{!<tr> <th>Intelligentsia</th> <td>!}[+ intell_ksc_display +]%{!</td> <td>!}[+ intell_kss_display +]%{!</td> <td>!}[+ intell_css_display +]%{!</td> <td>!}[+ intell_csl_display +]%{!</td> <td>!}[+ intell_sso_display +]%{!</td> <td>!}[+ intell_ssl_display +]%{!</td> <td>!}[+ intell_ind_display +]%{!</td> </tr>!}
 
 {!</table>!}
 

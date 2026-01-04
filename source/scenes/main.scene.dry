@@ -53,8 +53,15 @@ is-deck: true
 #- @party_affairs
 
 @govt
-title: Government Affairs
+title: Domestic Affairs
 card-image: img/national_assembly.jpg
 is-deck: true
 
 #- @govt_affairs
+
+@foreign
+title: Foreign Affairs
+card-image: img/passport.jpg
+is-deck: true
+
+#- @foreign_affairs

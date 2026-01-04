@@ -144,7 +144,7 @@ Q.stb_loyalty = 0.4;
 // Support for socialism
 Q.socialism = 40;
 // Support for reform
-Q.reform = 59;
+Q.pro_reform = 59;
 
 Q.emergency_rule = 0;
 

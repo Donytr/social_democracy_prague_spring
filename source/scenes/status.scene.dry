@@ -110,22 +110,22 @@ if (Q.lm_strength) {
 
 {!<span class="tooltip-text" title="People's Militias">LM</span>!} militarisation: [+ lm_militancy : militancy +]
 
-{!<span class="tooltip-text" title="Public Security">VB</span>!}: [+ vb_strength +]K members
+{!<span class="tooltip-text" title="Public Security">VB</span>!}: [+ vb_strength +] thousand members
 
-{!<span class="tooltip-text" title="Public Security">VB</span>!} militarisation: [+ vb_loyalty : militancy +]
+{!<span class="tooltip-text" title="Public Security">VB</span>!} militarisation: [+ vb_militancy : militancy +]
 
 {!<span class="tooltip-text" title="Public Security">VB</span>!} loyalty: [+ vb_loyalty : loyalty +]
 
-{!<span class="tooltip-text" title="State Security">StB</span>!}: [+ stb_strength +]K members
+{!<span class="tooltip-text" title="State Security">StB</span>!}: [+ stb_strength +] thousand members
 
-{!<span class="tooltip-text" title="State Security">StB</span>!} efficiency: [+ stb_loyalty : loyalty +]
+{!<span class="tooltip-text" title="State Security">StB</span>!} efficiency: [+ stb_loyalty : militancy +]
 
 {!<span class="tooltip-text" title="State Security">StB</span>!} loyalty: [+ stb_loyalty : loyalty +]
 
 @polls
 on-arrival: {!
 Q.socialism_disp = Math.round(Q.socialism);
-Q.reform_disp = Math.round(Q.reforms);
+Q.pro_reform_disp = Math.round(Q.pro_reform);
 !}
 
 = Projected election results
@@ -167,4 +167,4 @@ Intelligentsia: KSČ: [+ intell_ksc_display +]%, KSS: [+ intell_kss_display +]%,
 
 Support for Socialism: [+ socialism_disp +]%
 
-Support for Reform: [+ reform_disp +]%
+Support for Reform: [+ pro_reform_disp +]%

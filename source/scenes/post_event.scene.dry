@@ -12,15 +12,14 @@ for (var c of Q.classes) {
     }
 }
 
-Q.pro_republic = Math.round(Q.pro_republic);
-Q.nationalism = Math.round(Q.nationalism);
 Q.socialism = Math.round(Q.socialism);
+Q.reform = Math.round(Q.reform);
 
-if (Q.pro_republic < 0) {
-    Q.pro_republic = 0;
+if (Q.socialism < 0) {
+    Q.socialism = 0;
 }
-if (Q.pro_republic >= 100) {
-    Q.pro_republic = 99;
+if (Q.socialism >= 100) {
+    Q.socialism = 99;
 }
 // re-calculate party support
 // calculate normalized class voting for the achievements
@@ -76,16 +75,14 @@ if (Q.unemployed <= 1) {
 }
 
 // re-calculate dissent.
-var total_strength = Q.left_strength + Q.center_strength + Q.labor_strength + Q.reformist_strength + Q.neorevisionist_strength;
+var total_strength = Q.reformist_strength + Q.pragmatist_strength + Q.hardliner_strength;
 
 // normalize strength for the different factions
-Q.left_strength = 100*Q.left_strength/total_strength;
-Q.center_strength = 100*Q.center_strength/total_strength;
-Q.labor_strength = 100*Q.labor_strength/total_strength;
 Q.reformist_strength = 100*Q.reformist_strength/total_strength;
-Q.neorevisionist_strength = 100*Q.neorevisionist_strength/total_strength;
+Q.pragmatist_strength = 100*Q.pragmatist_strength/total_strength;
+Q.hardliner_strength = 100*Q.hardliner_strength/total_strength;
 
-var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent + Q.neorevisionist_strength*Q.neorevisionist_dissent;
+var total_dissent = Q.reformist_strength*Q.reformist_dissent + Q.pragmatist_strength*Q.pragmatist_dissent + Q.hardliner_strength*Q.hardliner_dissent;
 
 
 Q.dissent = 0.01*total_dissent/total_strength;
@@ -250,19 +247,22 @@ if (Q.week_actions >= 1) {
         Q.economic_expansion += Q.economic_growth/2;
     }
     /////////////////////////////// update opinions based on economy
-    if (Q.unemployed > 15 && Q.pro_republic > 40) {
-        Q.pro_republic -= 1;
+    if (Q.unemployed > 15 && Q.socialism > 40) {
+        Q.socialism -= 1;
+        Q.pro_reform += 1;
     }
-    if (Q.unemployed > 30 && Q.pro_republic > 20) {
-        Q.pro_republic -= 1;
+    if (Q.unemployed > 30 && Q.socialism > 20) {
+        Q.socialism -= 1;
+        Q.pro_reform += 1;
     }
-    if (Q.inflation >= 8 && Q.pro_republic > 40) {
-        Q.pro_republic -= 1;
+    if (Q.inflation >= 8 && Q.socialism > 40) {
+        Q.socialism -= 1;
+        Q.pro_reform += 1;
     }
 
     ///////////////////////////// change party support based on pro_republic
     // if pro_republic is less than the support of the Weimar coalition, reduce SPD support...
-    if (Q.pro_republic < (Q.spd_votes + Q.ddp_votes + Q.z_votes - 3)) {
+    /*if (Q.pro_republic < (Q.spd_votes + Q.ddp_votes + Q.z_votes - 3)) {
         if (Q.new_middle_spd > 0) {
             Q.new_middle_spd -= 5/12;
             Q.new_middle_nsdap += 3/12;
@@ -463,7 +463,7 @@ if (Q.week_actions >= 1) {
         if (Q.catholics_spd_normalized > 20) {
             Q.catholics_spd -= 6/12;
         }
-    }
+    }*/
 }
 Q.has_event = 0;
 // check if there are any cards in #event, and then go to main if not.
