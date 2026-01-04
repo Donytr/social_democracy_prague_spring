@@ -190,13 +190,13 @@ Q.pension_ind = 45;
 // Current National Assembly composition
 // % of the NA in June 1964
 // source: wikipedia
-Q.ksc_r = 48.3;
+Q.ksc_r = 48.33;
 Q.kss_r = 24.0;
-Q.css_r = 8.0;
-Q.csl_r = 6.7;
-Q.sso_r = 2.0;
-Q.ssl_r = 1.7;
-Q.ind_r = 9.3;
+Q.css_r = 8.01;
+Q.csl_r = 6.66;
+Q.sso_r = 2.01;
+Q.ssl_r = 1.66;
+Q.ind_r = 9.33;
 
 // diff from prev in 1960
 Q.old_ksc_r = 49;
