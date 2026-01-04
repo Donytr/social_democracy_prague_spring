@@ -291,12 +291,12 @@ Q.minority_government = 0;
 
 // ministries - which parties control the ministries?
 // starting with the Josef Lenárt's cabinet https://cs.wikipedia.org/wiki/Vl%C3%A1da_Jozefa_Len%C3%A1rta
-#Q.planning_minister = ' '; # cannot find any name before Vlasák in '68
-#Q.planning_minister_party = 'KSČ';
+//Q.planning_minister = ' '; cannot find any name before Vlasák in '68
+//Q.planning_minister_party = 'KSČ';
 Q.energy_minister = 'Josef Korčák';
 Q.energy_minister_party = 'KSČ';
-#Q.price_minister = ' '; # the first one was in 1968?
-#Q.price_minister_party = 'KSČ';
+//Q.price_minister = ' '; the first one was in 1968?
+//Q.price_minister_party = 'KSČ';
 Q.agriculture_minister = 'Karel Mestek';
 Q.agriculture_minister_party = 'KSČ';
 Q.chemical_minister = 'Václav Valeš';
@@ -325,8 +325,8 @@ Q.inttrade_minister = 'Jindřich Uher';
 Q.inttrade_minister_party = 'KSČ';
 Q.justice_minister = 'Alois Neuman';
 Q.justice_minister_party = 'ČSS';
-#Q.labour_minister = ''; # established in 1968
-#Q.labour_minister_party = 'KSS';
+//Q.labour_minister = ''; established in 1968
+//Q.labour_minister_party = 'KSS';
 Q.mining_minister = 'František Penc';
 Q.mining_minister_party = 'KSČ';
 Q.defence_minister = 'Bohumír Lomský';
