@@ -207,8 +207,14 @@ Q.old_sso_r = 4/3; // 4 seats
 Q.old_ssl_r = 2/3; // 2 seats
 Q.old_ind_r = 43/3; // 43 seats
 
-// Display
-Q.ksc_r_display = Math.round(Q.ksc_r);
+// Displayable number of National Assembly seat percentage (from 1964)
+Q.ksc_r_1964 = 48;
+Q.kss_r_1964 = 24;
+Q.css_r_1964 = 8;
+Q.csl_r_1964 = 7;
+Q.sso_r_1964 = 2;
+Q.ssl_r_1964 = 2;
+Q.ind_r_1964 = 9;
 
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];

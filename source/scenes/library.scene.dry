@@ -94,18 +94,18 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r_display +]%
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +] ?][? if n_elections > 0 : [+ ksc_r_display +] ?]%
 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +] ?][? if n_elections > 0 : [+ kss_r_display +] ?]%
 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +] ?][? if n_elections > 0 : [+ css_r_display +] ?]%
 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +] ?][? if n_elections > 0 : [+ csl_r_display +] ?]%
 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +] ?][? if n_elections > 0 : [+ sso_r_display +] ?]%
 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
-Independents: [+ ind_r +]%
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +] ?][? if n_elections > 0 : [+ ssl_r_display +] ?]%
+Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +] ?]%
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
 [? if in_national_front and ksc_in_government: National Front ?]

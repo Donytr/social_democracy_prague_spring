@@ -39,20 +39,19 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-# 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_votes +]%
-# 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_votes +]%
-# 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_votes +]%
-# 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_votes +]%
-# 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_votes +]%
-# 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_votes +]%
-# 
-Independents: [+ ind_votes +]%
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r +]%
+
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
+
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
+
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
+
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
+
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
+
+Independents: [+ ind_r +]%
 
 [? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -132,25 +131,18 @@ Q.pro_reform_disp = Math.round(Q.pro_reform);
 
 (if the election were to be held now):
 
-# 1928: 30, 1930: 25, 1932: 22
 KSČ: [+ ksc_votes +]%
 
-# 1928: 15, 1930: 15, 1932: 
 KSS: [+ kss_votes +]%
 
-# 1928: 10, 1930: 13
 ČSS: [+ css_votes +]%
 
-# 1928: 5, 1930: 4 (as DstP)
 ČSL: [+ csl_votes +]%
 
-# 1928: 9, 1930: 5
 SSO: [+ sso_votes +]%
 
-# 1928: 14, 1930: 7
 SSl: [+ ssl_votes +]%
 
-# 1928: 9, 1930: 10
 Independent: [+ ind_votes +]%
 
 Detailed results for each demographic
