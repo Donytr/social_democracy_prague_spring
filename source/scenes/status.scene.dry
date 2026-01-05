@@ -40,19 +40,19 @@ First Secretary: [+ first_secretary +]
 National Assembly composition:
 
 # 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r +]%
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_votes +]%
 # 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_votes +]%
 # 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_votes +]%
 # 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_votes +]%
 # 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_votes +]%
 # 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_votes +]%
 # 
-Independents: [+ ind_r +]%
+Independents: [+ ind_votes +]%
 
 [? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 

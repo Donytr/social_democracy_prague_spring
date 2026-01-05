@@ -129,13 +129,13 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.ksc_r = Q.ksc_votes;
-Q.kss_r = Q.kss_votes;
-Q.css_r = Q.css_votes;
-Q.csl_r = Q.csl_votes;
-Q.sso_r = Q.sso_votes;
-Q.ssl_r = Q.ssl_votes;
-Q.ind_r = Q.ind_votes;
+Q.ksc_r = Math.round(Q.ksc_votes);
+Q.kss_r = Math.round(Q.kss_votes);
+Q.css_r = Math.round(Q.css_votes);
+Q.csl_r = Math.round(Q.csl_votes);
+Q.sso_r = Math.round(Q.sso_votes);
+Q.ssl_r = Math.round(Q.ssl_votes);
+Q.ind_r = Math.round(Q.ind_votes);
 
 // The largest party can only be the KSČ or the KSS.
 Q.largest_party = 'KSČ';
@@ -155,25 +155,25 @@ The electoral system is essentially proportional, with the proportion of Reichst
 **Election results:**
 
 # 1928: 30, 1930: 25, 1932: 22
-KSČ: [+ ksc_r +]
+KSČ: [+ ksc_r_votes +]
 
 # 1928: 15, 1930: 15, 1932: 
-KSS: [+ kss_r +]
+KSS: [+ kss_r_votes +]
 
 # 1928: 10, 1930: 13
-ČSS: [+ css_r +]
+ČSS: [+ css_r_votes +]
 
 # 1928: 5, 1930: 4 (as DstP)
-ČSL: [+ csl_r +]
+ČSL: [+ csl_r_votes +]
 
 # 1928: 9, 1930: 5
-SSO: [+ sso_r +]
+SSO: [+ sso_r_votes +]
 
 # 1928: 14, 1930: 7
-SSl: [+ ssl_r +]
+SSl: [+ ssl_r_votes +]
 
 # 1928: 9, 1930: 10
-Independent: [+ ind_r +]
+Independent: [+ ind_r_votes +]
 
 **Potential coalitions:**
 
