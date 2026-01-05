@@ -129,13 +129,13 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.ksc_r = Math.round(Q.ksc_votes);
-Q.kss_r = Math.round(Q.kss_votes);
-Q.css_r = Math.round(Q.css_votes);
-Q.csl_r = Math.round(Q.csl_votes);
-Q.sso_r = Math.round(Q.sso_votes);
-Q.ssl_r = Math.round(Q.ssl_votes);
-Q.ind_r = Math.round(Q.ind_votes);
+Q.ksc_votes = Math.round(Q.ksc_r);
+Q.kss_votes = Math.round(Q.kss_r);
+Q.css_votes = Math.round(Q.css_r);
+Q.csl_votes = Math.round(Q.csl_r);
+Q.sso_votes = Math.round(Q.sso_r);
+Q.ssl_votes = Math.round(Q.ssl_r);
+Q.ind_votes = Math.round(Q.ind_r);
 
 // The largest party can only be the KSČ or the KSS.
 Q.largest_party = 'KSČ';
