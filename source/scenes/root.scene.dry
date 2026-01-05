@@ -190,13 +190,13 @@ Q.pension_ind = 45;
 // Current National Assembly composition
 // % of the NA in June 1964
 // source: wikipedia
-Q.ksc_r = 48.33; // 145 seats
-Q.kss_r = 24; // 72 seats
-Q.css_r = 8; // 24 seats
-Q.csl_r = 6.67; // 20 seats
-Q.sso_r = 2; // 6 seats
-Q.ssl_r = 1.67; // 5 seats
-Q.ind_r = 9.33; // 28 seats
+Q.ksc_r = 145/3; // 145 seats
+Q.kss_r = 72/3; // 72 seats
+Q.css_r = 24/3; // 24 seats
+Q.csl_r = 20/3; // 20 seats
+Q.sso_r = 6/3; // 6 seats
+Q.ssl_r = 5/3; // 5 seats
+Q.ind_r = 28/3; // 28 seats
 
 // diff from prev in 1960
 Q.old_ksc_r = 49; // 147 seats
