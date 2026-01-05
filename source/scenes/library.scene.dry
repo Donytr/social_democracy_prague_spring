@@ -236,7 +236,7 @@ Independent: [+ ind_votes +]%
 
 **Detailed results for each demographic**
 
-{!<table class="tableBorder">!}
+{!<table class="tableBorder">!} 
 
 {!<tr> <th class="cellBorder"> </th> <th class="cellBorderKSC"><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span></th> <th class="cellBorderKSS"><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span></th> <th class="cellBorderCSS"><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span></th> <th class="cellBorderCSL"><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span></th> <th class="cellBorderSSO"><span class="tooltip-text" title="Party of Slovak Revival">SSO</span></th> <th class="cellBorderSSL"><span class="tooltip-text" title="Freedom Party">SSl</span></th> <th class="cellBorderIND"><span class="tooltip-text" title="Independent">Ind</span></th> </tr>!}
 
@@ -268,7 +268,7 @@ Current relations: [+ kss_relation : relationships +]
 
 Current relations: [+ css_relation : relationships +]
 
-{!<tr><td><div class="box" style='background-color:#FFDC00'> </div> !} **ČSL** - *Československá strana lidová* (Czechoslovak People's Party) - a conservative catholic and the only non-socialist party formed after 1945. During February 1948, it was taken over by its radical communist wing. Many remain in the party as to protest against the regime, and frictions exist between the pro-Communist leadership and members.
+{!<tr><td><div class="box" style='background-color:#FFDC00'> </div> !} **ČSL** - *Československá strana lidová* (Czechoslovak People's Party) - a conservative catholic party, the only non-socialist one formed after 1945. During February 1948, it was taken over by its radical communist wing. Many remain in the party as to protest against the regime, and frictions exist between the pro-Communist leadership and members.
 
 Current relations: [+ csl_relation : relationships +]
 
