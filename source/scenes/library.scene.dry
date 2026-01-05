@@ -80,7 +80,7 @@ go-to: menu
 
 **1963**: The Third Five-Year Plan collapses, a sign of the economic downturn plaguing the country.
 
-**1965**: The economist Ota Šik, a member of the KSČ's Central Committee and a former ardent proponent of planned economy, is beginning to carry out reforms aimed at introducing market elements and generally liberalising the Czechoslovak economy.
+**1965**: The economist Ota Šik, a member of the KSČ's Central Committee and a former ardent proponent of planned economy, is starting to carry out reforms aimed at liberalising the Czechoslovak economy.
 
 @curr_gov
 
@@ -93,25 +93,22 @@ Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
 First Secretary: [+ first_secretary +]
 
 National Assembly composition:
+{! Q.ksc_r_display = Math.round(Q.ksc_r); !}
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r_display +]%
 
-# 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r +]%
-# 
 {!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
-# 
+
 {!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
-# 
+
 {!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
-# 
+
 {!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
-# 
+
 {!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
-# 
 Independents: [+ ind_r +]%
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
-[? if in_weimar_coalition and ksc_in_government: Weimar Coalition ?][? if in_grand_coalition and ksc_in_government: Grand Coalition ?][? if in_popular_front and ksc_in_government: Popular Front ?][? if in_left_front and ksc_in_government: Left Front ?][? if in_ksc_majority and ksc_in_government: SPD majority ?][? if in_minority_government and ksc_in_government: minority government ?][? if in_emergency_government and ksc_in_government: emergency government ?]
-
+[? if in_national_front and ksc_in_government: National Front ?]
 [? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
 [? if ksc_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
@@ -214,25 +211,25 @@ go-to: menu
 **Projected election results** (if the election were to be held now):
 
 # 1928: 30, 1930: 25, 1932: 22
-KSČ: [+ ksc_votes +]%
+KSČ: [+ ksc_r +]%
 
 # 1928: 15, 1930: 15, 1932: 
-KSS: [+ kss_votes +]%
+KSS: [+ kss_r +]%
 
 # 1928: 10, 1930: 13
-ČSS: [+ css_votes +]%
+ČSS: [+ css_r +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-ČSL: [+ csl_votes +]%
+ČSL: [+ csl_r +]%
 
 # 1928: 9, 1930: 5
-SSO: [+ sso_votes +]%
+SSO: [+ sso_r +]%
 
 # 1928: 14, 1930: 7
-SSl: [+ ssl_votes +]%
+SSl: [+ ssl_r +]%
 
 # 1928: 9, 1930: 10
-Independent: [+ ind_votes +]%
+Independent: [+ ind_r +]%
 
 **Detailed results for each demographic**
 
@@ -284,9 +281,10 @@ Current relations: [+ ssl_relation : relationships +]
 
 @paramilitaries
 on-arrival: {!
-Q.rb_strength = Math.round(Q.rb_strength);
-Q.sh_strength = Math.round(Q.sh_strength);
-Q.sa_strength = Math.round(Q.sa_strength); 
+Q.csla_strength = Math.round(Q.csla_strength);
+Q.lm_strength = Math.round(Q.lm_strength);
+Q.vb_strength = Math.round(Q.vb_strength); 
+Q.stb_strength = Math.round(Q.stb_strength); 
 !}
 go-to: menu
 
