@@ -207,6 +207,9 @@ Q.old_sso_r = 4/3; // 4 seats
 Q.old_ssl_r = 2/3; // 2 seats
 Q.old_ind_r = 43/3; // 43 seats
 
+// Display
+Q.ksc_r_display = Math.round(Q.ksc_r);
+
 // array of objects of the form {date: Date(), spd: 10, kpd: 12, ...} for each election
 Q.election_records = [];
 // party support records for every month

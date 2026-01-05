@@ -93,7 +93,7 @@ Prime Minister: [+ prime_minister +] ([+ prime_minister_party +])
 First Secretary: [+ first_secretary +]
 
 National Assembly composition:
-{! Q.ksc_r_display = Math.round(Q.ksc_r); !}
+
 {!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r_display +]%
 
 {!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
