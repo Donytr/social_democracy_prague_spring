@@ -62,7 +62,7 @@ is-deck: true
 
 @foreign
 title: Foreign Affairs
-card-image: img/passport.jpg
+card-image: img/passport.png
 is-deck: true
 
 #- @foreign_affairs

@@ -49,7 +49,17 @@ This section details my methodology - where I got my information from, how I pro
 
 **Ethnicities**
 
-Data about Czech, Slovak, and Hungarian representation comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,733K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
+Data about Czech, Slovak, and Hungarian representation comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,734K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
+
+{!<table>!}
+
+{!<tr> <th> </th> <th>Czechs</th> <th>Slovaks</th> <th>Moravians</th> <th>Hungarians</th> </tr>!}
+
+{!<tr> <th> Number of </th> <td style="text-align: right;">5,595K</td> <td style="text-align: right;">4,203K</td> <td style="text-align: right;">3,517K</td> <td style="text-align: right;">574K</td> </tr>!}
+
+{!<tr> <th> % </th> <td style="text-align: right;">39</td> <td style="text-align: right;">29</td> <td style="text-align: right;">22</td> <td style="text-align: right;">4</td> </tr>!}
+
+{!</table>!}
 
 
 **Social classes**
@@ -68,9 +78,9 @@ Since I left out children (20.8%), I had to multiply all percentages by 1.21 to 
 
 {!<tr> <th> Number of </th> <td style="text-align: right;">656,976</td> <td style="text-align: right;">3,357,125</td> <td style="text-align: right;">1,712,189</td> <td style="text-align: right;">2,072,362</td> <td style="text-align: right;">271,668</td> </tr>!}
 
-{!<tr> <th> % </th> <td>6.70</td> <td>34.23</td> <td>17.46</td> <td>21.13</td> <td>2.77</td> </tr>!}
+{!<tr> <th> % </th> <td style="text-align: right;">6.70</td> <td style="text-align: right;">34.23</td> <td style="text-align: right;">17.46</td> <td style="text-align: right;">21.13</td> <td style="text-align: right;">2.77</td> </tr>!}
 
-{!<tr> <th> % (normalised) </th> <td>8.11</td> <td>41.42</td> <td>21.12</td> <td>25.57</td> <td>3.35</td> </tr>!}
+{!<tr> <th> % (normalised) </th> <td style="text-align: right;">8.11</td> <td style="text-align: right;">41.42</td> <td style="text-align: right;">21.12</td> <td style="text-align: right;">25.57</td> <td style="text-align: right;">3.35</td> </tr>!}
 
 {!</table>!}
 
@@ -92,7 +102,7 @@ map.jpg: Central Intelligence Agency. 1981. Wikimedia Commons, https://commons.w
 
 national_assembly.jpg: *unknown*. Before 1948. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg. Accessed 4 Jan 2026. Public Domain
 
-passport.jpg: Patrik Kunec. 15 Jan 2024. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg. Accessed 4 Jan 2026. Public Domain
+passport.png: Patrik Kunec. 15 Jan 2024. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg. Accessed 4 Jan 2026. Public Domain
 
 rude_pravo.jpg: Rudé Právo. 1 Jun 1967. Ústav pro českou literaturu, https://archiv.ucl.cas.cz/index.php?path=RudePravo/1967/6/1/1.png. Accessed 4 Jan 2026. Watermark present on the archived version was removed. (not in public domain, but I doubt the KSČM will sue me...please don't, this mod is educational)
 

@@ -96,11 +96,9 @@ Q.stb_loyalty = 0.4;
 // The state of the country
 
 // popular opinion
-// national ideology - on a binary scale
-// Support for socialism
-Q.socialism = 40;
-// Support for reform
-Q.pro_reform = 59;
+// national ideology
+Q.socialism = 40; // Support for socialism. Will increase/decrease depending on economic situation and satisfaction with governance.
+Q.pro_reform = 59; // Support for reform. Will increase/decrease depending on economic situation, satisfaction with governance, and purges.
 
 Q.emergency_rule = 0;
 
@@ -110,6 +108,12 @@ Q.coup_progress = 0;
 Q.capital_strike_progress = 0;
 
 Q.budget = 4;
+
+// Proportion of different ethnic groups
+Q.czech = 65
+Q.slovak = 29
+Q.moravian = 22
+Q.hungarian = 4
 
 // Proportion of different social groups
 Q.rural = 8;
@@ -239,10 +243,8 @@ Q.sso_in_government = 1;
 
 // National Front - default governing coalition
 Q.in_national_front = 1;
-// if you're in a coalition, this is an incremental counter for how many times dissent has happened from the right.
+// if you're in a coalition, this is an incremental counter for how many times dissent has happened from other parties. WIP - party pluralism.
 Q.coalition_dissent = 0;
-// dissent from the KPD, in a popular front or left front government
-//Q.kpd_coalition_dissent = 0;
 
 // does the SPD tolerate the government even if it is not a participant?
 Q.ksc_toleration = 0;
@@ -387,7 +389,6 @@ Q.emergency_cuts_timer = 0;
 Q.unemployment_insurance_timer = 0;
 Q.sa_ban_timer = 0;
 Q.sh_ban_timer = 0;
-Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
 
@@ -486,6 +487,4 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 It is a turbulent time for the Czechoslovak Socialist Republic, to say at least. Since the beginning of the 60s, the economy has been stagnating and dissatisfaction with the current state of things increasing.
 
-For the better or worse, winds of change are reaching the country. Due to strained economy and ongoing economic reform, citizens are starting to demand political freedoms. President Novotný and party hardliners resist any change, though.
-
-
+For the better or worse, the winds of change are reaching the country. Due to strained economy and ongoing economic reform, citizens are starting to demand political freedoms. President Novotný and party hardliners resist any change, though.

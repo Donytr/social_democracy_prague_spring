@@ -25,8 +25,6 @@ KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in 
 
 [? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if ksc_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
-
 Internal dissent: [+ dissent_percent : dissent +]
 
 = Government

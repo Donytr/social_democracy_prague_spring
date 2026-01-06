@@ -94,24 +94,23 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +] ?][? if n_elections > 0 : [+ ksc_r_display +] ?]%
+{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +] ?][? if n_elections > 0 : [+ kss_r_display +] ?]%
+{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +] ?][? if n_elections > 0 : [+ css_r_display +] ?]%
+{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +] ?][? if n_elections > 0 : [+ csl_r_display +] ?]%
+{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +] ?][? if n_elections > 0 : [+ sso_r_display +] ?]%
+{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +] ?][? if n_elections > 0 : [+ ssl_r_display +] ?]%
-Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +] ?]%
+{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]%
+
+Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]%
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
 [? if in_national_front and ksc_in_government: National Front ?]
-[? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
-
-[? if ksc_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+// [? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?] // WIP; reuse when party plurality
 
 **Current cabinet:**
 
@@ -444,19 +443,19 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#DC241F; outline: 2px; outline-style: solid;'> </div></td><td>!} **KSČ:** {!</td><td>!} **[+ ksc_r +]%** {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DC241F; outline: 2px; outline-style: solid;'> </div></td><td>!} **KSČ:** {!</td><td>!} ** [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]** {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!} KSS: {!</td><td>!} [+ kss_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!} KSS: {!</td><td>!}  [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FAC469'> </div></td><td>!} ČSS: {!</td><td>!} [+ css_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FAC469'> </div></td><td>!} ČSS: {!</td><td>!}  [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r +]% ?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#FFDC00'> </div></td><td>!} ČSL: {!</td><td>!} [+ csl_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#FFDC00'> </div></td><td>!} ČSL: {!</td><td>!}  [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#0000FF'> </div></td><td>!} SSO: {!</td><td>!} [+ sso_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#0000FF'> </div></td><td>!} SSO: {!</td><td>!}  [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#1A809A'> </div></td><td>!} SSl: {!</td><td>!} [+ ssl_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#1A809A'> </div></td><td>!} SSl: {!</td><td>!}  [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?] {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div></td><td>!} Independent: {!</td><td>!} [+ ind_r +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#DCDCDC'> </div></td><td>!} Independent: {!</td><td>!}  [? if n_elections = 0 : [+ ind_r_1964 +]% ?][? if n_elections > 0 : [+ ind_r +]% ?] {!</td></tr>!}
 {!</table>!}
 
 = Election history
