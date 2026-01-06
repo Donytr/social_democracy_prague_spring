@@ -110,7 +110,7 @@ Q.capital_strike_progress = 0;
 Q.budget = 4;
 
 // Proportion of different ethnic groups
-Q.czech = 65
+Q.czech = 39
 Q.slovak = 29
 Q.moravian = 22
 Q.hungarian = 4
