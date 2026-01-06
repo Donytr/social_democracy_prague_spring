@@ -94,19 +94,19 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
+{!<div class="box" style='background-color:#DC241F;'> </div><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
+{!<div class="box" style='background-color:#8B0000'> </div><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
+{!<div class="box" style='background-color:#FAC469'> </div><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
+{!<div class="box" style='background-color:#FFDC00'> </div><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
+{!<div class="box" style='background-color:#0000FF'> </div><span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]%
+{!<div class="box" style='background-color:#1A809A'> </div><span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
-Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]%
+{!<div class="box" style='background-color:#DCDCDC'> </div>!}Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
 [? if in_national_front and ksc_in_government: National Front ?]
@@ -166,7 +166,7 @@ go-to: menu
 
 There are two ways to roughly divide the population into distinct groups: by ethnic identity and social class. There are four significant ethnic groups within Czechoslovakia:
 
-**Czechs**: The dominant group in Bohemia and the Czechoslovak Republic generally. 65% nationally, 95% in Czechia.
+**Czechs**: The dominant group in Bohemia and the Czechoslovak Republic generally. 39% nationally, 95% in Czechia.
 
 **Slovaks**: The dominant group in Slovakia. 29% nationally, 85% in Slovakia.
 

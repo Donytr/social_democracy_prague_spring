@@ -37,19 +37,19 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [+ ksc_r +]%
+{!<div class="box" style='background-color:#DC241F;'> </div><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
 
-{!<span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [+ kss_r +]%
+{!<div class="box" style='background-color:#8B0000'> </div><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [+ css_r +]%
+{!<div class="box" style='background-color:#FAC469'> </div><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
 
-{!<span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [+ csl_r +]%
+{!<div class="box" style='background-color:#FFDC00'> </div><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
 
-{!<span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [+ sso_r +]%
+{!<div class="box" style='background-color:#0000FF'> </div><span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<span class="tooltip-text" title="Freedom Party">SSl</span>!}: [+ ssl_r +]%
+{!<div class="box" style='background-color:#1A809A'> </div><span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
-Independents: [+ ind_r +]%
+{!<div class="box" style='background-color:#DCDCDC'> </div>!}Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
 [? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 
