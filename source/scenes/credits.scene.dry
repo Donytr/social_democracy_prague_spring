@@ -14,17 +14,21 @@ Here are all sources referenced during the creation of this mod.
 
 = Books
 
-**Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. https://archive.org/details/from-the-prague-spring-to-normalization
+**Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. {!<a target="_blank" href="https://archive.org/details/from-the-prague-spring-to-normalization">Archive.org</a>!}
 
-**Bašta, Jiří**. Lidové milice 1948 - 1969: Nelegální armáda Komunistické strany Československa (People's Militias 1948 - 1969: Illegal military of the KSČ). Institue for the Study of Totalitarian Regimes. https://archive.org/details/lidove-milice, https://www.ustrcr.cz/wp-content/uploads/2017/10/LIDOVE-MILICE.pdf
+**Bašta, Jiří**. Lidové milice 1948 - 1969: Nelegální armáda Komunistické strany Československa. {!<a target="_blank" href="https://www.ustrcr.cz/wp-content/uploads/2017/10/LIDOVE-MILICE.pdf">Institute for the Study of Totalitarian Regimes</a>!}. {!<a target="_blank" href="https://archive.org/details/lidove-milice">Archive.org</a>!}
 
-**International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up, https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml
+**International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. {!<a target="_blank" href="https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up">Archive.org</a>!}, {!<a target="_blank" href="https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml">IMF eLibrary</a>!}
 
-**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948
+**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. {!<a target="_blank" href="https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948">Archive.org</a>!}
+
+**Sokolová, Věra**. Cultural Politics of Ethnicity: Discourses on Roma in Communist Czechoslovakia. ibidem-Verlag, 2008. {!<a target="_blank" href="https://archive.org/details/cultural-politics-of-ethnicity-discourses-on-roma-in-communist-czechoslovakia">Archive.org</a>!}, {!<a target="_blank" href="https://www.researchgate.net/publication/323387973_Cultural_Politics_of_Ethnicity_Discourses_on_Roma_in_Communist_Czechoslovakia">ResearchGate</a>!}
 
 - @credits: Back
 
 @articles
+
+= Articles
 
 **armada.vojenstvi.cz**. Rubrika: Čísla a fakta (number of Czechoslovak soldiers in 1966). https://armada.vojenstvi.cz/povalecna/cisla-fakta
 
@@ -33,6 +37,8 @@ Here are all sources referenced during the creation of this mod.
 - @credits: Back
 
 @data
+
+= Data
 
 **Czech Statistical Office**. Czechoslovak Population Census – 1970. 1970. https://csu.gov.cz/ceskoslovenske-scitani-lidu-1970
 
@@ -47,22 +53,24 @@ This section details my methodology - where I got my information from, how I pro
 
 @demographics
 
-**Ethnicities**
+= Ethnicities
 
 Data about Czech, Slovak, and Hungarian representation comes from the 1970 Czechoslovak census. Things were trickier with Moravians, as the Communist regime did not recognise them as a distinct ethnic group and generally suppressed any discussion regarding Moravian ethnicity. Thus, I assumed 90% of those lived in Moravia (3,734K) and identified as Czech in the census (3,517K) were Moravian. This is a very crude method, but likely not too far from reality...I hope.
 
+As for Roma, I used a figure from the 1970s (300K), cited by *Cultural Politics of Ethnicity: Discourses on Roma in Communist Czechoslovakia* by Věra Sokolová. It is not too precise, but that is enough for this mod.
+
 {!<table>!}
 
-{!<tr> <th> </th> <th>Czechs</th> <th>Slovaks</th> <th>Moravians</th> <th>Hungarians</th> </tr>!}
+{!<tr> <th> </th> <th>Czechs</th> <th>Slovaks</th> <th>Moravians</th> <th>Hungarians</th> <th>Roma</th></tr>!}
 
-{!<tr> <th> Number of </th> <td style="text-align: right;">5,595K</td> <td style="text-align: right;">4,203K</td> <td style="text-align: right;">3,517K</td> <td style="text-align: right;">574K</td> </tr>!}
+{!<tr> <th> Number of </th> <td style="text-align: right;">5,595K</td> <td style="text-align: right;">4,203K</td> <td style="text-align: right;">3,517K</td> <td style="text-align: right;">574K</td> <td style="text-align: right;">300K</td> </tr>!}
 
-{!<tr> <th> % </th> <td style="text-align: right;">39</td> <td style="text-align: right;">29</td> <td style="text-align: right;">22</td> <td style="text-align: right;">4</td> </tr>!}
+{!<tr> <th> % </th> <td style="text-align: right;">39</td> <td style="text-align: right;">29</td> <td style="text-align: right;">22</td> <td style="text-align: right;">4</td> <td style="text-align: right;">2</td> </tr>!}
 
 {!</table>!}
 
 
-**Social classes**
+= Social classes
 
 Data was once again retrieved from the 1970 census. For all social classes, I left out children below 15 years of age, as they couldn't vote yet. For the working class, middle class, and the rural class, I added together values in the following rows above the "Economically inactive" row: *ekonomicky aktivní* (economically active), *- pomáhající* (helpers), *- ženy v domácnosti* (housewives), *- učni* (apprentices), *- děti do 15 let* (minors younger than 15 years), and *- ostatní dospělí* (other adults). Below the "Economically inactive" row, I counted the following rows: *ženy v domácnosti* (housewives), *učni, žáci, studenti, děti* (apprentices, pupils, students, children), and *ostatní dospělí* (other adults).
 
@@ -90,6 +98,13 @@ Since I left out children (20.8%), I had to multiply all percentages by 1.21 to 
 
 @images
 
+= Images
+
+
+**Newspapers**
+
+rude_pravo.jpg: Rudé Právo. 15 Apr 1966. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/4/15/1.png">Ústav pro českou literaturu</a>!}. Accessed 18 Jan 2026. Watermark present on the archived version was removed. Note: Not in public domain, but I doubt the KSČM will sue me...Please don't.
+
 **People**
 
 
@@ -98,14 +113,14 @@ Since I left out children (20.8%), I had to multiply all percentages by 1.21 to 
 
 
 **Other**
-map.jpg: Central Intelligence Agency. 1981. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Ceskoslovenska_Republika_-_DPLA_-_fcda1e759627a2f5f063de83c82a78f9.jpg. Accessed 1 Jan 2026. Public Domain
 
-national_assembly.jpg: *unknown*. Before 1948. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg. Accessed 4 Jan 2026. Public Domain
+ideology.jpg: Dominik 'Donytr' Trunda. 18 Jan 2026. Logo of KSČ used: {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Emblem_of_the_Communist_Party_of_Czechoslovakia_1948-1990.png">Wikimedia Commons</a>!}. Accessed 18 Jan 2026. Public Domain
 
-passport.png: Patrik Kunec. 15 Jan 2024. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg. Accessed 4 Jan 2026. Public Domain
+map.jpg: Central Intelligence Agency. 1981. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Ceskoslovenska_Republika_-_DPLA_-_fcda1e759627a2f5f063de83c82a78f9.jpg">Wikimedia Commons</a>!}. Accessed 1 Jan 2026. Public Domain
 
-rude_pravo.jpg: Rudé Právo. 1 Jun 1967. Ústav pro českou literaturu, https://archiv.ucl.cas.cz/index.php?path=RudePravo/1967/6/1/1.png. Accessed 4 Jan 2026. Watermark present on the archived version was removed. (not in public domain, but I doubt the KSČM will sue me...please don't, this mod is educational)
+national_assembly.jpg: *unknown*. Before 1948. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg">Wikimedia Commons</a>!}. Accessed 4 Jan 2026. Public Domain
 
+passport.png: Patrik Kunec. 15 Jan 2024. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg">Wikimedia Commons</a>!}. Accessed 4 Jan 2026. Public Domain
 
 - @credits: Back
 

@@ -21,7 +21,7 @@ Week [+ week +], [+ month : month +] [+ year +]
 Party resources: [+ resources +]
 
 KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in government - ?][? if ksc_toleration == 0 and ksc_in_government == 0 and ksc_caretaker == 0 : opposition ?][? if ksc_caretaker : caretaker government ?]
-[? if in_weimar_coalition and ksc_in_government: Weimar Coalition ?][? if in_grand_coalition and ksc_in_government: Grand Coalition ?][? if in_popular_front and ksc_in_government: Popular Front ?][? if in_left_front and ksc_in_government: Left Front ?][? if in_ksc_majority and ksc_in_government: SPD majority ?][? if in_minority_government and ksc_in_government: minority government ?][? if in_emergency_government and ksc_in_government: emergency government ?]
+[? if in_national_front and ksc_in_government: National Front ?]
 
 [? if ksc_in_government and not in_ksc_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
 
@@ -37,19 +37,19 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<div class="box" style='background-color:#DC241F;'> </div><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
+{!<div class="box" style='background-color:#DC241F;'> </div> <span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
 
-{!<div class="box" style='background-color:#8B0000'> </div><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
+{!<div class="box" style='background-color:#8B0000'> </div> <span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
 
-{!<div class="box" style='background-color:#FAC469'> </div><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
+{!<div class="box" style='background-color:#FAC469'> </div> <span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
 
-{!<div class="box" style='background-color:#FFDC00'> </div><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
+{!<div class="box" style='background-color:#FFDC00'> </div> <span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
 
-{!<div class="box" style='background-color:#0000FF'> </div><span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
+{!<div class="box" style='background-color:#0000FF'> </div> <span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<div class="box" style='background-color:#1A809A'> </div><span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
+{!<div class="box" style='background-color:#1A809A'> </div> <span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
-{!<div class="box" style='background-color:#DCDCDC'> </div>!}Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
+{!<div class="box" style='background-color:#DCDCDC'> </div>!} Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
 [? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -62,8 +62,6 @@ Inflation: [+ inflation_2 +]%
 Unemployment: [+ unemployed_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
-
-
 
 # = Public Opinion
 
@@ -111,13 +109,17 @@ if (Q.lm_strength) {
 
 {!<span class="tooltip-text" title="Public Security">VB</span>!} militarisation: [+ vb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="Public Security">VB</span>!} loyalty: [+ vb_loyalty : loyalty +]
-
 {!<span class="tooltip-text" title="State Security">StB</span>!}: [+ stb_strength +] thousand members
 
 {!<span class="tooltip-text" title="State Security">StB</span>!} efficiency: [+ stb_loyalty : militancy +]
 
 {!<span class="tooltip-text" title="State Security">StB</span>!} loyalty: [+ stb_loyalty : loyalty +]
+
+@diplomacy
+
+= International relations
+
+Moscow: [+ relation_moscow : moscow +]
 
 @polls
 on-arrival: {!
@@ -142,6 +144,18 @@ SSO: [+ sso_votes +]%
 SSl: [+ ssl_votes +]%
 
 Independent: [+ ind_votes +]%
+
+Detailed results for each ethnicity
+
+Czechs: KSČ: [+ czech_ksc_display +]%, KSS: [+ czech_kss_display +]%, ČSS: [+ czech_css_display +]%, ČSL: [+ czech_csl_display +]%, SSO: [+ czech_sso_display +]%; SSl: [+ czech_ssl_display +]%, Independent: [+ czech_ind_display +]%
+
+Slovaks: KSČ: [+ slovak_ksc_display +]%, KSS: [+ slovak_kss_display +]%, ČSS: [+ slovak_css_display +]%, ČSL: [+ slovak_csl_display +]%, SSO: [+ slovak_sso_display +]%; SSl: [+ slovak_ssl_display +]%, Independent: [+ slovak_ind_display +]%
+
+Moravians: KSČ: [+ moravian_ksc_display +]%, KSS: [+ moravian_kss_display +]%, ČSS: [+ moravian_css_display +]%, ČSL: [+ moravian_csl_display +]%, SSO: [+ moravian_sso_display +]%; SSl: [+ moravian_ssl_display +]%, Independent: [+ moravian_ind_display +]%
+
+Hungarians: KSČ: [+ hungarian_ksc_display +]%, KSS: [+ hungarian_kss_display +]%, ČSS: [+ hungarian_css_display +]%, ČSL: [+ hungarian_csl_display +]%, SSO: [+ hungarian_sso_display +]%; SSl: [+ hungarian_ssl_display +]%, Independent: [+ hungarian_ind_display +]%
+
+Roma: KSČ: [+ roma_ksc_display +]%, KSS: [+ roma_kss_display +]%, ČSS: [+ roma_css_display +]%, ČSL: [+ roma_csl_display +]%, SSO: [+ roma_sso_display +]%; SSl: [+ roma_ssl_display +]%, Independent: [+ roma_ind_display +]%
 
 Detailed results for each demographic
 

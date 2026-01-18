@@ -2,15 +2,17 @@
 
 = Images (general):
 
-map.jpg: Central Intelligence Agency. 1981. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Ceskoslovenska_Republika_-_DPLA_-_fcda1e759627a2f5f063de83c82a78f9.jpg. Accessed 1 Jan 2026. Public Domain
+ideology.jpg: Dominik "Donytr" Trunda. 18 Jan 2026. Logo of KSČ used: {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Emblem_of_the_Communist_Party_of_Czechoslovakia_1948-1990.png">Wikimedia Commons</a>!}. Accessed 18 Jan 2026. Public Domain
 
-national_assembly.jpg: *unknown*. Before 1948. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg. Accessed 4 Jan 2026. Public Domain
+map.jpg: Central Intelligence Agency. 1981. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Ceskoslovenska_Republika_-_DPLA_-_fcda1e759627a2f5f063de83c82a78f9.jpg">Wikimedia Commons</a>!}. Accessed 1 Jan 2026. Public Domain
 
-passport.png: Patrik Kunec. 15 Jan 2024. Wikimedia Commons, https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg. Accessed 4 Jan 2026. Public Domain
+national_assembly.jpg: *unknown*. Before 1948. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Budova_Pra%C5%BEsk%C3%A9_burzy_s_p%C5%99ed_48.jpg">Wikimedia Commons</a>!}. Accessed 4 Jan 2026. Public Domain
+
+passport.png: Patrik Kunec. 15 Jan 2024. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Passport_of_the_Czechoslovak_Socialist_Republic,_issued_in_1985_-_cover.jpg">Wikimedia Commons</a>!}. Accessed 4 Jan 2026. Public Domain
 
 = Images (newspapers):
 
-rude_pravo.jpg: Rudé Právo. 1 Jun 1967. Ústav pro českou literaturu, https://archiv.ucl.cas.cz/index.php?path=RudePravo/1967/6/1/1.png. Accessed 4 Jan 2026. Watermark present on the archived version was removed. (not in public domain, but I doubt the KSČM will sue me...please don't, this mod is educational)
+rude_pravo.jpg: Rudé Právo. 15 Apr 1966. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/4/15/1.png">Ústav pro českou literaturu</a>!}. Accessed 18 Jan 2026. Watermark present on the archived version was removed. Note: Not in public domain, but I doubt the KSČM will sue me. Please don't.
 
 = Images (posters):
 

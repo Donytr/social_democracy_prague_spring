@@ -10,7 +10,7 @@ Herein contains relevant information about the government and politics of the Cz
 @menu
 
 - @government: Czechoslovakia's system of government
-- @czechoslovak_timeline: Timeline of Czechoslovakia before 1967
+- @czechoslovak_timeline: Timeline of Czechoslovakia before 1966
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -34,7 +34,7 @@ The prime minister is, along with deputy ministers, chosen by the Central Commit
 @czechoslovak_timeline
 go-to: menu
 
-= Timeline of Czechoslovakia and KSČ (until 1967)
+= Timeline of Czechoslovakia and KSČ (until 1966)
 
 **1914**: The Great War begins. Although many Czechs and Slovaks are initially loyal to Austria-Hungary, this gradually changes, with thousands defecting to form the Czechoslovak Legion.
 
@@ -48,7 +48,7 @@ go-to: menu
 
 **1928**: In July, the KSČ organises the "Red Day" (*Rudý Den*), a protest in Prague aimed at proving the party's capability at mobilising the masses. However, the event is a failure, as only a few thousand of the anticipated 120,000 people attend. This significantly increases the criticism the moderate party leadership faces from radicals such as Klement Gottwald, who is leading an unofficial group of communist officials called the "Karlín Boys".
 
-**1929**: The Fifth Congress of the KSČ is hastily organised. The existing leadership is dismissed, Gottwald is elected the new General Secretary. Many members of the KSČ leave, tens of thousands are purged for criticising Gottwald. Many later form the Communist Party of Czechoslovakia, often called the Leninists.
+**1929**: The Fifth Congress of the KSČ is hastily organised. The existing leadership is dismissed, Gottwald is elected the new General Secretary. Many members of the KSČ leave, tens of thousands are purged for criticising Gottwald. Many later form their own party, often being the Leninists.
 
 **1932**: The Leninists merge with the Czechoslovak Social-Democratic Party.
 
@@ -94,17 +94,17 @@ First Secretary: [+ first_secretary +]
 
 National Assembly composition:
 
-{!<div class="box" style='background-color:#DC241F;'> </div><span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
+{!<div class="box" style='background-color:#DC241F;'> </div> <span class="tooltip-text" title="Communist Party of Czechoslovakia">KSČ</span>!}: [? if n_elections = 0 : [+ ksc_r_1964 +]% ?][? if n_elections > 0 : [+ ksc_r +]% ?]
 
-{!<div class="box" style='background-color:#8B0000'> </div><span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
+{!<div class="box" style='background-color:#8B0000'> </div> <span class="tooltip-text" title="Communist Party of Slovakia">KSS</span>!}: [? if n_elections = 0 : [+ kss_r_1964 +]% ?][? if n_elections > 0 : [+ kss_r +]% ?]
 
-{!<div class="box" style='background-color:#FAC469'> </div><span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
+{!<div class="box" style='background-color:#FAC469'> </div> <span class="tooltip-text" title="Czechoslovak Socialist Party">ČSS</span>!}: [? if n_elections = 0 : [+ css_r_1964 +]% ?][? if n_elections > 0 : [+ css_r+]% ?]
 
-{!<div class="box" style='background-color:#FFDC00'> </div><span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
+{!<div class="box" style='background-color:#FFDC00'> </div> <span class="tooltip-text" title="Czechoslovak People's Party">ČSL</span>!}: [? if n_elections = 0 : [+ csl_r_1964 +]% ?][? if n_elections > 0 : [+ csl_r +]% ?]
 
-{!<div class="box" style='background-color:#0000FF'> </div><span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
+{!<div class="box" style='background-color:#0000FF'> </div> <span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<div class="box" style='background-color:#1A809A'> </div><span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
+{!<div class="box" style='background-color:#1A809A'> </div>< span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
 {!<div class="box" style='background-color:#DCDCDC'> </div>!}Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
@@ -173,6 +173,8 @@ There are two ways to roughly divide the population into distinct groups: by eth
 **Moravians**: The dominant group in Moravia-Silesia. It is underrepresented and discussions of Moravian identity have been historically suppressed. It is not officially listed in censuses. 22% nationally.
 
 **Hungarians**: The dominant group in southern Slovakia. It faces frequent discrimination. 4% nationally, 12% in Slovakia.
+
+**Roma**: An ethnic group which faces frequnt stereotypisation and racism. Measures like forced settlement have been enacted against it in order to dilute its identity. The KSČ does not recognise it as an ethnic group, instead calling all Roma anti-social.
 
 Then there are social/economic classes:
 

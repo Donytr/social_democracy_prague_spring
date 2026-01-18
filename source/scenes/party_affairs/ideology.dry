@@ -1,0 +1,58 @@
+title: Questions of Ideology
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: ideology_timer = 0
+on-arrival: week_actions += 1; old_ideology = ideology; ideology_timer = 16 // every 4 months
+card-image: img/ideology.jpg
+max-visits: 3
+#subtitle: Setting the party's ideological direction.
+
+= Questions of Ideology
+
+The KSČ is torn between three major ideological camps. What should be our primary ideological guidance for now?
+
+[? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
+
+- @reformist: We must reform our current system to be more democratic.
+- @pragmatist: The current status quo is the best path forward. However, if the people demand it, then we shall undertake moderate reform.
+- @hardliner: The counter-revolutionary 'reformist' movement must be crushed, one way or another.
+- @easy_discard
+
+@class_struggle
+on-arrival: {!
+if (Q.ideology && Q.ideology != "reformist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "reformist"; reformist_strength += 10; reformist_dissent -= 5; relation_moscow += 0.02; hardliner_dissent += 3; pragmatist_dissent =+ 0.5
+
+The reformist wing of our party is in support of reforming our institutions to be more democratic and representative of public opinion. However, hardliners protest and invoke the memory of Hungarian Uprising of 1956 as a warning. 
+
+@pragmatist
+on-arrival: {!
+if (Q.ideology && Q.ideology != "pragmatist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "pragmatist"; pragmatist_strength += 10; pragmatist_dissent -= 10; reformist_dissent -= 5; hardliner_dissent -= 2.5
+
+Pragmatists in the party prefer preserving the current status quo and perhaps lifting some oppressive measures. [? if pro_reform >= 45 : However, given the extent of public support behind the reform movement, they are willing to moderately amend our socialist system and fulfill some of its demands. ?]
+
+@labor
+on-arrival: {!
+if (Q.ideology && Q.ideology != "labor") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "hardliner"; hardliner_strength += 10; relation_moscow -= -0.03; pragmatist_dissent += 3; reformist_dissent += 6; pro_reform += 1
+
+The hardliner wing of the party seeks to maintain the current system and perhaps give the party even more powers. [? if pro_reform >= 50 : However, given the extent of public support behind the reform movement, maintaining this course might be difficult. ?] Reformists in the party are unhappy by this, to say at least, and even pragmatists feel unease.
+
+@changed
+on-arrival: reformist_dissent += 5; pragmatist_dissent += 5; hardliner_dissent += 5
+
+We have changed ideologies. Many in the party feel unmoored.
