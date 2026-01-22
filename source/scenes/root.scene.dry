@@ -23,7 +23,7 @@ Q.started = 1;
 Q.time = 1;
 Q.year = 1966;
 Q.month = 4;
-Q.week = 3
+Q.week = 3;
 // how many actions have been taken this week?
 Q.week_actions = 0;
 
@@ -106,23 +106,23 @@ Q.budget = 4;
 Q.
 
 // autonomy & minorities. WIP
-Q.federalisation = 0 // 0 = full centralisation, 1 = czechia and slovakia are federalised
-Q.federal_moravia = 0 // 0 = Moravia is part of Czechia. 1 = Moravia is a federal state (much to the dismay of Czechs). 
-Q.federal_hungary = 0 // 0 = Hungarian parts of Slovakia are part of Slovakia. 1 = Hungarians have their own federal state (much to the dismay of everyone)
-Q.minority_body_hungarian = 0 // 0 = there is no Hungarian minority body. 1 = there is one.
-Q.minority_body_roma = 0 // there is no Roma minority body. 1 = there is one
-Q.roma_resettlement = 1 // 0 = forced settlement policy was discontinued. 1 = forced settlement policy in place
-Q.roma_sterilisation = 0 // 0 = there is no forced sterilisation of Roma women. 1 = the policy is in place.
+Q.federalisation = 0; // 0 = full centralisation, 1 = czechia and slovakia are federalised
+Q.federal_moravia = 0; // 0 = Moravia is part of Czechia. 1 = Moravia is a federal state (much to the dismay of Czechs). 
+Q.federal_hungary = 0; // 0 = Hungarian parts of Slovakia are part of Slovakia. 1 = Hungarians have their own federal state (much to the dismay of everyone)
+Q.minority_body_hungarian = 0; // 0 = there is no Hungarian minority body. 1 = there is one.
+Q.minority_body_roma = 0; // there is no Roma minority body. 1 = there is one
+Q.roma_resettlement = 1; // 0 = forced settlement policy was discontinued. 1 = forced settlement policy in place
+Q.roma_sterilisation = 0; // 0 = there is no forced sterilisation of Roma women. 1 = the policy is in place.
 
 // international relations WIP
-Q.relation_moscow = 0.15 // when reaches 1, Warsaw Pact invasion is triggered
+Q.relation_moscow = 0.15; // when reaches 1, Warsaw Pact invasion is triggered
 
 // Proportion of different ethnic groups
-Q.czech = 39
-Q.slovak = 29
-Q.moravian = 22
-Q.hungarian = 4
-Q.roma = 2
+Q.czech = 39;
+Q.slovak = 29;
+Q.moravian = 22;
+Q.hungarian = 4;
+Q.roma = 2;
 
 // Proportion of different social groups
 Q.rural = 8;
@@ -132,17 +132,15 @@ Q.pension = 26;
 Q.intell = 4;
 //Q.unemployed = 8.6;
 
-// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
-
 // income for industrial workers in reichsmarks/year - 1928 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
 Q.income = 1600; //WIP
 // what about incomes for different classes? rural workers? middle-class workers?
 
 // inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+Q.inflation = 2.9; //WIP
 
 // economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
-Q.economic_growth = 4.4;
+Q.economic_growth = 4.4; // WIP
 
 // economic expansion timer
 Q.economic_expansion = 0;
