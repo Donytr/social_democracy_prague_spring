@@ -48,7 +48,7 @@ max-cards: 4
 
 @party
 title: Party Affairs
-card-image: {!rude_pravo!}
+card-image: img/rude_pravo.jpg
 is-deck: true
 
 #- @party_affairs
