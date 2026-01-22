@@ -69,7 +69,7 @@ Q.czech = 46;
 Q.slovak = 13;
 Q.moravian = 14;
 Q.hungarian = 25;
-Q.¨roma = 14;
+Q.roma = 14;
 
 Q.classes = ['rural', 'working', 'middle', 'intell', 'pension'];
 Q.parties = ['ksc', 'kss', 'css', 'csl', 'sso', 'ssl', 'ind'];
