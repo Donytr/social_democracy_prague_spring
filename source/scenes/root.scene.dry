@@ -231,47 +231,47 @@ Q.pension_ssl = 10;
 Q.pension_ind = 15;
 
 // Support for party by ethnic group
-Q.czech_ksc = ((rural_ksc*czech_rural)+(working_ksc*czech_working)+(middle_ksc*czech_middle)+(intell_ksc*czech_intell)+(pension_ksc*czech_pension)) // +(czech_religion*mul_religion))*(1.15*slovak_autonomy*moravian_autonomy*hungarian_autonomy*roma_status) // WIP...
-Q.slovak_ksc = ((rural_ksc*slovak_rural)+(working_ksc*slovak_working)+(middle_ksc*slovak_middle)+(intell_ksc*slovak_intell)+(pension_ksc*slovak_pension))
-Q.moravian_ksc = ((rural_ksc*moravian_rural)+(working_ksc*moravian_working)+(middle_ksc*moravian_middle)+(intell_ksc*moravian_intell)+(pension_ksc*moravian_pension))
-Q.hungarian_ksc = ((rural_ksc*hungarian_rural)+(working_ksc*hungarian_working)+(middle_ksc*hungarian_middle)+(intell_ksc*hungarian_intell)+(pension_ksc*hungarian_pension))
-Q.roma_ksc = ((rural_ksc*roma_rural)+(working_ksc*roma_working)+(middle_ksc*roma_middle)+(intell_ksc*roma_intell)+(pension_ksc*roma_pension))
+Q.czech_ksc = ((rural_ksc*czech_rural)+(working_ksc*czech_working)+(middle_ksc*czech_middle)+(intell_ksc*czech_intell)+(pension_ksc*czech_pension));
+Q.slovak_ksc = ((rural_ksc*slovak_rural)+(working_ksc*slovak_working)+(middle_ksc*slovak_middle)+(intell_ksc*slovak_intell)+(pension_ksc*slovak_pension));
+Q.moravian_ksc = ((rural_ksc*moravian_rural)+(working_ksc*moravian_working)+(middle_ksc*moravian_middle)+(intell_ksc*moravian_intell)+(pension_ksc*moravian_pension));
+Q.hungarian_ksc = ((rural_ksc*hungarian_rural)+(working_ksc*hungarian_working)+(middle_ksc*hungarian_middle)+(intell_ksc*hungarian_intell)+(pension_ksc*hungarian_pension));
+Q.roma_ksc = ((rural_ksc*roma_rural)+(working_ksc*roma_working)+(middle_ksc*roma_middle)+(intell_ksc*roma_intell)+(pension_ksc*roma_pension));
 
-Q.czech_kss = ((rural_kss*czech_rural)+(working_kss*czech_working)+(middle_kss*czech_middle)+(intell_kss*czech_intell)+(pension_kss*czech_pension))
-Q.slovak_kss = ((rural_kss*slovak_rural)+(working_kss*slovak_working)+(middle_kss*slovak_middle)+(intell_kss*slovak_intell)+(pension_kss*slovak_pension))
-Q.moravian_kss = ((rural_kss*moravian_rural)+(working_kss*moravian_working)+(middle_kss*moravian_middle)+(intell_kss*moravian_intell)+(pension_kss*moravian_pension))
-Q.hungarian_kss = ((rural_kss*hungarian_rural)+(working_kss*hungarian_working)+(middle_kss*hungarian_middle)+(intell_kss*hungarian_intell)+(pension_kss*hungarian_pension))
-Q.roma_kss = ((rural_kss*roma_rural)+(working_kss*roma_working)+(middle_kss*roma_middle)+(intell_kss*roma_intell)+(pension_kss*roma_pension))
+Q.czech_kss = ((rural_kss*czech_rural)+(working_kss*czech_working)+(middle_kss*czech_middle)+(intell_kss*czech_intell)+(pension_kss*czech_pension));
+Q.slovak_kss = ((rural_kss*slovak_rural)+(working_kss*slovak_working)+(middle_kss*slovak_middle)+(intell_kss*slovak_intell)+(pension_kss*slovak_pension));
+Q.moravian_kss = ((rural_kss*moravian_rural)+(working_kss*moravian_working)+(middle_kss*moravian_middle)+(intell_kss*moravian_intell)+(pension_kss*moravian_pension));
+Q.hungarian_kss = ((rural_kss*hungarian_rural)+(working_kss*hungarian_working)+(middle_kss*hungarian_middle)+(intell_kss*hungarian_intell)+(pension_kss*hungarian_pension));
+Q.roma_kss = ((rural_kss*roma_rural)+(working_kss*roma_working)+(middle_kss*roma_middle)+(intell_kss*roma_intell)+(pension_kss*roma_pension));
 
-Q.czech_css = ((rural_css*czech_rural)+(working_css*czech_working)+(middle_css*czech_middle)+(intell_css*czech_intell)+(pension_css*czech_pension))
-Q.slovak_css = ((rural_css*slovak_rural)+(working_css*slovak_working)+(middle_css*slovak_middle)+(intell_css*slovak_intell)+(pension_css*slovak_pension))
-Q.moravian_css = ((rural_css*moravian_rural)+(working_css*moravian_working)+(middle_css*moravian_middle)+(intell_css*moravian_intell)+(pension_css*moravian_pension))
-Q.hungarian_css = ((rural_css*hungarian_rural)+(working_css*hungarian_working)+(middle_css*hungarian_middle)+(intell_css*hungarian_intell)+(pension_css*hungarian_pension))
-Q.roma_css = ((rural_css*roma_rural)+(working_css*roma_working)+(middle_css*roma_middle)+(intell_css*roma_intell)+(pension_css*roma_pension))
+Q.czech_css = ((rural_css*czech_rural)+(working_css*czech_working)+(middle_css*czech_middle)+(intell_css*czech_intell)+(pension_css*czech_pension));
+Q.slovak_css = ((rural_css*slovak_rural)+(working_css*slovak_working)+(middle_css*slovak_middle)+(intell_css*slovak_intell)+(pension_css*slovak_pension));
+Q.moravian_css = ((rural_css*moravian_rural)+(working_css*moravian_working)+(middle_css*moravian_middle)+(intell_css*moravian_intell)+(pension_css*moravian_pension));
+Q.hungarian_css = ((rural_css*hungarian_rural)+(working_css*hungarian_working)+(middle_css*hungarian_middle)+(intell_css*hungarian_intell)+(pension_css*hungarian_pension));
+Q.roma_css = ((rural_css*roma_rural)+(working_css*roma_working)+(middle_css*roma_middle)+(intell_css*roma_intell)+(pension_css*roma_pension));
 
-Q.czech_csl = ((rural_csl*czech_rural)+(working_csl*czech_working)+(middle_csl*czech_middle)+(intell_csl*czech_intell)+(pension_csl*czech_pension))
-Q.slovak_csl = ((rural_csl*slovak_rural)+(working_csl*slovak_working)+(middle_csl*slovak_middle)+(intell_csl*slovak_intell)+(pension_csl*slovak_pension))
-Q.moravian_csl = ((rural_csl*moravian_rural)+(working_csl*moravian_working)+(middle_csl*moravian_middle)+(intell_csl*moravian_intell)+(pension_csl*moravian_pension))
-Q.hungarian_csl = ((rural_csl*hungarian_rural)+(working_csl*hungarian_working)+(middle_csl*hungarian_middle)+(intell_csl*hungarian_intell)+(pension_csl*hungarian_pension))
-Q.roma_csl = ((rural_csl*roma_rural)+(working_csl*roma_working)+(middle_csl*roma_middle)+(intell_csl*roma_intell)+(pension_csl*roma_pension))
+Q.czech_csl = ((rural_csl*czech_rural)+(working_csl*czech_working)+(middle_csl*czech_middle)+(intell_csl*czech_intell)+(pension_csl*czech_pension));
+Q.slovak_csl = ((rural_csl*slovak_rural)+(working_csl*slovak_working)+(middle_csl*slovak_middle)+(intell_csl*slovak_intell)+(pension_csl*slovak_pension));
+Q.moravian_csl = ((rural_csl*moravian_rural)+(working_csl*moravian_working)+(middle_csl*moravian_middle)+(intell_csl*moravian_intell)+(pension_csl*moravian_pension));
+Q.hungarian_csl = ((rural_csl*hungarian_rural)+(working_csl*hungarian_working)+(middle_csl*hungarian_middle)+(intell_csl*hungarian_intell)+(pension_csl*hungarian_pension));
+Q.roma_csl = ((rural_csl*roma_rural)+(working_csl*roma_working)+(middle_csl*roma_middle)+(intell_csl*roma_intell)+(pension_csl*roma_pension));
 
-Q.czech_sso = ((rural_sso*czech_rural)+(working_sso*czech_working)+(middle_sso*czech_middle)+(intell_sso*czech_intell)+(pension_sso*czech_pension))
-Q.slovak_sso = ((rural_sso*slovak_rural)+(working_sso*slovak_working)+(middle_sso*slovak_middle)+(intell_sso*slovak_intell)+(pension_sso*slovak_pension))
-Q.moravian_sso = ((rural_sso*moravian_rural)+(working_sso*moravian_working)+(middle_sso*moravian_middle)+(intell_sso*moravian_intell)+(pension_sso*moravian_pension))
-Q.hungarian_sso = ((rural_sso*hungarian_rural)+(working_sso*hungarian_working)+(middle_sso*hungarian_middle)+(intell_sso*hungarian_intell)+(pension_sso*hungarian_pension))
-Q.roma_sso = ((rural_sso*roma_rural)+(working_sso*roma_working)+(middle_sso*roma_middle)+(intell_sso*roma_intell)+(pension_sso*roma_pension))
+Q.czech_sso = ((rural_sso*czech_rural)+(working_sso*czech_working)+(middle_sso*czech_middle)+(intell_sso*czech_intell)+(pension_sso*czech_pension));
+Q.slovak_sso = ((rural_sso*slovak_rural)+(working_sso*slovak_working)+(middle_sso*slovak_middle)+(intell_sso*slovak_intell)+(pension_sso*slovak_pension));
+Q.moravian_sso = ((rural_sso*moravian_rural)+(working_sso*moravian_working)+(middle_sso*moravian_middle)+(intell_sso*moravian_intell)+(pension_sso*moravian_pension));
+Q.hungarian_sso = ((rural_sso*hungarian_rural)+(working_sso*hungarian_working)+(middle_sso*hungarian_middle)+(intell_sso*hungarian_intell)+(pension_sso*hungarian_pension));
+Q.roma_sso = ((rural_sso*roma_rural)+(working_sso*roma_working)+(middle_sso*roma_middle)+(intell_sso*roma_intell)+(pension_sso*roma_pension));
 
-Q.czech_ssl = ((rural_ssl*czech_rural)+(working_ssl*czech_working)+(middle_ssl*czech_middle)+(intell_ssl*czech_intell)+(pension_ssl*czech_pension)) // +(czech_religion*mul_religion))*(1.15*slovak_autonomy*moravian_autonomy*hungarian_autonomy*roma_status) // WIP...
-Q.slovak_ssl = ((rural_ssl*slovak_rural)+(working_ssl*slovak_working)+(middle_ssl*slovak_middle)+(intell_ssl*slovak_intell)+(pension_ssl*slovak_pension))
-Q.moravian_ssl = ((rural_ssl*moravian_rural)+(working_ssl*moravian_working)+(middle_ssl*moravian_middle)+(intell_ssl*moravian_intell)+(pension_ssl*moravian_pension))
-Q.hungarian_ssl = ((rural_ssl*hungarian_rural)+(working_ssl*hungarian_working)+(middle_ssl*hungarian_middle)+(intell_ssl*hungarian_intell)+(pension_ssl*hungarian_pension))
-Q.roma_ssl = ((rural_ssl*roma_rural)+(working_ssl*roma_working)+(middle_ssl*roma_middle)+(intell_ssl*roma_intell)+(pension_ssl*roma_pension))
+Q.czech_ssl = ((rural_ssl*czech_rural)+(working_ssl*czech_working)+(middle_ssl*czech_middle)+(intell_ssl*czech_intell)+(pension_ssl*czech_pension));
+Q.slovak_ssl = ((rural_ssl*slovak_rural)+(working_ssl*slovak_working)+(middle_ssl*slovak_middle)+(intell_ssl*slovak_intell)+(pension_ssl*slovak_pension));
+Q.moravian_ssl = ((rural_ssl*moravian_rural)+(working_ssl*moravian_working)+(middle_ssl*moravian_middle)+(intell_ssl*moravian_intell)+(pension_ssl*moravian_pension));
+Q.hungarian_ssl = ((rural_ssl*hungarian_rural)+(working_ssl*hungarian_working)+(middle_ssl*hungarian_middle)+(intell_ssl*hungarian_intell)+(pension_ssl*hungarian_pension));
+Q.roma_ssl = ((rural_ssl*roma_rural)+(working_ssl*roma_working)+(middle_ssl*roma_middle)+(intell_ssl*roma_intell)+(pension_ssl*roma_pension));
 
-Q.czech_ind = ((rural_ind*czech_rural)+(working_ind*czech_working)+(middle_ind*czech_middle)+(intell_ind*czech_intell)+(pension_ind*czech_pension)) // +(czech_religion*mul_religion))*(1.15*slovak_autonomy*moravian_autonomy*hungarian_autonomy*roma_status) // WIP...
-Q.slovak_ind = ((rural_ind*slovak_rural)+(working_ind*slovak_working)+(middle_ind*slovak_middle)+(intell_ind*slovak_intell)+(pension_ind*slovak_pension))
-Q.moravian_ind = ((rural_ind*moravian_rural)+(working_ind*moravian_working)+(middle_ind*moravian_middle)+(intell_ind*moravian_intell)+(pension_ind*moravian_pension))
-Q.hungarian_ind = ((rural_ind*hungarian_rural)+(working_ind*hungarian_working)+(middle_ind*hungarian_middle)+(intell_ind*hungarian_intell)+(pension_ind*hungarian_pension))
-Q.roma_ind = ((rural_ind*roma_rural)+(working_ind*roma_working)+(middle_ind*roma_middle)+(intell_ind*roma_intell)+(pension_ind*roma_pension))
+Q.czech_ind = ((rural_ind*czech_rural)+(working_ind*czech_working)+(middle_ind*czech_middle)+(intell_ind*czech_intell)+(pension_ind*czech_pension));
+Q.slovak_ind = ((rural_ind*slovak_rural)+(working_ind*slovak_working)+(middle_ind*slovak_middle)+(intell_ind*slovak_intell)+(pension_ind*slovak_pension));
+Q.moravian_ind = ((rural_ind*moravian_rural)+(working_ind*moravian_working)+(middle_ind*moravian_middle)+(intell_ind*moravian_intell)+(pension_ind*moravian_pension));
+Q.hungarian_ind = ((rural_ind*hungarian_rural)+(working_ind*hungarian_working)+(middle_ind*hungarian_middle)+(intell_ind*hungarian_intell)+(pension_ind*hungarian_pension));
+Q.roma_ind = ((rural_ind*roma_rural)+(working_ind*roma_working)+(middle_ind*roma_middle)+(intell_ind*roma_intell)+(pension_ind*roma_pension));
 
 
 // Current National Assembly composition
@@ -506,7 +506,7 @@ new-page: true
 
 > *"Eastern Europe caused constant alarm in the Soviet supreme leadership. The suppression of the Hungarian Uprising had been traumatic for Khrushchev. He had thought he was relaxing communist rule for everybody’s benefit but found that societies west of the Soviet Union hated their oppressors. The Prague Spring was less traumatic for Brezhnev, who had never promised reform in eastern Europe; his conscience, if he had one, was untroubled by his decision to send Warsaw Pact forces into Czechoslovakia in 1968."*
 
- - Robert Service, *Comrades - A History of Communism*, 2009
+ - Robert Service, *Comrades: A History of Communism*, 2009
 
 > *"The Prague Spring was a time when history began to move."*
 
