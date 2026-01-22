@@ -103,7 +103,6 @@ Q.pro_reform = 25; // Support for reform. Will increase/decrease depending on ec
 Q.budget = 4;
 
 // reforms. WIP
-Q.
 
 // autonomy & minorities. WIP
 Q.federalisation = 0; // 0 = full centralisation, 1 = czechia and slovakia are federalised
