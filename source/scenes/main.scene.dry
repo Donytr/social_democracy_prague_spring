@@ -16,7 +16,7 @@ max-cards: 3
 
 [? if year = 1966 and month = 4 and week == 3 : PRAGUE — Preparations for the 13th Party Congress of the KSČ are underway. It is expected to take place at the end of April and the start of May. ?]
 
-[? if year = 1966 and month = 4 and week == 3 : DA-NANG — Protests in the second-largest city of South Vietnam are continuing, with protesters demanding a resignation of the current government and a formation of a civillian one. ?]
+[? if year = 1966 and month = 4 and week == 3 : DA NANG — Protests in the second-largest city of South Vietnam are continuing, with protesters demanding a resignation of the current government and a formation of a civillian one. ?]
 
 [? if year = 1966 and month = 4 and week == 3 : POZNAŃ — Amid celebrations of 1000 years since the establishment of the first Polish nation, First Secretary Władysław Gomułka criticises the Catholic Church's concept of celebrating baptism. ?]
 

@@ -19,7 +19,7 @@ The KSČ is torn between three major ideological camps. What should be our prima
 - @hardliner: The counter-revolutionary 'reformist' movement must be crushed, one way or another.
 - @easy_discard
 
-@class_struggle
+@reformist
 on-arrival: {!
 if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
