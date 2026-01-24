@@ -1,4 +1,4 @@
-title: Next month
+title: Next week
 set-bg: img/map.jpg
 is-hand: true
 on-arrival: {!
@@ -14,30 +14,14 @@ max-cards: 3
 
 #Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 
-[? if year = 1928 and month = 2 : The current bourgeois-right government has fallen. The next elections are slated for May of this year. ?]
+[? if year = 1966 and month = 4 and week == 3 : PRAGUE — Preparations for the 13th Party Congress of the KSČ are underway. It is expected to take place at the end of April and the start of May. ?]
 
-- @party
-- @govt
-#- @advisor
-#- @shuffle_leadership_pinned
+[? if year = 1966 and month = 4 and week == 3 : DA-NANG — Protests in the second-largest city of South Vietnam are continuing, with protesters demanding a resignation of the current government and a formation of a civillian one. ?]
 
-@main_easy
-set-bg: img/map.jpg
-is-hand: true
-on-arrival: {!
-if (Q.advisor_action_timer <= 0) {
-    Q.pinnedCardsDescription = 'Advisors - an action is available.';
-} else if (Q.advisor_action_timer == 1) {
-    Q.pinnedCardsDescription = 'Advisors - next action available in 1 week.';
-} else {
-    Q.pinnedCardsDescription = 'Advisors - next action available in ' + Q.advisor_action_timer + ' weeks.';
-}
-!}
-max-cards: 4
+[? if year = 1966 and month = 4 and week == 3 : POZNAŃ — Amid celebrations of 1000 years since the establishment of the first Polish nation, First Secretary Władysław Gomułka criticises the Catholic Church's concept of celebrating baptism. ?]
 
-#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
+[? if year = 1966 and month = 4 and week == 3 : SOFIA — A delegation of the Bulgarian National Assembly is set to visit Czechoslovakia next week. ?]
 
-[? if year = 1928 and month = 2 : The current bourgeois-right government has fallen. The next elections are slated for May of this year. ?]
 
 - @party
 - @govt
@@ -51,14 +35,14 @@ title: Party Affairs
 card-image: img/rude_pravo.jpg
 is-deck: true
 
-#- @party_affairs
+- #party_affairs
 
 @govt
 title: Domestic Affairs
 card-image: img/national_assembly.jpg
 is-deck: true
 
-#- @govt_affairs
+#- #govt_affairs
 
 @foreign
 title: Foreign Affairs
