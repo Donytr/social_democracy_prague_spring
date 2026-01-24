@@ -505,10 +505,6 @@ new-page: true
 
  - Robert Service, *Comrades: A History of Communism*, 2009
 
-> *"The Prague Spring was a time when history began to move."*
-
- - Jaroslav Suk
-
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
 For more information on the politics and government of the Czechoslovak Socialist Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
@@ -548,7 +544,7 @@ go-to: 1928_main
 
 @1928_main
 new-page: true
-go-to: main if true;
+go-to: main if true
 
 = **1966**
 
