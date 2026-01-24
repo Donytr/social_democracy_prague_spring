@@ -26,7 +26,7 @@ if (Q.ideology && Q.ideology != "reformist") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "reformist"; reformist_strength += 10; reformist_dissent -= 5; relation_moscow += 0.02; hardliner_dissent += 3; pragmatist_dissent =+ 0.5
+on-departure: ideology = "reformist"; reformist_strength += 10; reformist_dissent -= 5; relation_moscow += 0.02; hardliner_dissent += 3; pragmatist_dissent += 0.5
 
 The reformist wing of our party is in support of reforming our institutions to be more democratic and representative of public opinion. However, hardliners protest and invoke the memory of Hungarian Uprising of 1956 as a warning. 
 
