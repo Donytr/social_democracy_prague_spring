@@ -41,9 +41,9 @@ on-departure: ideology = "pragmatist"; pragmatist_strength += 10; pragmatist_dis
 
 Pragmatists in the party prefer preserving the current status quo and perhaps lifting some oppressive measures. [? if pro_reform >= 45 : However, given the extent of public support behind the reform movement, they are willing to moderately amend our socialist system and fulfill some of its demands. ?]
 
-@labor
+@hardliner
 on-arrival: {!
-if (Q.ideology && Q.ideology != "labor") {
+if (Q.ideology && Q.ideology != "hardliner") {
     Q.changed = 1;
 }
 !}
