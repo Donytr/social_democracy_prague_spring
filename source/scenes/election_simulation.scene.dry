@@ -15,6 +15,7 @@ Q.intell = 3;
 Q.pension = 25;
 
 Q.classes = ['rural', 'working', 'middle', 'intell', 'pension'];
+Q.ethnics = ['czech', 'slovak', 'moravian', 'hungarian', 'roma'];
 Q.parties = ['ksc', 'kss', 'css', 'csl', 'sso', 'ssl', 'ind'];
 
 // Support for party by social group
@@ -72,6 +73,7 @@ Q.hungarian = 25;
 Q.roma = 14;
 
 Q.classes = ['rural', 'working', 'middle', 'intell', 'pension'];
+Q.ethnics = ['czech', 'slovak', 'moravian', 'hungarian', 'roma'];
 Q.parties = ['ksc', 'kss', 'css', 'csl', 'sso', 'ssl', 'ind'];
 
 // Support for party by social group

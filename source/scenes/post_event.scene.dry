@@ -4,10 +4,17 @@ on-arrival: {!
 Q.last_advisor_action = 0;
 Q.last_cabinet_action = 0;
 // make sure no stat is below 0.
-for (var c of Q.classes) {
+for (var c of Q.classes) { // classes
     for (var party of Q.parties) {
         if (Q[c+'_'+party] < 0) {
             Q[c+'_'+party] = 0;
+        }
+    }
+}
+for (var e of Q.ethnics) { // ethnic groups
+    for (var party of Q.parties) {
+        if (Q[e+'_'+party] < 0) {
+            Q[e+'_'+party] = 0;
         }
     }
 }
@@ -21,6 +28,7 @@ if (Q.socialism < 0) {
 if (Q.socialism >= 100) {
     Q.socialism = 99;
 }
+
 // re-calculate party support
 // calculate normalized class voting for the achievements
 for (var c of Q.classes) {
@@ -36,6 +44,7 @@ for (var c of Q.classes) {
         Q[c + '_' + party + '_display'] = Math.round(100*Q[c+'_'+party]/class_votes);
     }
 }
+
 // calculate support for each of the parties
 var total_support = 0; 
 for (var party of Q.parties) {
@@ -50,6 +59,58 @@ for (var party of Q.parties) {
     Q[party + '_support'] = party_support;
     total_support += party_support; 
 }
+
+// calculate multipliers
+var autonomy_mul = {}; // autonomy / federalisation
+if (Q.federalisation === 0) { // Czechoslovakia centralised
+    autonomy_mul['czech'] = 1.1;
+    autonomy_mul['slovak'] = 0.85;
+    autonomy_mul['moravian'] = 0.9;
+    autonomy_mul['hungarian'] = 0.8;
+    autonomy_mul['roma'] = 1.0;
+} else if (Q.federalisation === 1) { // federal Czechia and Slovakia
+    autonomy_mul['czech'] = 1;
+    autonomy_mul['slovak'] = 1.1;
+    autonomy_mul['moravian'] = 0.85;
+    autonomy_mul['hungarian'] = 0.75;
+    autonomy_mul['roma'] = 0.9; // discrimination against Roma in Slovakia was stronger
+} else if (Q.federalisation === 2) { // federal Czechia, Moravia, and Slovakia
+    autonomy_mul['czech'] = 0.95;
+    autonomy_mul['slovak'] = 1.1;
+    autonomy_mul['moravian'] = 1.1;
+    autonomy_mul['hungarian'] = 0.75;
+    autonomy_mul['roma'] = 0.9; // discrimination against Roma in Slovakia was stronger
+} else { // federal Czechia, Moravia, Slovakia, and Hungarian Slovakia
+    autonomy_mul['czech'] = 0.9;
+    autonomy_mul['slovak'] = 0.95;
+    autonomy_mul['moravian'] = 1.05;
+    autonomy_mul['hungarian'] = 1.2;
+    autonomy_mul['roma'] = 0.9;
+}
+
+
+// calculate ethnic party support (with multipliers)
+for (var e of Q.ethnics) {
+    for (var party of Q.parties) {
+        var support = 0;
+        for (var c of Q.classes) {
+            support += Q[c+'_'+party] * Q[e+'_'+c];
+        }
+        Q[e+'_'+party] = support * autonomy_mul[e]; // autonomy multiplier
+    }
+}
+for (var e of Q.ethnics) {
+    var ethnic_votes = 0;
+    for (var party of Q.parties) {
+        ethnic_votes += Q[e+'_'+party];
+    }
+    for (var party of Q.parties) {
+        Q[e + '_' + party + '_normalized'] = 100*Q[e+'_'+party]/ethnic_votes;
+        Q[e + '_' + party + '_display'] = Math.round(100*Q[e+'_'+party]/ethnic_votes);
+    }
+}
+
+
 // 2. normalize support (fraction)
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
