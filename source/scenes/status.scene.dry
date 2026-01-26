@@ -49,7 +49,7 @@ National Assembly composition:
 
 {!<div class="box" style='background-color:#1A809A'> </div> <span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
-{!<div class="box" style='background-color:#DCDCDC'> </div>!} Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
+{!<div class="box" style='background-color:#DCDCDC'> </div>!} Independents: [? if n_elections = 0 : [+ ind_r_1964 +]% ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
 [? if ksc_in_government = 1 : Budget: [+ budget +] ?]
 
@@ -117,9 +117,21 @@ if (Q.lm_strength) {
 
 @diplomacy
 
-= International relations
+= Warsaw Pact
 
-Moscow: [+ relation_moscow : moscow +]
+Moscow: [+ relation_ussr : moscow +]
+
+Budapest : [+ relation_hungary : relationships +]
+
+Bucharest : [+ relation_romania : relationships +]
+
+East Berlin : [+ relation_gdr : relationships +]
+
+Sofia : [+ relation_bulgaria : relationships +]
+
+Tirana : [+ relation_albania : relationships +]
+
+Warsaw : [+ relation_poland : relationships +]
 
 @polls
 on-arrival: {!

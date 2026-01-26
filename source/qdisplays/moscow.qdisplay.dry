@@ -1,0 +1,11 @@
+
+# relationship with Moscow
+(..0.06) alarmed
+(0.06..0.19) suspicious
+(0.19..0.31) apprehensive
+(0.31..0.41) uneasy
+(0.41..0.54) neutral
+(0.54..0.71) satisfactory
+(0.71..0.91) decent
+(0.91..1.00) friendly
+(1.00..) cordial

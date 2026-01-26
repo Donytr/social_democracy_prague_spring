@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "HeptaSlab";
+    src: url("font/HeptaSlab.ttf");
+}
+
 body {
   --bg-color: #f3f3e3;
   --border-color: #000;
@@ -12,7 +17,7 @@ body {
   --tab-hover-color: #ececec;
   --card-border-color: #ccc; 
   --card-bg-color: #ddd; 
-  font-family: "Courier New", Georgia, monospace;
+  font-family: "HeptaSLab", "Courier New", monospace;
   background-color: var(--bg-color);
   padding: 0;
   line-height: 130%;

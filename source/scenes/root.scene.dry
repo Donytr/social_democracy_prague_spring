@@ -112,7 +112,13 @@ Q.roma_resettlement = 1; // 0 = forced settlement policy was discontinued. 1 = f
 Q.roma_sterilisation = 0; // 0 = there is no forced sterilisation of Roma women. 1 = the policy is in place.
 
 // international relations WIP
-Q.relation_moscow = 0.15; // when reaches 1, Warsaw Pact invasion is triggered
+Q.relation_ussr = 0.85; // when reaches 0, Warsaw Pact invasion is triggered.
+Q.relation_hungary = 0.4; // Negative opinion of reforms.
+Q.relation_romania = 0.3; // Ceauşescu was already on Dubček's side and against Soviet influence. He condemned the Warsaw Pact invasion harshly.
+Q.relation_gdr = 0.5; // Hardliner. Dogmatic and against reforms. Ulbricht disavowed reforms early- Indirectly supported the Warsaw Pact invasion by supplying it.
+Q.relation_bulgaria = 0.35; // Negative stance towards reforms.
+Q.relation_albania = 0.2; // Tirana was generally hostile towards USSR, labelling it as traitors to Communism and neorevisionists. Albanian leadership deemed the USSR too liberal.
+Q.relation_poland = 0.6; // Hardliner. Hostile towards reforms.
 
 // Proportion of different ethnic groups
 Q.czech = 39;

@@ -12,17 +12,51 @@ if (Q.advisor_action_timer <= 0) {
 !}
 max-cards: 3
 
-#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
-
 [? if year = 1966 and month = 4 and week == 3 : PRAGUE — Preparations for the 13th Party Congress of the KSČ are underway. It is expected to take place at the end of April and the start of May. ?]
 
-[? if year = 1966 and month = 4 and week == 3 : DA NANG — Protests in the second-largest city of South Vietnam are continuing, with protesters demanding a resignation of the current government and a formation of a civillian one. ?]
+[? if year = 1966 and month = 4 and week == 3 : DA NANG — Protests in the second-largest city of South Vietnam continue with protesters demanding a resignation of the current government and a formation of a civillian one. ?]
 
-[? if year = 1966 and month = 4 and week == 3 : POZNAŃ — Amid celebrations of 1000 years since the establishment of the first Polish nation, First Secretary Władysław Gomułka criticises the Catholic Church's concept of celebrating baptism. ?]
+[? if year = 1966 and month = 4 and week == 3 : POZNAŃ — Amid celebrations of one millenium since the establishment of the first Polish state, First Secretary Władysław Gomułka criticises the Catholic Church's concept of celebrating baptism. ?]
 
-[? if year = 1966 and month = 4 and week == 3 : SOFIA — A delegation of the Bulgarian National Assembly is set to visit Czechoslovakia next week. ?]
+[? if year = 1966 and month = 4 and week == 3 : SANTA MONICA — The 38th Academy Awards are held in this Californian city. The Czechoslovak film *The Shop on Main Street* wins in the Best Foreign Language Film category! ?]
 
+[? if year = 1966 and month = 4 and week == 3 : SOFIA — A delegation of the Bulgarian National Assembly is set to visit Czechoslovakia next week. ?] #IMPORTANT?
 
+[? if year = 1966 and month = 4 and week == 4 : BRATISLAVA — The 96th anniversary of Vladimir Lenin's birth is celebrated in what is Czechoslovakia's third largest city. ?]
+
+[? if year = 1966 and month = 4 and week == 4 : ROME — Soviet Minister of Foreign Affairs Andrei Gromyko visits Rome to discuss Soviet-Italian relations with his Italian counterpart. He also meets with Pope Paul VI, which is the first meeting between the USSR and the Roman Catholic Church. ?]
+
+[? if year = 1966 and month = 4 and week == 4 : SINOIA — Rhodesian Security Forces kill seven insurgents after discovering explosive charges which failed to explode, marking Tte first major engagement of the Rhodesian Bush War. ?]
+
+[? if year = 1966 and month = 4 and week == 4 : TASHKENT — A magnitude 5.2 earthquake destroys around 80% of the Uzbek SSR's capital. Leonid Brezhnev visits to supervise the recovery effors. ?]
+
+[? if year = 1966 and month = 4 and week == 4 : TEL AVIV — A exhibition about the Slovak National Uprising and participation of Jewish partisans in resistance against Nazis in Slovakia is opened. ?]
+
+[? if year = 1966 and month = 5 and week == 1 : PRAGUE — President Novotný meets with the Bulgarian diplomatic delegation. The National Assembly debates about a possible reform to allow private ownership of apartments. ?] #IMPORTANT? PERHAPS AN EVEN TO OFFER ASSISTANCE REGARDING THE VRATSA DISASTER
+
+[? if year = 1966 and month = 5 and week == 1 : ALEXANDRIA — Yugoslavian President Tito meets with the Egyptian President Nasser for diplomatic talks. ?]
+
+[? if year = 1966 and month = 5 and week == 1 : DEŠTNICE — A railway accident takes place in northwestern Bohemia as a train collides with a truck at a level crossing. There are 10 casualties. ?] #IMPORTANT?
+
+[? if year = 1966 and month = 5 and week == 1 : NEW YORK — Muhammad Hussain El-Fara, a representative of Jordan to the UN, labels the recent incursion of Israeli troops into Jordan's territory as direct aggression. ?]
+
+[? if year = 1966 and month = 5 and week == 1 : VRATSA — A dam near the small Bulgarian village of Zgorigrad collapses, causing dozens of deaths and extensive damage. ?] #IMPORTANT?
+
+[? if year = 1966 and month = 5 and week == 2 : PRAGUE — The 21st anniversary of liberation from Nazi Germany is celebrated around Czechoslovakia with military parades. Singaporean Prime Minister Lee Kuan Yew visits the country after accepting an official invitation. ?]
+
+[? if year = 1966 and month = 5 and week == 2 : NEW YORK — African members of the US Security Council call for a British military blockade of Rhodesia. ?]
+
+[? if year = 1966 and month = 5 and week == 3 : DA NANG — North Vietnam besieges the second-largest city of South Vietnam. ?]
+
+[? if year = 1966 and month = 5 and week == 4 : GEORGETOWN — Guyana becomes an independent nation after more than a century of British colonial rule. ?]
+
+[? if year = 1966 and month = 5 and week == 4 : HAVANA — Prime Minister Fidel Castro declares martial law because of a possible US attack. ?]
+
+[? if year = 1966 and month = 6 and week == 4 : BUENOS AIRES — The Argentinian military overthrows the democratically elected president Arturo Illia and establishes an authoritan regime. ?]
+
+[? if year = 1966 and month = 6 and week == 4 : PARIS — France withdraws from NATO's military structure. ?]
+
+#Here, the main deck will be displayed. Clicking on the deck draws a card into your hand. Clicking on a card activates that card.
 - @party
 - @govt
 - @foreign

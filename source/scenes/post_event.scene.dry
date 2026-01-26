@@ -89,7 +89,7 @@ if (Q.federalisation === 0) { // Czechoslovakia centralised
 }
 
 
-// calculate ethnic party support (with multipliers)
+// calculate ethnic party support
 for (var e of Q.ethnics) {
     for (var party of Q.parties) {
         var support = 0;
@@ -110,7 +110,6 @@ for (var e of Q.ethnics) {
     }
 }
 
-
 // 2. normalize support (fraction)
 for (var party of Q.parties) {
     Q[party+'_normalized'] = Q[party + '_support']/total_support;
@@ -118,6 +117,7 @@ for (var party of Q.parties) {
     Q[party+'_votes_display'] = Math.round(Q[party+'_normalized']*100);
 }
 
+// normalise ethnic support
 
 // set faction strength/dissent to 0
 for (var c of Q.factions) {
