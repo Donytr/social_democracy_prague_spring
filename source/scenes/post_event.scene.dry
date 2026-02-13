@@ -3,6 +3,11 @@ new-page: true
 on-arrival: {!
 Q.last_advisor_action = 0;
 Q.last_cabinet_action = 0;
+
+// Reset temp_var
+if (Q.temp_var != 0) {
+    Q.temp_var = 0;
+}
 // make sure no stat is below 0.
 for (var c of Q.classes) { // classes
     for (var party of Q.parties) {
@@ -27,6 +32,19 @@ if (Q.socialism < 0) {
 }
 if (Q.socialism >= 100) {
     Q.socialism = 99;
+}
+if (Q.reform < 0) {
+    Q.reform = 0;
+}
+if (Q.reform >= 100) {
+    Q.reform = 99;
+}
+
+if (Q.power_supply < 0) {
+    Q.power_supply = 0;
+}
+if (Q.power_supply >= 100) {
+    Q.power_supply = 99;
 }
 
 // re-calculate party support
@@ -551,7 +569,7 @@ if (typeof window !== "undefined" && window.generateBar) {
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0
 
-= [+ month : month +] [+ year +]
+= Week [+ week +], [+ month : month +] [+ year +]
 
 @events_choice
 

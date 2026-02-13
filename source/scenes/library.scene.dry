@@ -12,6 +12,7 @@ Herein contains relevant information about the government and politics of the Cz
 - @government: Czechoslovakia's system of government
 - @czechoslovak_timeline: Timeline of Czechoslovakia before 1966
 - @curr_gov: Current government details
+- @ministries: Ministry details
 - @demographics: Demographics
 - @parties: Parties
 - @public_opinion: Public opinion (and projected election results)
@@ -104,7 +105,7 @@ National Assembly composition:
 
 {!<div class="box" style='background-color:#0000FF'> </div> <span class="tooltip-text" title="Party of Slovak Revival">SSO</span>!}: [? if n_elections = 0 : [+ sso_r_1964 +]% ?][? if n_elections > 0 : [+ sso_r +]% ?]
 
-{!<div class="box" style='background-color:#1A809A'> </div>< span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
+{!<div class="box" style='background-color:#1A809A'> </div> <span class="tooltip-text" title="Freedom Party">SSl</span>!}: [? if n_elections = 0 : [+ ssl_r_1964 +]% ?][? if n_elections > 0 : [+ ssl_r +]% ?]
 
 {!<div class="box" style='background-color:#DCDCDC'> </div>!}Independents: [? if n_elections = 0 : [+ ind_r_1964 +] ?][? if n_elections > 0 : [+ ind_r_display +]% ?]
 
@@ -114,13 +115,15 @@ KSČ position: [? if ksc_toleration : toleration ?][? if ksc_in_government : in 
 
 **Current cabinet:**
 
-Central Planning Commission: [+ planning_minister +] ([+ planning_minister_party +])
+[? if planning_ministry != 0 : Central Planning Commission: [+ planning_minister +] ([+ planning_minister_party +]) ?]
 
 Central Energy Administration: [+ energy_minister +] ([+ energy_minister_party +])
 
-Price Regulation: [+ price_minister +] ([+ price_minister_party +])
+[? if price_ministry != 0 : Price Regulation: [+ price_minister +] ([+ price_minister_party +]) ?]
 
-Agriculture and Food: [+ agriculture_minister +] ([+ agriculture_minister_party +])
+[? if agriculture_ministry != 0 : Agriculture and Food: [+ agriculture_minister +] ([+ agriculture_minister_party +]) ?]
+
+[? if agriculture_ministry == 0 : Agriculture and Forestry: [+ agriforestry_minister +] ([+ agriforestry_minister_party +]) ?]
 
 Chemical Industry: [+ chemical_minister +] ([+ chemical_minister_party +])
 
@@ -128,7 +131,11 @@ Construction: [+ construction_minister +] ([+ construction_minister_party +])
 
 Consumer Industry: [+ consumerind_minister +] ([+ consumerind_minister_party +])
 
-Education: [+ education_minister +] ([+ education_minister_party +])
+[? if culture_ministry != 0 : Culture and Information: [+ culture_minister +] ([+ culture_minister_party +]) ?]
+
+[? if culture_ministry == 0 : Education and Culture: [+ educulture_minister +] ([+ educulture_minister_party +]) ?]
+
+[? if culture_ministry != 0 : Education: [+ education_minister +] ([+ education_minister_party +]) ?]
 
 Finance: [+ finance_minister +] ([+ finance_minister_party +])
 
@@ -136,7 +143,7 @@ Foreign Affairs: [+ foreign_minister +] ([+ foreign_minister_party +])
 
 Foreign Trade: [+ fortrade_minister +] ([+ fortrade_minister_party +])
 
-Forestry and Water Management: [+ forestry_minister +] ([+ forestry_minister_party +])
+[? if agriculture_ministry != 0 : Forestry and Water Management: [+ forestry_minister +] ([+ forestry_minister_party +]) ?]
 
 Health: [+ health_minister +] ([+ health_minister_party +])
 
@@ -148,7 +155,7 @@ Internal Trade: [+ inttrade_minister +] ([+ inttrade_minister_party +])
 
 Justice: [+ justice_minister +] ([+ justice_minister_party +])
 
-Labour and Social Affairs: [+ labour_minister +] ([+ labour_minister_party +])
+[? if labour_ministry != 0 : Labour and Social Affairs: [+ labour_minister +] ([+ labour_minister_party +]) ?]
 
 Mining: [+ mining_minister +] ([+ mining_minister_party +])
 
@@ -158,13 +165,66 @@ Technology: [+ technology_minister +] ([+ technology_minister_party +])
 
 Transport: [+ transport_minister +] ([+ transport_minister_party +])
 
+@ministries
+go-to: menu
+
+= Ministry details
+[? if planning_ministry != 0 : **Central Planning Commission:** Perhaps the most important ministry of them all. Responsible for economic plans. ?]
+
+**Central Energy Administration:** Manages distribution of electricity, including setting separate rules for households and businesses, collecting fees, and mandating for how long certain appliances can be used.
+
+[? if price_ministry != 0 : **Price Regulation:** Sets prices of all goods and services in the country. ?]
+
+[? if agriculture_ministry != 0: **Agriculture and Food:** Manages agricultural production and the food industry. ?]
+
+[? if agriculture_ministry == 0: **Agriculture and Forestry:** Manages agricultural production and the forestry and food industries. ?]
+
+**Chemical Industry:** Manages and regulates the chemical industry, including the production of chemicals, rubber, oil, and paper.
+
+**Construction:** Responsible for the contruction material industry and the construction and allocation of housing.
+
+**Consumer Industry:** Manages and regulates the consumer industry, including the production of textiles and clothing, glass and porcelain products, wooden products (such as furniture and packaging), and printed publications.
+
+[? if culture_ministry != 0: **Culture and Information:** Manages state media, censorship, and payments to authors. ?]
+
+[? if culture_ministry == 0: **Education and Culture:** Manages state media, censorship, education system, and research. ?]
+
+[? if culture_ministry != 0: **Education:** Manages education system and research. ?]
+
+**Finance:** Responsible for our state's fiscal policy and our currency.
+
+**Foreign Affairs:** Responsible for our foreign policy; that is, our relations with other states and international organisations.
+
+**Foreign Trade:** Among its responsibilities is setting the rules for foreign businesses operating in Czechoslovakia and managing our imports and exports. It cooperates on the latter with the Minsitry of Internal Trade.
+
+[? if agriculture_ministry != 0: **Forestry and Water Management:** Manages the forestry industry and water resources. ?]
+
+**Health:** Manages our healthcare system, medical research, and health insurance.
+
+**Heavy Industry:** Manages our engineering industry and the production of metals.
+
+**Interior:** Handles the internal security and manages the VB, the StB, and emergency services.
+
+**Internal Trade:** Regulates where organisations can purchase products, how much they can purchase, and for how much. It also inspects domestic businesses and cooperates with the Ministry of Foreign Trade on imports and exports.
+
+**Justice:** Responsible for judiciary and penal systems.
+
+[? if labour_ministry != 0: **Labour and Social Affairs:** Manages employment, wages, social security, work conditions, and workplace equality between sexes. ?]
+
+**Mining:** Handles the mining ministry and the distribution of fuels (e.g. natural gas, oil).
+
+**National Defence:** Manages our defence, military doctrine, the Czechoslovak People's Army, and the Military Counterintelligence, a branch of the StB.
+
+**Technology:** Controls the direction of state research and development and our involvement with new technologies (e.g. computing).
+
+**Transport:** Manages our transportation infrastructure, including roads, railways, and public transport. It can initiate construction of new transit links.
 
 @demographics
 go-to: menu
 
 **Demographic Groups**
 
-There are two ways to roughly divide the population into distinct groups: by ethnic identity and social class. There are four significant ethnic groups within Czechoslovakia:
+There are two ways to roughly divide the population into distinct groups: by ethnic identity and social class. There are five significant ethnic groups within Czechoslovakia:
 
 **Czechs**: The dominant group in Bohemia and the Czechoslovak Republic generally. 39% nationally, 95% in Czechia.
 

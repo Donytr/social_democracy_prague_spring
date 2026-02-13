@@ -36,6 +36,9 @@ Q.old_demographics = 0;
 // TODO: not yet implemented
 Q.use_decimals = 0;
 
+// a temporary variable used in events and such
+Q.temp_var = 0
+
 // party resources
 Q.resources = 2;
 // party dues
@@ -93,6 +96,8 @@ Q.stb_strength = 9; // StB had 8K employees in mid-50s, 12K in 1989. That's roug
 Q.stb_efficiency = 1;
 Q.stb_loyalty = 0.4;
 
+Q.emergency_personel = 0; // the higher the value, the more stretched Czechoslovak medical and firefighter sevices are.
+
 // The state of the country
 
 // popular opinion
@@ -116,9 +121,13 @@ Q.relation_ussr = 0.85; // when reaches 0, Warsaw Pact invasion is triggered.
 Q.relation_hungary = 0.4; // Negative opinion of reforms.
 Q.relation_romania = 0.3; // Ceauşescu was already on Dubček's side and against Soviet influence. He condemned the Warsaw Pact invasion harshly.
 Q.relation_gdr = 0.5; // Hardliner. Dogmatic and against reforms. Ulbricht disavowed reforms early- Indirectly supported the Warsaw Pact invasion by supplying it.
-Q.relation_bulgaria = 0.35; // Negative stance towards reforms.
+Q.relation_bulgaria = 0.35; // Negative stance towards reforms. Very loyal to Soviets.
 Q.relation_albania = 0.2; // Tirana was generally hostile towards USSR, labelling it as traitors to Communism and neorevisionists. Albanian leadership deemed the USSR too liberal.
 Q.relation_poland = 0.6; // Hardliner. Hostile towards reforms.
+
+Q.relation_yugoslavia = 0.5 // Tito supportive of socialist reforms.
+
+Q.relation_china = 0.3 // critical of Soviet socialism, but also hostile towards reforms.
 
 // Proportion of different ethnic groups
 Q.czech = 39;
@@ -270,11 +279,11 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Antonín Novotný";
+Q.president = "Novotný"; // Antonín Novotný
 Q.president_party = 'KSČ';
-Q.prime_minister = "Josef Lenárt";
+Q.prime_minister = "Lenárt"; // Josef Lenárt
 Q.prime_minister_party = 'KSČ';
-Q.first_secretary = "Antonín Novotný";
+Q.first_secretary = "Novotný";
 Q.ksc_in_government = 1;
 Q.ssl_in_government = 1;
 Q.kss_in_government = 1;
@@ -293,51 +302,62 @@ Q.ksc_toleration = 0;
 // is the current government a presidential minority government?
 Q.minority_government = 0;
 
-// ministries - which parties control the ministries?
+// ministries
+Q.planning_ministry = 1 // 
+Q.price_ministry = 0 // does not exist until April 1968
+Q.agriculture_ministry = 0 // does not exist until April 1967, when it split off the Ministry of Agriculture and Forestry
+Q.labour_ministry = 0 // does not exist until 1968
+// give an option to streamline administration and reduce the number of ministries?
 // starting with the Josef Lenárt's cabinet https://cs.wikipedia.org/wiki/Vl%C3%A1da_Jozefa_Len%C3%A1rta
-//Q.planning_minister = ' '; cannot find any name before Vlasák in '68
-//Q.planning_minister_party = 'KSČ';
-Q.energy_minister = 'Josef Korčák';
+Q.planning_minister = ''; //cannot find any name before Vlasák in '68
+Q.planning_minister_party = 'KSČ';
+Q.energy_minister = 'Korčák'; // Josef Korčák
 Q.energy_minister_party = 'KSČ';
-//Q.price_minister = ' '; the first one was in 1968?
-//Q.price_minister_party = 'KSČ';
-Q.agriculture_minister = 'Karel Mestek';
-Q.agriculture_minister_party = 'KSČ';
-Q.chemical_minister = 'Václav Valeš';
+Q.price_minister = ''; // the first one was in 1968?
+Q.price_minister_party = '';
+Q.agriculture_minister = ''; // Karel Mestek. Since April 1967
+Q.agriculture_minister_party = '';
+Q.agriforestry_minister = 'Burian'; // Jiří Burian (until Agriculture split into Agriculture and Food)
+Q.agriforestry_minister_party = 'KSČ';
+Q.chemical_minister = 'Valeš'; // Václav Valeš
 Q.chemical_minister_party = 'KSČ';
-Q.construction_minister = 'Samuel Takáč';
+Q.construction_minister = 'Takáč'; // Samuel Takáč
 Q.construction_minister_party = 'KSS';
-Q.consumerind_minister = 'Božena Machačová-Dostálová';
+Q.consumerind_minister = 'Machačová-Dostálová'; // Božena Machačová-Dostálová
 Q.consumerind_minister_party = 'KSČ';
-Q.education_minister = 'Jiří Hájek';
+Q.culture_minister = '' // Karel Hoffmann since January 1967
+Q.culture_minister_party = '';
+Q.educulture_minister = 'Hájek';
+Q.educulture_minister_party = 'KSČ';
+Q.education_minister = 'Hájek'; // Jiří Hájek
 Q.education_minister_party = 'KSČ';
-Q.finance_minister = 'Bohumil Sucharda';
+Q.finance_minister = 'Dvořák'; // Richard Dvořák
 Q.finance_minister_party = 'KSČ';
-Q.foreign_minister = 'Václav David';
+Q.foreign_minister = 'David'; // Václav David
 Q.foreign_minister_party = 'KSČ';
-Q.fortrade_minister = 'František Hamouz';
+Q.fortrade_minister = 'Hamouz'; // František Hamouz
 Q.fortrade_minister_party = 'KSČ';
-Q.forestry_minister = 'Josef Smrkovský';
-Q.forestry_minister_party = 'KSČ';
-Q.health_minister = 'Josef Plojhar';
+Q.forestry_minister = ''; // Josef Smrkovský was the first minister after the ministry formed in April 1967
+Q.forestry_minister_party = '';
+Q.health_minister = 'Plojhar'; // Josef Plojhar
 Q.health_minister_party = 'ČSL';
-Q.heavyind_minister = 'Josef Krejčí';
+Q.heavyind_minister = 'Krejčí'; // Josef Krejčí
 Q.heavyind_minister_party = 'KSČ';
-Q.interior_minister = 'Josef Kudrna';
+Q.interior_minister = 'Kudrna'; // Josef Kudrna
 Q.interior_minister_party = 'KSČ';
-Q.inttrade_minister = 'Jindřich Uher';
+Q.inttrade_minister = 'Uher'; // Jindřích Uher
 Q.inttrade_minister_party = 'KSČ';
-Q.justice_minister = 'Alois Neuman';
+Q.justice_minister = 'Neuman'; // Alois Neuman
 Q.justice_minister_party = 'ČSS';
-//Q.labour_minister = ''; established in 1968
-//Q.labour_minister_party = 'KSS';
-Q.mining_minister = 'František Penc';
+Q.labour_minister = ''; // established in 1968
+Q.labour_minister_party = '';
+Q.mining_minister = 'Penc'; // František Penc
 Q.mining_minister_party = 'KSČ';
-Q.defence_minister = 'Bohumír Lomský';
+Q.defence_minister = 'Lomský'; // Bohumír Lomský
 Q.defence_minister_party = 'KSČ';
-Q.technology_minister = 'František Vlasák';
+Q.technology_minister = 'Vlasák'; // František Vlasák
 Q.technology_minister_party = 'KSČ';
-Q.transport_minister = 'Alois Indra';
+Q.transport_minister = 'Indra'; // Alois Indra
 Q.transport_minister_party = 'KSČ';
 
 // Tax rates relative to 1928 baseline
@@ -436,9 +456,6 @@ Q.march_on_berlin_timer = 0;
 Q.wels_advisor = 1; // Otto Wels
 Q.muller_advisor = 1; // Hermann Müller
 Q.muller_dead = 0;
-// okay I know Arthur Crispien was a leader irl but i couldn't find much interesting about him...
-Q.crispien_advisor = 0; // Arthur Crispien
-Q.hilferding_advisor = 1; // Rudolf Hilferding
 
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
@@ -450,12 +467,6 @@ Q.seydewitz_advisor = 0; // Max Seydewitz
 // centrist alternate advisors
 Q.pfulf_advisor = 0; // Antonie Pfülf
 Q.breitscheid_advisor = 0; // Rudolf Breitscheid
-
-// Reformist advisors
-Q.severing_advisor = 0; // Carl Severing
-Q.braun_advisor = 0; // Otto Braun
-Q.juchacz_advisor = 0; // Marie Juchacz
-Q.baade_advisor = 0; // Fritz Baade
 
 !}
 set-bg: img/map.jpg
@@ -506,7 +517,7 @@ go-to: 1928_main
 new-page: true
 go-to: main
 
-= **1966**
+= **Week 1, April 1966**
 
 It is a turbulent time for the Czechoslovak Socialist Republic, to say at least. Since the beginning of the 60s, the economy has been stagnating and dissatisfaction with the current state of things increasing.
 

@@ -4,6 +4,9 @@ Here are all sources referenced during the creation of this mod.
 
 - @books: Books
 - @articles: Articles
+- @newspapers: Newspapers
+- @videos: Videos
+- @laws: Laws
 - @data: Data
 - @method: Methodology
 - @images: Image sources
@@ -16,13 +19,17 @@ Here are all sources referenced during the creation of this mod.
 
 **Pierce, Gina M.** 1968 and Beyond: From the Prague Spring to “Normalization”. University of Pittsburgh. {!<a target="_blank" href="https://archive.org/details/from-the-prague-spring-to-normalization">Archive.org</a>!}
 
+**Sokolová, Věra**. Cultural Politics of Ethnicity: Discourses on Roma in Communist Czechoslovakia. ibidem-Verlag, 2008. {!<a target="_blank" href="https://archive.org/details/cultural-politics-of-ethnicity-discourses-on-roma-in-communist-czechoslovakia">Archive.org</a>!}, {!<a target="_blank" href="https://www.researchgate.net/publication/323387973_Cultural_Politics_of_Ethnicity_Discourses_on_Roma_in_Communist_Czechoslovakia">ResearchGate</a>!}
+
 **Bašta, Jiří**. Lidové milice 1948 - 1969: Nelegální armáda Komunistické strany Československa. {!<a target="_blank" href="https://www.ustrcr.cz/wp-content/uploads/2017/10/LIDOVE-MILICE.pdf">Institute for the Study of Totalitarian Regimes</a>!}. {!<a target="_blank" href="https://archive.org/details/lidove-milice">Archive.org</a>!}
+
+**Čermák, Vladimír**. Operace Srpen 1968. 
 
 **International Monetary Fund**. The Czech and Slovak Federal Republic: An Economy in Transition. 1990. {!<a target="_blank" href="https://archive.org/details/czechslovakfeder0000unse/page/n3/mode/2up">Archive.org</a>!}, {!<a target="_blank" href="https://www.elibrary.imf.org/display/book/9781557751690/9781557751690.xml">IMF eLibrary</a>!}
 
-**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. {!<a target="_blank" href="https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948">Archive.org</a>!}
+**Ministry of Finance**. HISTORIE Ministerstva financí. {!<a target="_blank" href="https://mf.gov.cz/assets/cs/media/2005-08-17_publikace-historie-mf-1918-2004-komplet-v02_verze02.pdf">mf.gov.cz</a>!}, {!<a target="_blank" href="https://archive.org/details/2005-08-17-publikace-historie-mf-1918-2004-komplet-v-02-verze-02">Archive.org</a>!}
 
-**Sokolová, Věra**. Cultural Politics of Ethnicity: Discourses on Roma in Communist Czechoslovakia. ibidem-Verlag, 2008. {!<a target="_blank" href="https://archive.org/details/cultural-politics-of-ethnicity-discourses-on-roma-in-communist-czechoslovakia">Archive.org</a>!}, {!<a target="_blank" href="https://www.researchgate.net/publication/323387973_Cultural_Politics_of_Ethnicity_Discourses_on_Roma_in_Communist_Czechoslovakia">ResearchGate</a>!}
+**Marek, Pavel**. The Establishment of the Czechoslovak Socialist Party in 1948. Palacký University, 2023. {!<a target="_blank" href="https://archive.org/details/establishment-of-the-czechoslovak-socialist-party-1948">Archive.org</a>!}
 
 - @credits: Back
 
@@ -30,17 +37,41 @@ Here are all sources referenced during the creation of this mod.
 
 = Articles
 
-**armada.vojenstvi.cz**. Rubrika: Čísla a fakta (number of Czechoslovak soldiers in 1966). https://armada.vojenstvi.cz/povalecna/cisla-fakta
+**armada.vojenstvi.cz**. Rubrika: Čísla a fakta (number of Czechoslovak soldiers in 1966). {!<a target="_blank" href="https://armada.vojenstvi.cz/povalecna/cisla-fakta">Web</a>!}, {!<a target="_blank" href="https://web.archive.org/web/20260211070449/https://armada.vojenstvi.cz/povalecna/cisla-fakta">Archive.org</a>!}
 
-**totalita.cz**. Státní bezpečnost (StB). https://www.totalita.cz/stb/stb.php
+**totalita.cz**. Státní bezpečnost (StB). {!<a target="_blank" href="https://www.totalita.cz/stb/stb.php">Web</a>!}, {!<a target="_blank" href="https://web.archive.org/web/20260211072614/https://www.totalita.cz/stb/stb.php">Archive.org</a>!}
 
 - @credits: Back
+
+@newspapers
+
+= Rudé právo
+
+Although obviously biased, it was still a useful source of information about events in the Warsaw Pact and outside of it and the Communist Party's stance on them.
+
+1966-05-01_bulgarian_delegation: **Rudé právo**, 1966-05-05. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/5/5/1.png">Web</a>!}, {!<a target="_blank" href="https://web.archive.org/web/20260211072945/https://archiv.ucl.cas.cz/index.php?path=RudePravo%2F1966%2F5%2F5%2F1.png">Archive.org</a>!}
+
+- @credits: Back
+
+@videos
+
+= Videos
+
+**Česká televize**. 30 let zpět: Ministerstvo stavebnictví se bude rušit. 2020. {!<a target="_blank" href="https://ct24.ceskatelevize.cz/clanek/specialy/30-let-zpet-ministerstvo-stavebnictvi-se-bude-rusit-41443">ceskatelevize.cz</a>!}
+
+- @credits: Back
+
+@laws
+
+= Laws
+
+**159/1950 Sb.**. About the responsibilities of various ministries. 20 Dec 1950. {!<a target="_blank" href="https://www.zakonyprolidi.cz/cs/1950-159">Web</a>!}, {!<a target="_blank" href="web.archive.org/web/20260211085251/https://www.zakonyprolidi.cz/cs/1950-159">Archive.org</a>!}
 
 @data
 
 = Data
 
-**Czech Statistical Office**. Czechoslovak Population Census – 1970. 1970. https://csu.gov.cz/ceskoslovenske-scitani-lidu-1970
+**Czech Statistical Office**. Czechoslovak Population Census – 1970. 1970. {!<a target="_blank" href="https://csu.gov.cz/ceskoslovenske-scitani-lidu-1970">Web</a>!}
 
 - @credits: Back
 
@@ -100,21 +131,24 @@ Since I left out children (20.8%), I had to multiply all percentages by 1.21 to 
 
 = Images
 
+**Events**
+
+1966-05-01_bulgarian_delegation.jpg: Rudé Právo. 5 May 1966. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/5/5/1.png">Ústav pro českou literaturu</a>!}. Accessed 06 Feb 2026. Unknown license.
 
 **Newspapers**
 
-rude_pravo.jpg: Rudé Právo. 15 Apr 1966. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/4/15/1.png">Ústav pro českou literaturu</a>!}. Accessed 18 Jan 2026. Watermark present on the archived version was removed. Note: Not in public domain, but I doubt the KSČM will sue me...Please don't.
+rude_pravo.jpg: Rudé Právo. 15 Apr 1966. {!<a target="_blank" href="https://archiv.ucl.cas.cz/index.php?path=RudePravo/1966/4/15/1.png">Ústav pro českou literaturu</a>!}. Accessed 18 Jan 2026. Unknown license.
 
 **People**
 
-
+GanovskySava.jpg: *unknown*. *unknown date*. {!<a target="_blank" href="https://www.amazon.com/Vintage-Academician-Ganovsky-giving-speech/dp/B00TP31HMI">Amazon</a>!} ({!<a target="_blank" href="https://archive.is/VIueQ">archive</a>!}). Accessed 4 Feb 2026. Unknown license.
 
 **Posters**
 
 
 **Other**
 
-ideology.jpg: Dominik 'Donytr' Trunda. 18 Jan 2026. Logo of KSČ used: {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Emblem_of_the_Communist_Party_of_Czechoslovakia_1948-1990.png">Wikimedia Commons</a>!}. Accessed 18 Jan 2026. Public Domain
+ideology.jpg: Donytr. 18 Jan 2026. Logo of KSČ used: {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Emblem_of_the_Communist_Party_of_Czechoslovakia_1948-1990.png">Wikimedia Commons</a>!}. Accessed 18 Jan 2026. Public Domain
 
 map.jpg: Central Intelligence Agency. 1981. {!<a target="_blank" href="https://commons.wikimedia.org/wiki/File:Ceskoslovenska_Republika_-_DPLA_-_fcda1e759627a2f5f063de83c82a78f9.jpg">Wikimedia Commons</a>!}. Accessed 1 Jan 2026. Public Domain
 

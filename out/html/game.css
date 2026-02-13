@@ -121,6 +121,9 @@ a {
   color: var(--link-color);
   text-decoration: none;
 }
+p, span {
+  font-size: 90%;
+}
 p {
   margin: 0;
   margin-bottom: 1em;

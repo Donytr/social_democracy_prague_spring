@@ -1,0 +1,69 @@
+title: Meeting with a Bulgarian delegation
+subtitle: 
+view-if: year == 1966 and month == 5 and week == 1
+frequency: 1000
+max-visits: 1
+tags: event
+new-page: true
+face-image: img/events/1966-05-01_bulgarian_delegation.jpg
+
+= Meeting with a Bulgarian delegation
+
+After fourteen days of travel around our country, a delegation from the People's Republic of Bulgaria has arrived to the Prague Castle to visit President Novotný. Led by Sava Ganovski, the chairman of the National Assembly of Bulgaria, the delegation seeks discussion about the future developments of a socialist society.
+
+This could be a good opportunity to bolster relations between both countries. However, we need to keep in mind that Bulgaria is one of the more conservative members of the Warsaw Pact, very loyal to the Soviet Union.
+
+@1966_05_01_bd
+
+- @1966_05_01_bd_loyalty: Reassert out commitment to socialism.
+- @1966_05_01_bd_vratsa: Mention the recent dam disaster in Vratsa.
+- @1966_05_01_bd_end: End the meeting.
+
+@1966_05_01_bd_loyalty
+max-visits: 1
+go-to: 1966_05_01_bd
+on-arrival: relation_bulgaria += 0.05; temp_var = 1;
+
+Voicing our support and commitment to the system of socialism comes naturally, which pleases Bulgarian diplomats.
+
+@1966_05_01_bd_vratsa
+subtitle: Perhaps we could offer some assistance?
+max-visits: 1
+go-to: 1966_05_01_bd_vratsa_decision
+on-arrival: relation_bulgaria += 0.01;
+
+We make mention of the recent dam collapse near the Bulgarian town of Vratsa, which (according to recent reports) caused over 90 deaths and extensive damages. Bulgarians delegates are caught by surprise, as they didn't expect us to be aware of this incident.
+
+@1966_05_01_bd_vratsa_decision
+max-visits: 1
+
+- @1966_05_01_bd_vratsa_personel: Offer to send emergency personnel to help with the disaster's management.
+- @1966_05_01_bd_vratsa_aid: Offer material aid to assist with reconstruction efforts.
+- @1966_05_01_bd_vratsa_nothing: Express condolences about the tragic event.
+
+@1966_05_01_bd_vratsa_personel
+max-visits: 1
+on-arrival: emergency_personel += 1; relation_bulgaria += 0.1;
+
+We offer to send medical and firefighter personnel to help deal with the disaster's aftermath. Bulgarian delegates gratefully accept, and as they take their leave, Ganovski reaffirms Bulgaria's commitment to our fraternal relationship and cooperation.
+
+This might stretch our domestic emergency personnel a bit, though.
+
+@1966_05_01_bd_vratsa_aid
+max-visits: 1
+# WIP - ECONOMIC EFFECTS
+on-arrival: relation_bulgaria += 0.1; economic_growth += 0.1; budget -= 1;
+
+We offer to send material aid to Bulgarian authorities and assist with reconstruction efforts. Bulgarian delegates gratefully accept, and as they take their leave, Ganovski reaffirms Bulgaria's commitment to our fraternal relationship and cooperation.
+
+Since Czechoslovak companies are going to be involved in reconstruction, this might slightly boost our economy.
+
+@1966_05_01_bd_vratsa_nothing
+max-visits: 1
+
+Bulgarian delegates appreciate our concern, although they seem a bit disappointed that we don't offer any real assistance. As they take their leave, Ganovski reaffirms Bulgaria's commitment to our fraternal relationship.
+
+@1966_05_01_bd_end
+subtitle: It's about time we wrap up...
+max-visits: 1
+The meeting ends on a positive note. As the Bulgarian delegation takes its leave, Ganovski reaffirms Bulgaria's commitment to our fraternal relationship.

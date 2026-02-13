@@ -121,17 +121,31 @@ if (Q.lm_strength) {
 
 Moscow: [+ relation_ussr : moscow +]
 
-Budapest : [+ relation_hungary : relationships +]
+Budapest : [+ relation_hungary : foreign +]
 
-Bucharest : [+ relation_romania : relationships +]
+Bucharest : [+ relation_romania : foreign +]
 
-East Berlin : [+ relation_gdr : relationships +]
+East Berlin : [+ relation_gdr : foreign +]
 
-Sofia : [+ relation_bulgaria : relationships +]
+Sofia : [+ relation_bulgaria : foreign +]
 
-Tirana : [+ relation_albania : relationships +]
+Tirana : [+ relation_albania : foreign +]
 
-Warsaw : [+ relation_poland : relationships +]
+Warsaw : [+ relation_poland : foreign +]
+
+= Non-Aligned Movement
+
+Belgrade: [+ relation_yugoslavia : foreign +]
+
+= Others
+
+Beijing: [+ relation_china : foreign +]
+
+@infrastructure
+
+= Energy
+
+Power supply: [+ power_supply : power +]
 
 @polls
 on-arrival: {!
