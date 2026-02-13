@@ -1,7 +1,6 @@
 title: Meeting with a Bulgarian delegation
 subtitle: 
-view-if: year == 1966 and month == 5 and week == 1
-frequency: 1000
+view-if: year = 1966 and month = 5 and week = 1
 max-visits: 1
 tags: event
 new-page: true
