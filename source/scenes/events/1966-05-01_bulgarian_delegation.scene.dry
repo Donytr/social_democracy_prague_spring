@@ -1,6 +1,7 @@
 title: Meeting with the Bulgarian delegation
-subtitle: A delegation of the Bulgarian National Assembly visits Prague...
 view-if: year = 1966 and month = 5 and week = 1
+subtitle: A delegation of the Bulgarian National Assembly visits Prague...  
+frequency: 1000
 max-visits: 1
 tags: event
 new-page: true
