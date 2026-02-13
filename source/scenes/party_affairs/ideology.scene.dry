@@ -7,7 +7,8 @@ on-arrival: week_actions += 1; old_ideology = ideology; ideology_timer = 1
 card-image: img/ideology.jpg
 max-visits: 100
 #subtitle: Setting the party's ideological direction.
-# timer = 16; max-visits: 3
+#timer = 16; max-visits: 3
+
 = Questions of Ideology
 
 The KSČ is torn between three major ideological camps. What should be our primary ideological guidance for now?
