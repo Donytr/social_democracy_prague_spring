@@ -1,4 +1,6 @@
-# Social Democracy: An Alternate History
+# Prague Spring: An Alternate History
+
+For devlogs, see [my blog](https://donytr.bearblog.dev).
 
 ## Included Libraries
 
